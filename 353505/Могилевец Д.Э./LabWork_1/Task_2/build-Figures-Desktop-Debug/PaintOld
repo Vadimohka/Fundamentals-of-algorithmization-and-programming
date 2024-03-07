@@ -1,0 +1,177 @@
+#ifndef PAINT_H
+#define PAINT_H
+#include <polygon.h>
+
+class Paint : public Polygon
+{
+public:
+    Paint();
+private:
+    void draw(QPainter&) override;
+    void mouseMoveEvent(QMouseEvent*) override;
+    void mousePressEvent(QMouseEvent*) override;
+    void mouseReleaseEvent(QMouseEvent*) override;
+    void deltaRotation(qreal) override;
+    void deltaScale(qreal, qreal) override;
+    void deltaShift(QPointF) override;
+    void updateMassCenter() override;
+    void PrintInfo() override;
+    int amountOfUsedPoints;
+    bool enabledPainting;
+    bool isPainting;
+    QCheckBox* isPaintingCheckBox;
+    QPushButton* clearButton;
+private slots:
+    void on_checkBox_clicked();
+    void on_clear_clicked();
+};
+
+#endif // PAINT_H
+
+
+
+
+
+#include "paint.h"
+
+Paint::Paint() {
+    amountOfVertexes = 5000;
+    vertexes = new QPointF[amountOfVertexes];
+
+    isPaintingCheckBox = new QCheckBox("Разрешить рисование");
+    isPaintingCheckBox->setParent(this);
+    isPaintingCheckBox->setGeometry(555, 0, 300, 25);
+    connect(isPaintingCheckBox, &QCheckBox::clicked, this, &Paint::on_checkBox_clicked);
+
+    clearButton = new QPushButton("Очистить");
+    clearButton->setParent(this);
+    clearButton->setGeometry(850, 25, 100, 25);
+    connect(clearButton, &QPushButton::clicked, this, &Paint::on_clear_clicked);
+
+    isPainting = false;
+    enabledPainting = false;
+
+    amountOfUsedPoints = 0;
+    EnableMoving->setStyleSheet("QCheckBox:disabled { color: gray; }");
+
+    clearButton->setStyleSheet("QPushButton {"
+                                      "  background-color: #008631;"
+                                      "  color: #83F28F;"
+                                      "}"
+                                      "QPushButton:disabled {"
+                                      "  background-color: #CCCCCC;"
+                                      "  color: #666666;"
+                                      "}");
+
+    QTimer* buttonsTimer = new QTimer(this);
+
+    connect(buttonsTimer, &QTimer::timeout, [=]{
+        clearButton->setDisabled(isRotating || isScaling);
+    });
+    buttonsTimer->start(100);
+}
+
+void Paint::draw(QPainter &painter)
+{
+    painter.setBrush(Qt::black);
+    QPen penis;
+    penis.setWidth(3);
+    painter.setPen(penis);
+    for (int i = 0; i < amountOfUsedPoints - 1; ++i) {
+        painter.drawLine(vertexes[i], vertexes[i + 1]);
+    }
+}
+
+void Paint::mouseMoveEvent(QMouseEvent *me)
+{
+    if (!isPainting) {
+        if (!isMoveble) return;
+        deltaShift(me->pos() - mouseOldPos);
+        mouseOldPos = me->pos();
+        return;
+    }
+    if (amountOfUsedPoints < 5000) {
+        vertexes[amountOfUsedPoints] = me->pos();
+        amountOfUsedPoints++;
+    }
+}
+
+void Paint::mousePressEvent(QMouseEvent *me)
+{
+    mouseOldPos = me->pos();
+    if (enabledPainting) {
+        isPainting = true;
+        vertexes[amountOfUsedPoints] = me->pos();
+        amountOfUsedPoints++;
+    }
+    if (isMoveble) setCursor(Qt::ClosedHandCursor);
+}
+
+void Paint::mouseReleaseEvent(QMouseEvent *)
+{
+    isPainting = false;
+    unsetCursor();
+}
+
+void Paint::updateMassCenter()
+{
+    if (amountOfUsedPoints == 0) return;
+    QPointF newMassCenter = QPointF(0, 0);
+    for (int i = 0; i < amountOfUsedPoints; ++i) {
+        newMassCenter += vertexes[i];
+    }
+    massCenter = newMassCenter / amountOfUsedPoints;
+}
+
+void Paint::deltaRotation(qreal angle)
+{
+    if (amountOfUsedPoints == 0) return;
+    qreal xtranslated{};
+    qreal ytranslated{};
+    for (int i = 0; i < amountOfUsedPoints; ++i) {
+        xtranslated = vertexes[i].rx() - massCenter.rx();
+        ytranslated = vertexes[i].ry() - massCenter.ry();
+        vertexes[i].rx() = massCenter.rx() + xtranslated * qCos(angle) - ytranslated * qSin(angle);
+        vertexes[i].ry() = massCenter.ry() + xtranslated * qSin(angle) + ytranslated * qCos(angle);
+    }
+}
+
+void Paint::deltaScale(qreal currsize, qreal deltascale)
+{
+    if (amountOfUsedPoints == 0) return;
+    for (int i = 0; i < amountOfUsedPoints; ++i) {
+        vertexes[i] = massCenter + (vertexes[i] - massCenter) * (currsize + deltascale) / currsize;
+    }
+}
+
+void Paint::deltaShift(QPointF shift)
+{
+    if (amountOfUsedPoints == 0) return;
+    for (int i = 0; i < amountOfUsedPoints; ++i) {
+        vertexes[i] += shift;
+    }
+}
+
+void Paint::on_checkBox_clicked()
+{
+    enabledPainting = !enabledPainting;
+    if (isMoveble) {
+        EnableMoving->animateClick();
+        isMoveble = false;
+    }
+    EnableMoving->setEnabled(!enabledPainting);
+}
+
+void Paint::on_clear_clicked()
+{
+    if (isRotating || isScaling) return;
+    amountOfUsedPoints = 0;
+    PrintInfo();
+}
+
+void Paint::PrintInfo(){
+    updateMassCenter();
+    Info->setText("\nАбсцисса центра масс: " + QString::number(massCenter.rx()) +
+                  "\nОрдината центра масс: " + QString::number(massCenter.ry()));
+}
+
