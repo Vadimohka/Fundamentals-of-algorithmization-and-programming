@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "string_view": "cpp",
+        "*.tcc": "cpp",
+        "mutex": "cpp",
+        "valarray": "cpp"
+    }
+}
