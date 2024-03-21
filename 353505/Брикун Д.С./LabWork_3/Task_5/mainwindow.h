@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QStandardItemModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,6 +22,9 @@ private slots:
     void on_pushButton_clicked();
 
 private:
+    void count(const QString, unsigned long long &, unsigned long long &, QStandardItem *);
     Ui::MainWindow *ui;
+    QStandardItemModel * model;
+    QString directoryPath;
 };
 #endif // MAINWINDOW_H

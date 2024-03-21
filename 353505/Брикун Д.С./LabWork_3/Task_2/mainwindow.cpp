@@ -13,7 +13,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-unsigned long long func(int m, int n){
+unsigned long long MainWindow::func(int m, int n){
     if (m == 0)
         return n + 1;
     else if (n == 0)

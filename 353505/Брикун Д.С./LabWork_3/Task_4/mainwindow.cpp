@@ -35,7 +35,7 @@ void MainWindow::addRow(){
         pCell = new QTableWidgetItem;
         ui->tableWidget->setItem(ui->tableWidget->rowCount() -1, 1, pCell);
     }
-    pCell->setText(QString::number(on[2]));
+    pCell->setText(QString::number(on[1]));
 
     pCell = ui->tableWidget->item(ui->tableWidget->rowCount() -1, 2);
     if(!pCell)
@@ -43,7 +43,7 @@ void MainWindow::addRow(){
         pCell = new QTableWidgetItem;
         ui->tableWidget->setItem(ui->tableWidget->rowCount() -1, 2, pCell);
     }
-    pCell->setText(QString::number(on[1]));
+    pCell->setText(QString::number(on[2]));
 
     if (rings.empty()){
         QVector<QVector<int>> aaa(3);

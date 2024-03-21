@@ -22,7 +22,13 @@ private slots:
     void on_pushButton_clicked();
 
 private:
-    QString intToBinary(long long, long long);
+    QString procOut(QString &);
+    QString fracToBinary(QString, long long);
+    QString multiply2(const QString&);
+    bool isnull(QString);
+    QString sum(const QString&, const QString&);
+    QString div2(QString);
+    QString intToBinary(QString);
     QString doubleToBinary(QString);
     bool proc = false;
     Ui::MainWindow *ui;

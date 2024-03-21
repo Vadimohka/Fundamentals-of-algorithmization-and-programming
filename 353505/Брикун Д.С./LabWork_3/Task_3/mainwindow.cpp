@@ -16,7 +16,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-long long func(long long n, long long k = 0){
+long long MainWindow::func(long long n, long long k = 0){
     if (n == 0) return k;
     return func(n / 10, k * 10 + n % 10);
 }
@@ -24,7 +24,7 @@ long long func(long long n, long long k = 0){
 void MainWindow::on_pushButton_clicked()
 {
     if (ui->lineEdit->text() != "")
-        ui->label->setText("ans: " + QString::number(func(ui->lineEdit->text().toLongLong())));
+        ui->label->setText("ans: " + QString::number(func(ui->lineEdit->text().toLongLong(), 0)));
     else
         ui->label->setText("Fill some number");
 }
