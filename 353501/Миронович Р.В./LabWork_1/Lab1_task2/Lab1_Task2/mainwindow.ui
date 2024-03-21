@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1400</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1400</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListView" name="Background">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>0</y>
+      <width>321</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>420</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>450</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>480</y>
+      <width>201</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ClearButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>620</y>
+      <width>201</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 0, 0);
+color : rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>Очистить</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>230</y>
+      <width>321</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Показать точку(окружность)</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="CircleButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>200</y>
+      <width>321</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Окружность</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="TriangleButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>20</y>
+      <width>341</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Треугольник</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="HexagonButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>80</y>
+      <width>301</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Шестиугольник</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="SqauerButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>110</y>
+      <width>321</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Квадрат</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="RectangleButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>50</y>
+      <width>301</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Прямоугольник</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="RhombusButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>140</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ромб</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="PolylineButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>170</y>
+      <width>341</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Рисовалка</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="Star5Button">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>360</y>
+      <width>311</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Звезда(5)</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="Star6Button">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>330</y>
+      <width>331</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Звезда(6)</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="Star8Button">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>270</y>
+      <width>401</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Звезда(8)</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="MoveButton">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>670</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Двигать</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Mode</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="DrawButton">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>630</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Рисовать</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Mode</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="LeftRotateButton">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>560</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>←</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Rotate</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="RightRotateButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>560</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>→</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Rotate</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="PlusButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>590</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Size</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="MinusButton">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>590</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Size</string>
+    </attribute>
+   </widget>
+   <widget class="QRadioButton" name="Star7Button">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>300</y>
+      <width>351</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Звезда(7)</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">Figure</string>
+    </attribute>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>410</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Координаты:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>440</y>
+      <width>66</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Площадь:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>470</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Периметр:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>530</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вращать/изменять размер</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1400</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="Rotate"/>
+  <buttongroup name="Figure"/>
+  <buttongroup name="Size"/>
+  <buttongroup name="Mode"/>
+ </buttongroups>
+</ui>
