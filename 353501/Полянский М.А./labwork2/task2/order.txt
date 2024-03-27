@@ -1,0 +1,13 @@
+Order Date: 2024-03-26T08:04:49
+Code: adfasdf, Name: asdfasdf, Price: 36, Quantity: 29
+Code: sdafasdf, Name: asdfasd, Price: 46, Quantity: 34
+
+Total Price: 2608
+Order Date: 2024-03-26T08:05:04
+Code: adfasdf, Name: adfasd, Price: 40, Quantity: 33
+
+Total Price: 1320
+Order Date: 2024-03-26T08:05:53
+Code: adfasd, Name: adfasd, Price: 27, Quantity: 12
+Code: fsdf, Name: asdfasd, Price: 27, Quantity: 10
+Total Price: 594
