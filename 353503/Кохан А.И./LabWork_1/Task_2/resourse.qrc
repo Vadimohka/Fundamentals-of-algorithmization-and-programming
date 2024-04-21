@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/1708262816567.png</file>
+        <file>img/1708262878181.png</file>
+        <file>img/1708262890015.png</file>
+        <file>img/1708263724802.png</file>
+        <file>img/1708263849499.png</file>
+        <file>img/1708264066922.png</file>
+        <file>img/1708264518923.png</file>
+        <file>img/1708264617939.png</file>
+        <file>img/1708264768701.png</file>
+        <file>img/1708264839442.png</file>
+        <file>img/1708264942133.png</file>
+        <file>img/1708289087609.png</file>
+        <file>img/1708289543129.png</file>
+        <file>img/octagon-2631-13894-550x550.png</file>
+        <file>img/free-icon-drag-drop-12596584.png</file>
+        <file>img/1708442512972.png</file>
+        <file>img/1708524572361.png</file>
+        <file>img/1708526228922.png</file>
+        <file>img/1708536360819.png</file>
+        <file>img/368b0b60811931bbd7903b72eb04da24.png</file>
+        <file>img/1708544971395.png</file>
+        <file>img/1708636699567.png</file>
+        <file>img/1708638238299.png</file>
+    </qresource>
+</RCC>
