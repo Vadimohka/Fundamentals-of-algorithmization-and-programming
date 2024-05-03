@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Task Manager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="showTasksButton">
+        <property name="text">
+         <string>Show Tasks</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="searchButton">
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openFileButton">
+        <property name="text">
+         <string>Open File</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addButton">
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="deleteButton">
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="editButton">
+        <property name="text">
+         <string>Edit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sortButton">
+        <property name="text">
+         <string>Sort</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <column>
+       <property name="text">
+        <string>Project Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Task</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Executor</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Supervisor</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Issue Date</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Due Date</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="projectLabel">
+      <property name="text">
+       <string>Project:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="projectLineEdit"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="taskLayout">
+      <item>
+       <widget class="QLabel" name="taskLabel">
+        <property name="text">
+         <string>Task:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="taskLineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="executorLayout">
+      <item>
+       <widget class="QLabel" name="executorLabel">
+        <property name="text">
+         <string>Executor:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="executorLineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="supervisorLayout">
+      <item>
+       <widget class="QLabel" name="supervisorLabel">
+        <property name="text">
+         <string>Supervisor:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="supervisorLineEdit"/>
+      </item>
+     </layout>
+    </item>
+<item>
+     <layout class="QHBoxLayout" name="issueDateLayout">
+      <item>
+       <widget class="QLabel" name="issueDateLabel">
+        <property name="text">
+         <string>Issue Date:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="issueDateLineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="dueDateLayout">
+      <item>
+       <widget class="QLabel" name="dueDateLabel">
+        <property name="text">
+         <string>Due Date:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="dueDateLineEdit"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

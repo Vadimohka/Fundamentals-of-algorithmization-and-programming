@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "qapplication": "cpp",
+        "qgraphicsobject": "cpp",
+        "qrandomgenerator": "cpp",
+        "qcoreapplication": "cpp",
+        "*.tcc": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp"
+    }
+}

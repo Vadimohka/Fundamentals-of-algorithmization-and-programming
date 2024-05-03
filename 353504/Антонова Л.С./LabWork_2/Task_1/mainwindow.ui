@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1095</width>
+    <height>624</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="DateTable">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>751</width>
+      <height>571</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BithdayButton">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>60</y>
+      <width>279</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter your Bithday date</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddDateButton">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>90</y>
+      <width>279</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add date to file</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OpenFileButton">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>150</y>
+      <width>279</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open file with dates</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChangeDateButton">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>120</y>
+      <width>279</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Change date in file</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>240</y>
+      <width>191</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bithday:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ExitButton">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>530</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1095</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ExitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>932</x>
+     <y>564</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1002</x>
+     <y>459</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

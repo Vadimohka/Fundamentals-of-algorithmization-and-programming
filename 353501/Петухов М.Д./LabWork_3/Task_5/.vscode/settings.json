@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "qmainwindow": "cpp",
+        "new": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
+    }
+}

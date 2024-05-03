@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1319</width>
+    <height>830</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>821</width>
+      <height>741</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>180</y>
+      <width>321</width>
+      <height>451</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Figures">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>240</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Figures</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="plus">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>400</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Изображения/Снимки экрана/259437.png</normaloff>../../../../Изображения/Снимки экрана/259437.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Clear">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>240</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minus">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>400</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Изображения/Снимки экрана/149163.png</normaloff>../../../../Изображения/Снимки экрана/149163.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="center">
+    <property name="geometry">
+     <rect>
+      <x>1011</x>
+      <y>340</y>
+      <width>158</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Center mass</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="counterclockwiserotation">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>480</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Изображения/Снимки экрана/arrow_rotate_counterclockwise_filled_icon_200021.png</normaloff>../../../../Изображения/Снимки экрана/arrow_rotate_counterclockwise_filled_icon_200021.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rotateclockwise">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>480</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Изображения/Снимки экрана/arrow_rotate_clockwise_regular_icon_204638.png</normaloff>../../../../Изображения/Снимки экрана/arrow_rotate_clockwise_regular_icon_204638.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>listWidget</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>Figures</zorder>
+   <zorder>plus</zorder>
+   <zorder>Clear</zorder>
+   <zorder>minus</zorder>
+   <zorder>center</zorder>
+   <zorder>counterclockwiserotation</zorder>
+   <zorder>rotateclockwise</zorder>
+  </widget>
+  <widget class="QMenuBar" name="task2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1319</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

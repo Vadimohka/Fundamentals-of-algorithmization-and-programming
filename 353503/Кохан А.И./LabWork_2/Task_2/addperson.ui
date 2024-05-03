@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddPerson</class>
+ <widget class="QWidget" name="AddPerson">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>614</width>
+    <height>939</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string> Добавление кандидата</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="2" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Фамилия:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="surname"/>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Имя:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLineEdit" name="name"/>
+   </item>
+   <item row="12" column="0" colspan="2">
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Отчество:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QLineEdit" name="patronymic"/>
+   </item>
+   <item row="18" column="1">
+    <widget class="QCheckBox" name="checkPatronymic">
+     <property name="text">
+      <string>Нет</string>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="0" colspan="2">
+    <widget class="QLabel" name="label_4">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Дата рождения:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="1">
+    <widget class="QDateEdit" name="date"/>
+   </item>
+   <item row="24" column="0" colspan="2">
+    <widget class="QLabel" name="label_5">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Наличие высшего образования:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="30" column="1">
+    <widget class="QComboBox" name="educationBox">
+     <item>
+      <property name="text">
+       <string>Нет</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Имеется</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="32" column="0" colspan="2">
+    <widget class="QLabel" name="label_6">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Специальность:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="35" column="1">
+    <widget class="QLineEdit" name="specialty"/>
+   </item>
+   <item row="39" column="1">
+    <widget class="QCheckBox" name="checkSpecialty">
+     <property name="text">
+      <string>Нет</string>
+     </property>
+    </widget>
+   </item>
+   <item row="40" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Желаемая должность:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="46" column="1">
+    <widget class="QLineEdit" name="post"/>
+   </item>
+   <item row="54" column="1">
+    <widget class="QLineEdit" name="money"/>
+   </item>
+   <item row="55" column="1">
+    <widget class="QCheckBox" name="checkMoney">
+     <property name="text">
+      <string>Не указано</string>
+     </property>
+    </widget>
+   </item>
+   <item row="56" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+   <item row="50" column="0" colspan="2">
+    <widget class="QLabel" name="label_8">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Минимальный оклад:</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

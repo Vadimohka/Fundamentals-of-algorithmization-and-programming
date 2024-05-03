@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1365</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_triangle">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>40</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create triangle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_square">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>0</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create square</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_rhombus">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>40</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create rhombus</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_circle">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>80</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create circle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_star5">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>120</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create 5-star</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_star6">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>160</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create 6-star</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_star8">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>160</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create 8-star</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_rectangle">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>0</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create rectangle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_parallel">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>80</y>
+      <width>181</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create parallelohram</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_hexagon">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>120</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create hexagon</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sizeup">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>390</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Size up</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sizedown">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>390</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Size down</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Perimeter">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>200</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Area">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>220</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CenterMass">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>240</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(0;0)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>200</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Perimeter</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>220</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Area</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>240</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Center mass</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_moveup">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>310</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Move up</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_movedown">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>310</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Move down</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_moveleft">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>270</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Move left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_moveright">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>270</y>
+      <width>101</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Move right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_rotleft">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>350</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rotate left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_rotright">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>350</y>
+      <width>101</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rotate right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_drawlineon">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>430</y>
+      <width>211</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Draw line mode on</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_drawlineoff">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>470</y>
+      <width>211</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Draw line mode off</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1051</width>
+      <height>631</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_rotlinel">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>510</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rotate line left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_rotliner">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>510</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rotate line right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_moveline">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>590</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Move line</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sizelinedown">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>550</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Line size down</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sizelineup">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>550</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Line size up</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1365</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

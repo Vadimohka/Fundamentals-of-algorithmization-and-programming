@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1037</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="2">
+     <widget class="QRadioButton" name="Hexagon">
+      <property name="text">
+       <string>Hexagon</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="2">
+     <widget class="QRadioButton" name="Rectangle">
+      <property name="text">
+       <string>Rectangle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2" rowspan="2">
+     <widget class="QRadioButton" name="FivePointer_star">
+      <property name="text">
+       <string>Five-pointed star</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="TypeFigureLabel">
+      <property name="text">
+       <string>Type of figure:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="ValueTypeFigureLabel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5" rowspan="2" colspan="2">
+     <widget class="QPushButton" name="deleteFigureButton">
+      <property name="text">
+       <string>Delete figure</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7" rowspan="2">
+     <widget class="QPushButton" name="PlusSize">
+      <property name="text">
+       <string>➕</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="8" rowspan="2">
+     <widget class="QPushButton" name="ChangeLeft">
+      <property name="text">
+       <string>↺</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="9" rowspan="2">
+     <widget class="QPushButton" name="Close">
+      <property name="text">
+       <string>Close</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="PerimetrLabel">
+      <property name="minimumSize">
+       <size>
+        <width>67</width>
+        <height>17</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Perimeter:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLabel" name="ValuePerimetrLabel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QRadioButton" name="Triangle">
+      <property name="text">
+       <string>Triangle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QRadioButton" name="Circle">
+      <property name="text">
+       <string>Circle</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QRadioButton" name="SixPointer_star">
+      <property name="text">
+       <string>Six-pointed star</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLabel" name="AreaLabel">
+      <property name="text">
+       <string>Area:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QLabel" name="ValueAreaLabel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QPushButton" name="backFigure">
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QPushButton" name="nextFigure">
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="QPushButton" name="MinusSize">
+      <property name="text">
+       <string>➖</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="8">
+     <widget class="QPushButton" name="ChangeRight">
+      <property name="text">
+       <string>↻</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="9">
+     <widget class="QPushButton" name="Clear">
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QRadioButton" name="Rhombus">
+      <property name="text">
+       <string>Rhombus</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QRadioButton" name="Square">
+      <property name="text">
+       <string>Square</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QRadioButton" name="EightPointed_star">
+      <property name="text">
+       <string>Eight-pointed star</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLabel" name="CentreLabel">
+      <property name="text">
+       <string>Centre:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QLabel" name="ValueCentreLabel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="8">
+     <widget class="QRadioButton" name="Rotation">
+      <property name="text">
+       <string>Rotation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="10">
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1037</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

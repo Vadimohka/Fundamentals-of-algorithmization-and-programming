@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>835</width>
+    <height>857</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Fira Code Medium</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>781</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="3,0,0,0,0,0,0,0,0,0">
+     <property name="bottomMargin">
+      <number>12</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>12</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>22</number>
+     </property>
+     <item row="8" column="1">
+      <widget class="QLabel" name="accuracyLbl">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>--</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="4">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Stats</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Words per minute:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Touch Typing Trainer</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="timeLbl">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>--</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QLabel" name="statsFreezedLbl">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {color: gray}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>Stats freezed</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Symbols per minute</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLabel" name="wpmLbl">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Accuracy:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="4">
+      <widget class="TTTextEdit" name="userText"/>
+     </item>
+     <item row="5" column="0" colspan="4">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QPushButton" name="defTrainingBtn">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Open Default Training</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Time:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLabel" name="smpLbl">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Semibold</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="4">
+      <widget class="TTSourceText" name="sourceText"/>
+     </item>
+     <item row="4" column="2" colspan="2">
+      <widget class="QPushButton" name="customTrainingBtn">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Open Custom Training</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="inpBlockedLbl">
+       <property name="text">
+        <string>Input blocked</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="TTKeyboard" name="keyboard">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>771</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>835</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TTSourceText</class>
+   <extends>QTextEdit</extends>
+   <header>TTSourceText.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TTTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>TTTextEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TTKeyboard</class>
+   <extends>QGraphicsView</extends>
+   <header>TTKeyboard.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

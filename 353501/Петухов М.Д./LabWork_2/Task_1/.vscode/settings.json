@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "qtextstream": "cpp",
+        "chrono": "cpp",
+        "optional": "cpp",
+        "format": "cpp",
+        "system_error": "cpp",
+        "new": "cpp",
+        "fstream": "cpp"
+    }
+}

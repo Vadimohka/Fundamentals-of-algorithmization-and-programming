@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1206</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="ChangeDate">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>390</y>
+      <width>173</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Change some date</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>1</y>
+      <width>175</width>
+      <height>182</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="Deffrence">
+       <property name="text">
+        <string>Deffrence between days</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="NextDay">
+       <property name="text">
+        <string>Next day</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="PreviousDay">
+       <property name="text">
+        <string>Previous day</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="TillBirthday">
+       <property name="text">
+        <string>Days till Bithday</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="IsLeap">
+       <property name="text">
+        <string>Is leap</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="WeekNumber">
+       <property name="text">
+        <string>Week number</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1031</x>
+      <y>310</y>
+      <width>171</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="Birthday">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="EnterBirthday">
+       <property name="text">
+        <string>Enter birthday</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>531</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OpenFile">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>500</y>
+      <width>173</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open file</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DaysFromToday">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>190</y>
+      <width>173</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Days from today</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddDate">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>420</y>
+      <width>173</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add date</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DisplayAll">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>230</y>
+      <width>173</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display all</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <column>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </column>
+      <row>
+       <property name="text">
+        <string>Row 1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Row 2</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>Row 3</string>
+       </property>
+      </row>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="nextDayButton">
+      <property name="text">
+       <string>Next Day</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="previousDayButton">
+      <property name="text">
+       <string>Previous Day</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="isLeapButton">
+      <property name="text">
+       <string>Is Leap Year</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="weekNumberButton">
+      <property name="text">
+       <string>Week Number</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="daysToBirthdayButton">
+      <property name="text">
+       <string>Days to Birthday</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="durationButton">
+      <property name="text">
+       <string>Duration</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="birthdayLineEdit"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="daysTillBirthdayLabel">
+      <property name="text">
+       <string>Days Till Birthday:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="daySpinBox"/>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="monthSpinBox"/>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="yearSpinBox"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="birthdayButton">
+      <property name="text">
+       <string>Birthday Button</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="openFileButton">
+      <property name="text">
+       <string>Open File Button</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="addDateButton">
+      <property name="text">
+       <string>Add Date Button</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="saveFileButton">
+      <property name="text">
+       <string>Save File Button</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</```
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+^K
+

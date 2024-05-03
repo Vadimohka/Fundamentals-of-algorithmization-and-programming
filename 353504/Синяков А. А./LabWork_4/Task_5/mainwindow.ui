@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1114</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>651</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>30</y>
+      <width>251</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>Сhecking methods</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Creatematrixs</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>emplace</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>assign</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>back</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>emplace_back</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>data</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>front</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>insert</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>clear</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>45</x>
+      <y>11</y>
+      <width>991</width>
+      <height>581</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>listWidget</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>comboBox</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1114</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

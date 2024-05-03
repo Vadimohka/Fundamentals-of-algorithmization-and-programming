@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>image/1709460043374.png</file>
+        <file>image/1709473169011.png</file>
+        <file>image/sort.png</file>
+        <file>image/1710061001351.png</file>
+        <file>image/Antu_view-refresh.svg.png</file>
+    </qresource>
+</RCC>

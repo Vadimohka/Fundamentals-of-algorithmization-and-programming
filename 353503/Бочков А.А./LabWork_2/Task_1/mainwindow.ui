@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="11" column="1">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="text">
+       <string>разница между др и датой</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1">
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="text">
+       <string>добавить дату</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="4">
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>подтвердить дату</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="text">
+       <string>разница между датами</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="8" colspan="5">
+     <widget class="QTableWidget" name="tableWidget"/>
+    </item>
+    <item row="12" column="0">
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="text">
+       <string>изменить дату</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>следующий день</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>открыть файл</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="2" colspan="2">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>номер недели</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2" colspan="2">
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="text">
+       <string>предыдущий день</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="4">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="4">
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

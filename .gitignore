@@ -32,7 +32,8 @@
 *.app
 
 # Build dir
-build/
+**/build/
+**/build-*/
 **/.DS_Store
-.cache/
-.idea/
+**/.cache/
+**/.idea/
