@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>721</width>
+      <height>385</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Data:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="initislizerEdit">
+       <property name="maxLength">
+        <number>45</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QPushButton" name="initialiseButton">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Initialise with string</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <family>Source Code Pro</family>
+         <pointsize>19</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Address Data Printer</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Initializer format:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>street:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="euSizeBox"/>
+     </item>
+     <item row="9" column="0" colspan="2">
+      <widget class="QPushButton" name="initialiseValuesButton">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Initialise with values</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Initializer string:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>number of house:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="nameEdit">
+       <property name="maxLength">
+        <number>56</number>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QComboBox" name="genderBox"/>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QCheckBox" name="isChildBox">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>was or not</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0" colspan="2">
+      <widget class="QPushButton" name="printButton">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Print data</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="fwData">
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>city or village:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <family>Source Code Pro Medium</family>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>STREET | HOME_NUMBER | CITY_OR_VILLAGE | WAS_OR_NOT</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
