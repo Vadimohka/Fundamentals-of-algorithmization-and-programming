@@ -1,0 +1,312 @@
+[
+    {
+        "id": 1,
+        "name": "Стеганный доспех",
+        "description": "Защита 11",
+        "type": 2,
+        "defence": 11
+    },
+    {
+        "id": 2,
+        "name": "Кожаный доспех",
+        "description": "Защита 11",
+        "type": 2,
+        "defence": 11
+    },
+    {
+        "id": 3,
+        "name": "Проклёпанная кожа",
+        "description": "Защита 12",
+        "type": 2,
+        "defence": 12
+    },
+    {
+        "id": 4,
+        "name": "Шкурный доспех",
+        "description": "Защита 12",
+        "type": 2,
+        "defence": 12
+    },
+    {
+        "id": 5,
+        "name": "Кольчужная рубаха",
+        "description": "Защита 13",
+        "type": 2,
+        "defence": 13
+    },
+    {
+        "id": 6,
+        "name": "Чешуйчатый доспех",
+        "description": "Защита 14",
+        "type": 2,
+        "defence": 14
+    },
+    {
+        "id": 7,
+        "name": "Кираса",
+        "description": "Защита 14",
+        "type": 2,
+        "defence": 14
+    },
+    {
+        "id": 8,
+        "name": "Полулаты",
+        "description": "Защита 15",
+        "type": 2,
+        "defence": 15
+    },
+    {
+        "id": 9,
+        "name": "Кольчуга",
+        "description": "Защита 16",
+        "type": 2,
+        "defence": 16
+    },
+    {
+        "id": 10,
+        "name": "Наборный доспех",
+        "description": "Защита 17",
+        "type": 2,
+        "defence": 17
+    },
+    {
+        "id": 11,
+        "name": "Боевой посох",
+        "description": "Урон D6",
+        "type": 1,
+        "damage": 6
+    },
+    {
+        "id": 12,
+        "name": "Кинжал",
+        "description": "Урон D4",
+        "type": 1,
+        "damage": 4 
+    },
+    {
+        "id": 13,
+        "name": "Ручной топор",
+        "description": "Урон D6",
+        "type": 1,
+        "damage": 6 
+    },
+    {
+        "id": 14,
+        "name": "Булава",
+        "description": "Урон D6",
+        "type": 1,
+        "damage": 6 
+    },
+    {
+        "id": 15,
+        "name": "Боевой топор",
+        "description": "Урон D8",
+        "type": 1,
+        "damage": 8
+    },
+    {
+        "id": 16,
+        "name": "Серп",
+        "description": "Урон D4",
+        "type": 1,
+        "damage": 4 
+    },
+    {
+        "id": 17,
+        "name": "Палица",
+        "description": "Урон D8",
+        "type": 1,
+        "damage": 8
+    },
+    {
+        "id": 18,
+        "name": "Алебарда",
+        "description": "Урон D10",
+        "type": 1,
+        "damage": 10
+    },
+    {
+        "id": 19,
+        "name": "Боевая кирка",
+        "description": "Урон D8",
+        "type": 1,
+        "damage": 8
+    },
+    {
+        "id": 20,
+        "name": "Длинный меч",
+        "description": "Урон D8",
+        "type": 1,
+        "damage": 8
+    },
+    {
+        "id": 21,
+        "name": "Моргенштерн",
+        "description": "Урон D8",
+        "type": 1,
+        "damage": 8
+    },
+    {
+        "id": 22,
+        "name": "Секира",
+        "description": "Урон D12",
+        "type": 1,
+        "damage": 12
+    },
+    {
+        "id": 23,
+        "name": "Цеп",
+        "description": "Урон D8",
+        "type": 1,
+        "damage": 8
+    },
+    {
+        "id": 24,
+        "name": "Дубинка",
+        "description": "Урон D4",
+        "type": 1,
+        "damage": 4
+    },
+    {
+        "id": 25,
+        "name": "Короткий меч",
+        "description": "Урон D6",
+        "type": 1,
+        "damage": 6
+    },
+    {
+        "id": 26,
+        "name": "Огненный шар",
+        "description": "Урон D8",
+        "type": 4,
+        "damage": 8
+    },
+    {
+        "id": 27,
+        "name": "Брызги кислоты",
+        "description": "Урон D6",
+        "type": 4,
+        "damage": 6
+    },
+    {
+        "id": 28,
+        "name": "Леденящее прикосновение",
+        "description": "Урон D6",
+        "type": 4,
+        "damage": 6
+    },
+    {
+        "id": 29,
+        "name": "Молния",
+        "description": "Урон D8",
+        "type": 4,
+        "damage": 8
+    },
+    {
+        "id": 30,
+        "name": "Электрошок",
+        "description": "Урон D4",
+        "type": 4,
+        "damage": 4
+    },
+    {
+        "id": 31,
+        "name": "Луч холода",
+        "description": "Урон D4",
+        "type": 4,
+        "damage": 4
+    },
+    {
+        "id": 32,
+        "name": "Град",
+        "description": "Урон D6",
+        "type": 4,
+        "damage": 6
+    },
+    {
+        "id": 33,
+        "name": "Смертный ужас",
+        "description": "Урон D12",
+        "type": 4,
+        "damage": 12
+    },
+    {
+        "id": 34,
+        "name": "Круг смерти",
+        "description": "Урон D10",
+        "type": 4,
+        "damage": 10
+    },
+    {
+        "id": 35,
+        "name": "Землетрясение",
+        "description": "Урон D8",
+        "type": 4,
+        "damage": 8
+    },
+    {
+        "id": 36,
+        "name": "Хилка",
+        "description": "Хилит 4 здоровья",
+        "type": 0,
+        "heal": 4
+    },
+    {
+        "id": 37,
+        "name": "Суперхилка",
+        "description": "Хилит 6 здоровья",
+        "type": 0,
+        "heal": 6
+    },
+    {
+        "id": 38,
+        "name": "Настойка деда",
+        "description": "Хилит 8 здоровья",
+        "type": 0,
+        "heal": 8
+    },
+    {
+        "id": 39,
+        "name": "Ведьмачья сыворотка",
+        "description": "Хилит 10 здоровья",
+        "type": 0,
+        "heal": 10
+    },
+    {
+        "id": 40,
+        "name": "Кровь дракона",
+        "description": "Хилит 12 здоровья",
+        "type": 0,
+        "heal": 12
+    },
+    {
+        "id": 41,
+        "name": "Потные носки",
+        "description": "Самые вонючие носки на диком западе",
+        "type": 3
+    },
+    {
+        "id": 42,
+        "name": "Амулет друидов",
+        "description": "Говорят, что он обладает силой (говорят)",
+        "type": 3
+    },
+    {
+        "id": 43,
+        "name": "Конспект по матану",
+        "description": "Д.Т. Письменный",
+        "type": 3
+    },
+    {
+        "id": 44,
+        "name": "Серебряное кольцо",
+        "description": "На обороте написано 99.99 Ag",
+        "type": 3
+    },
+    {
+        "id": 45,
+        "name": "Сырая рыба",
+        "description": "Буль",
+        "type": 3
+    }
+]

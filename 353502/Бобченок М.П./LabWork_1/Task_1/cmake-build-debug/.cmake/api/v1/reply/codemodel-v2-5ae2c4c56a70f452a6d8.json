@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "telega",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "telega::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-telega-Debug-10019da4aeac7fa6b131.json",
+					"name" : "telega",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "telega_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-telega_autogen-Debug-58a227557f0a03e01429.json",
+					"name" : "telega_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "telega_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-telega_autogen_timestamp_deps-Debug-76ef75c13942c514af4c.json",
+					"name" : "telega_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/u/CLionProjects/LAB1/telega/cmake-build-debug",
+		"source" : "/home/u/CLionProjects/LAB1/telega"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

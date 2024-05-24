@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/media">
+        <file>media/chpok-nays.wav</file>
+        <file>media/soundFall.mp3</file>
+        <file>media/soundFall1.mp3</file>
+        <file>media/tetris-background.gif</file>
+        <file>media/rotate.mp3</file>
+        <file>media/newGame.mp3</file>
+        <file>media/continueGame.mp3</file>
+        <file>media/click.mp3</file>
+    </qresource>
+    <qresource prefix="/files"/>
+    <qresource prefix="/">
+        <file>files/save.txt</file>
+        <file>files/record.txt</file>
+    </qresource>
+</RCC>

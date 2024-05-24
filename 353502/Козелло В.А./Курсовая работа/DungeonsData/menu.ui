@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QWidget" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border: 2px solid #6b6b6b;
+background-color: #cfcfcf;
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>240</y>
+     <width>201</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+        background-color: #e8e8e8;
+        border-bottom: 2px solid #6b6b6b;
+        border-right: 2px solid #6b6b6b;
+        border-left: 2px solid #6b6b6b;
+        border-top: none;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding: 5px 10px;
+        color: #000000;
+    }
+    QPushButton:hover {
+        background-color: #cfcfcf;
+    }
+    QPushButton:pressed {
+        background-color: #bfbfbf;
+    }</string>
+   </property>
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>100</y>
+     <width>201</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+        background-color: #e8e8e8;
+        border-bottom: none;
+        border-right: 2px solid #6b6b6b;
+        border-left: 2px solid #6b6b6b;
+        border-top: 2px solid #6b6b6b;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        padding: 5px 10px;
+        color: #000000;
+    }
+    QPushButton:hover {
+        background-color: #cfcfcf;
+    }
+    QPushButton:pressed {
+        background-color: #bfbfbf;
+    }</string>
+   </property>
+   <property name="text">
+    <string>Новая игра</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_continue">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>170</y>
+     <width>201</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+        background-color: #e8e8e8;
+        border-bottom: none;
+        border-right: 2px solid #6b6b6b;
+        border-left: 2px solid #6b6b6b;
+        border-top: none;
+        padding: 5px 10px;
+        color: #000000;
+    }
+    QPushButton:hover {
+        background-color: #cfcfcf;
+    }
+    QPushButton:pressed {
+        background-color: #bfbfbf;
+    }</string>
+   </property>
+   <property name="text">
+    <string>Продолжить</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Background</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

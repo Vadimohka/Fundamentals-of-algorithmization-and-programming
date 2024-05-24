@@ -1,0 +1,32 @@
+===Resources===
+
+You can get some resource by built special buildings to special fields. This fields can be 5 types:
+0 - nothing
+1 - wheat
+2 - stone
+3 - iron
+4 - fish
+
+Every player has 5 types of resources:
+0 - Money
+1 - Stone
+2 - Iron
+3 - Wheat
+4 - Fish
+
+3 and 4 assemble in food.
+1 and 2 need for building.
+1 also need for upgrade units.
+All resources you can get by special fields on game field.
+
+Builders create buildings from resources. When builders built mine for iron. It will get Iron while you don't studying special field on your science tree.
+
+
+===Сities and units===
+
+You can create new units in cities:
+0 - Builder
+1 - Settler
+2 - Knight
+3 - Knight (grade 2)
+

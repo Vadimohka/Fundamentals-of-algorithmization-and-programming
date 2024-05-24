@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1032</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Paint</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/1708699880134.ico</normaloff>img/1708699880134.ico</iconset>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRect"/>
+   <addaction name="actionSquare"/>
+   <addaction name="actionRomb"/>
+   <addaction name="actionHexagon"/>
+   <addaction name="actionEllipse"/>
+   <addaction name="actionCircle"/>
+   <addaction name="actionTriangle3"/>
+   <addaction name="actionTriangle90"/>
+   <addaction name="actionStar5"/>
+   <addaction name="actionStar6"/>
+   <addaction name="actionStar8"/>
+   <addaction name="actionLine"/>
+   <addaction name="separator"/>
+   <addaction name="actionMove"/>
+   <addaction name="actionRotation"/>
+   <addaction name="actionScale"/>
+   <addaction name="actionRestart"/>
+   <addaction name="actionDelete"/>
+   <addaction name="actionBroom"/>
+  </widget>
+  <action name="actionRect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708263724802.png</normaloff>:/img/img/1708263724802.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rect</string>
+   </property>
+   <property name="toolTip">
+    <string>Rectangle</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSquare">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708263849499.png</normaloff>:/img/img/1708263849499.png</iconset>
+   </property>
+   <property name="text">
+    <string>Square</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRomb">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708264518923.png</normaloff>:/img/img/1708264518923.png</iconset>
+   </property>
+   <property name="text">
+    <string>Romb</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionHexagon">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708289087609.png</normaloff>:/img/img/1708289087609.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hexagon</string>
+   </property>
+   <property name="toolTip">
+    <string>Hexagon</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionEllipse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708289543129.png</normaloff>:/img/img/1708289543129.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ellipse</string>
+   </property>
+   <property name="toolTip">
+    <string>Ellipse</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionCircle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708264066922.png</normaloff>:/img/img/1708264066922.png</iconset>
+   </property>
+   <property name="text">
+    <string>Circle</string>
+   </property>
+   <property name="toolTip">
+    <string>Circle</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTriangle3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708262878181.png</normaloff>:/img/img/1708262878181.png</iconset>
+   </property>
+   <property name="text">
+    <string>Triangle3</string>
+   </property>
+   <property name="toolTip">
+    <string>Triangle-3</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTriangle90">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708262890015.png</normaloff>:/img/img/1708262890015.png</iconset>
+   </property>
+   <property name="text">
+    <string>Triangle90</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStar5">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708264768701.png</normaloff>:/img/img/1708264768701.png</iconset>
+   </property>
+   <property name="text">
+    <string>Star5</string>
+   </property>
+   <property name="toolTip">
+    <string>Star-5</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStar6">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708264839442.png</normaloff>:/img/img/1708264839442.png</iconset>
+   </property>
+   <property name="text">
+    <string>Star6</string>
+   </property>
+   <property name="toolTip">
+    <string>Star-6</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStar8">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708264942133.png</normaloff>:/img/img/1708264942133.png</iconset>
+   </property>
+   <property name="text">
+    <string>Star8</string>
+   </property>
+   <property name="toolTip">
+    <string>Star-8</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMove">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/free-icon-drag-drop-12596584.png</normaloff>:/img/img/free-icon-drag-drop-12596584.png</iconset>
+   </property>
+   <property name="text">
+    <string>Move</string>
+   </property>
+   <property name="toolTip">
+    <string>Move Item</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708442512972.png</normaloff>:/img/img/1708442512972.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete item</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBroom">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708524572361.png</normaloff>:/img/img/1708524572361.png</iconset>
+   </property>
+   <property name="text">
+    <string>Broom</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete all</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRestart">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708526228922.png</normaloff>:/img/img/1708526228922.png</iconset>
+   </property>
+   <property name="text">
+    <string>Restart</string>
+   </property>
+   <property name="toolTip">
+    <string>Restart drawing</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRotation">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708536360819.png</normaloff>:/img/img/1708536360819.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rotation</string>
+   </property>
+   <property name="toolTip">
+    <string>Rotation item</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionScale">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/368b0b60811931bbd7903b72eb04da24.png</normaloff>:/img/img/368b0b60811931bbd7903b72eb04da24.png</iconset>
+   </property>
+   <property name="text">
+    <string>Scale</string>
+   </property>
+   <property name="toolTip">
+    <string>Scaling item</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionLine">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/img/1708638238299.png</normaloff>:/img/img/1708638238299.png</iconset>
+   </property>
+   <property name="text">
+    <string>Line</string>
+   </property>
+   <property name="toolTip">
+    <string>Line</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

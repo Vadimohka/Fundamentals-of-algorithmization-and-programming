@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1138</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 11pt &quot;Ubuntu&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="12" column="10">
+     <widget class="QPushButton" name="pushButton_strcmp">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strcmp</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="10">
+     <widget class="QPushButton" name="pushButton_strcpy">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strcpy</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="10">
+     <widget class="QPushButton" name="pushButton_strlen">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strlen</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="10">
+     <widget class="QPushButton" name="pushButton_memmove">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>memmove</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="10">
+     <widget class="QPushButton" name="pushButton_memset">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>memset</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="10">
+     <widget class="QPushButton" name="pushButton_memcpy">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>memcpy</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>String 1:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="6">
+     <widget class="QSpinBox" name="spb_N"/>
+    </item>
+    <item row="1" column="10">
+     <widget class="QPushButton" name="pushButton_strcat">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strcat</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="10">
+     <widget class="QPushButton" name="pushButton_strcoll">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strcoll</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="10">
+     <widget class="QPushButton" name="pushButton_strxfrm">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strxfrm</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="10">
+     <widget class="QPushButton" name="pushButton_strncpy">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strncpy</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QLineEdit" name="ln_str2"/>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>String 2:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="10">
+     <widget class="QPushButton" name="pushButton_strncmp">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strncmp</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="10">
+     <widget class="QPushButton" name="pushButton_strtok">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strtok</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="10">
+     <widget class="QPushButton" name="pushButton_memcmp">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>memcmp</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLineEdit" name="ln_str1"/>
+    </item>
+    <item row="11" column="10">
+     <widget class="QPushButton" name="pushButton_strncat">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>strncat</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="5">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>N:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QLineEdit" name="ln_ans">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1138</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,48 @@
+{
+    "name": "Наместник",
+    "dialog_nodes": [
+        {
+            "id": 0,
+            "option": "",
+            "dialog": "Я тебя ждал, путник. Ну что ж, приступим...",
+            "options": [1, 2, 3, 4, 5],
+            "event": 0
+        },
+        {
+            "id": 1,
+            "option": "Сразиться",
+            "dialog": "",
+            "options": [],
+            "event": 7
+        },
+        {
+            "id": 2,
+            "option": "Вступить в битву",
+            "dialog": "",
+            "options": [],
+            "event": 7
+        },
+        {
+            "id": 3,
+            "option": "Одолеть",
+            "dialog": "",
+            "options": [],
+            "event": 7
+        },
+        {
+            "id": 4,
+            "option": "Остановить тирана",
+            "dialog": "",
+            "options": [],
+            "event": 7
+        },
+        {
+            "id": 5,
+            "option": "Почувствовать себя героем",
+            "dialog": "",
+            "options": [],
+            "event": 7
+        }
+        
+    ]
+}

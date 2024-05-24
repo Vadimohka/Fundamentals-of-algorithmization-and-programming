@@ -1,0 +1,3 @@
+/home/denis/Qtprojects/LabWork_6/Task_2/cmake-build-debug/CMakeFiles/Task_2.dir
+/home/denis/Qtprojects/LabWork_6/Task_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/denis/Qtprojects/LabWork_6/Task_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

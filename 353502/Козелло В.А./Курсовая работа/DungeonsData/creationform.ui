@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreationForm</class>
+ <widget class="QWidget" name="CreationForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>283</width>
+    <height>214</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #bfbfbf;
+color: black;
+border-radius: 5px;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #6b6b6b;
+background-color: #e8e8e8;
+color: black;
+border-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string>Создание персонажа</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #6b6b6b;
+background-color: #e8e8e8;
+color: black;
+border-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string>Имя</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #6b6b6b;
+background-color: #e8e8e8;
+color: black;
+border-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string>Раса</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #6b6b6b;
+background-color: #e8e8e8;
+color: black;
+border-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string>Класс</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="name">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>50</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #6b6b6b;
+background-color: #e8e8e8;</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="race">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    background-color: #e8e8e8;
+    border: 2px solid #6b6b6b;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000000;
+}
+
+QComboBox::drop-down {
+    width: 20px;
+    border: none;
+}
+
+QComboBox::drop-down:disabled {
+    background-color: transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(../Sources/arrow_down.png); 
+}
+
+QComboBox::down-arrow:disabled {
+    image: none;
+}
+
+QComboBox::down-arrow:on {
+    image: url(../Sources/arrow_up.png); 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #e8e8e8;
+    border: 2px solid #6b6b6b;
+    border-radius: 5px;
+    color: #000000;
+    padding: 5px;
+    selection-background-color: #cfcfcf;
+}
+
+QComboBox QAbstractItemView::item:hover {
+        background-color: #cfcfcf;
+    }</string>
+   </property>
+   <property name="currentText">
+    <string>Дварф</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Дварф</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Эльф</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Полурослик</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Человек</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Драконорожденный</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Гном</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Полуэльф</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Полуорк</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Тифлинг</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="gameClass">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    background-color: #e8e8e8;
+    border: 2px solid #6b6b6b;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000000;
+}
+
+QComboBox::drop-down {
+    width: 20px;
+    border: none;
+}
+
+QComboBox::drop-down:disabled {
+    background-color: transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(../Sources/arrow_down.png); 
+}
+
+QComboBox::down-arrow:disabled {
+    image: none;
+}
+
+QComboBox::down-arrow:on {
+    image: url(../Sources/arrow_up.png); 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #e8e8e8;
+    border: 2px solid #6b6b6b;
+    border-radius: 5px;
+    color: #000000;
+    padding: 5px;
+    selection-background-color: #cfcfcf;
+}
+QComboBox QAbstractItemView::item:hover {
+        background-color: #cfcfcf;
+    }
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Варвар</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Бард</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Жрец</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Друид</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Воин</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Монах</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Паладин</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Следопыт</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Плут</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Чародей</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Колдун</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Волшебник</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="createButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+        background-color: #e8e8e8;
+        border: 2px solid #6b6b6b;
+        border-radius: 5px;
+        padding: 5px 10px;
+        color: #000000;
+    }
+    QPushButton:hover {
+        background-color: #cfcfcf;
+    }
+    QPushButton:pressed {
+        background-color: #bfbfbf;
+    }
+QPushButton:disabled {
+    color: gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

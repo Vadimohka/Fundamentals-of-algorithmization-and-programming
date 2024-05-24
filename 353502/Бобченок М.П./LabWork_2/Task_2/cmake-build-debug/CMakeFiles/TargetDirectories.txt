@@ -1,0 +1,5 @@
+/home/u/CLionProjects/Lab2/task2/cmake-build-debug/CMakeFiles/task2.dir
+/home/u/CLionProjects/Lab2/task2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/u/CLionProjects/Lab2/task2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/u/CLionProjects/Lab2/task2/cmake-build-debug/CMakeFiles/task2_autogen_timestamp_deps.dir
+/home/u/CLionProjects/Lab2/task2/cmake-build-debug/CMakeFiles/task2_autogen.dir

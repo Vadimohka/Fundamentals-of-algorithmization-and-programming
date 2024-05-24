@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Биржа труда</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <widget class="QTableWidget" name="tablePerson">
+      <column>
+       <property name="text">
+        <string>Фамилия</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Имя</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Отчество</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Дата рождения</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Высшее образование</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Специальность</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Желаемая должность</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Минимимальный оклад</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QTableWidget" name="tableCompany">
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>Название компании</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Специальность</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Должность</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Оклад</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Трудовой отпуск</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Высшее образовавние</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Мин. возраст</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Макс. возраст</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolCompany">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAddCompany"/>
+   <addaction name="actionDeleteCompany"/>
+   <addaction name="actionSortCompany"/>
+   <addaction name="separator"/>
+   <addaction name="actionReset"/>
+   <addaction name="actionDefCompany"/>
+  </widget>
+  <widget class="QToolBar" name="toolPerson">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAddPerson"/>
+   <addaction name="actionDeletePerson"/>
+   <addaction name="actionSortPerson"/>
+  </widget>
+  <action name="actionAddCompany">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/image/1709460043374.png</normaloff>:/img/image/1709460043374.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddCompany</string>
+   </property>
+   <property name="toolTip">
+    <string>Добавить компанию в таблицу</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDeleteCompany">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/image/1709473169011.png</normaloff>:/img/image/1709473169011.png</iconset>
+   </property>
+   <property name="text">
+    <string>DeleteCompany</string>
+   </property>
+   <property name="toolTip">
+    <string>Удалить выбранную компанию из таблицы</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddPerson">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/image/1709460043374.png</normaloff>:/img/image/1709460043374.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddPerson</string>
+   </property>
+   <property name="toolTip">
+    <string>Добавить кандидата в таблицу</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDeletePerson">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/image/1709473169011.png</normaloff>:/img/image/1709473169011.png</iconset>
+   </property>
+   <property name="text">
+    <string>DeletePerson</string>
+   </property>
+   <property name="toolTip">
+    <string>Удалить кандидата из таблицы</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSortCompany">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/image/sort.png</normaloff>:/img/image/sort.png</iconset>
+   </property>
+   <property name="text">
+    <string>SortCompany</string>
+   </property>
+   <property name="toolTip">
+    <string>Сортировать компании по алфавиту</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSortPerson">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/image/sort.png</normaloff>:/img/image/sort.png</iconset>
+   </property>
+   <property name="text">
+    <string>SortPerson</string>
+   </property>
+   <property name="toolTip">
+    <string>Сортировать фамилии кандидатов по алфавиту</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/img/image/Antu_view-refresh.svg.png</normaloff>:/img/image/Antu_view-refresh.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+   <property name="toolTip">
+    <string>Сброс</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDefCompany">
+   <property name="text">
+    <string>Deficit</string>
+   </property>
+   <property name="toolTip">
+    <string>Дефицитные компании</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>

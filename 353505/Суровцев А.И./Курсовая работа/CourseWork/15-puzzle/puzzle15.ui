@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Puzzle15</class>
+ <widget class="QWidget" name="Puzzle15">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>933</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(246, 211, 45);</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>581</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>50</y>
+     <width>321</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QCheckBox" name="cbx_picture">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 211, 45);</string>
+      </property>
+      <property name="text">
+       <string>Картинки</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bnt_generation">
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 211, 45);</string>
+      </property>
+      <property name="text">
+       <string>Сгенерировать случайную расстановку</string>
+      </property>
+      <property name="icon">
+       <iconset theme="view-refresh"/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="lbl_info_attempts">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 211, 45);</string>
+        </property>
+        <property name="text">
+         <string>Текущее число попыток: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbl_count_attempts">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 211, 45);</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bnt_get_my_result">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 211, 45);</string>
+      </property>
+      <property name="text">
+       <string>Вывести свои лучшие результаты</string>
+      </property>
+      <property name="icon">
+       <iconset theme="emblem-documents"/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bnt_servr_result">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 211, 45);</string>
+      </property>
+      <property name="text">
+       <string>Получить лучшие результаты с сервера</string>
+      </property>
+      <property name="icon">
+       <iconset theme="applications-internet"/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bnt_solve">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 211, 45);</string>
+      </property>
+      <property name="text">
+       <string>Решить головоломку / Остановить</string>
+      </property>
+      <property name="icon">
+       <iconset theme="media-playback-start"/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="bnt_goBackToMainMenu">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>10</y>
+     <width>319</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 211, 45);</string>
+   </property>
+   <property name="text">
+    <string>Вернуться в главное меню</string>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-undo"/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bnt_close">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>566</y>
+     <width>319</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(246, 211, 45);</string>
+   </property>
+   <property name="text">
+    <string>Закрыть приложение</string>
+   </property>
+   <property name="icon">
+    <iconset theme="application-exit"/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pixmap">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>300</y>
+     <width>251</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

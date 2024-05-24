@@ -1,147 +1,273 @@
+#include <stdexcept>
 #include "vector.h"
+#include "pair.h"
+
+#include <memory>
+#include <initializer_list>
+#include<QApplication>
 
 template<typename T>
-vector<T>::vector()
-{
-    _v=(T*)malloc(sizeof(T));
-    _size=0;
-    _capacity=1;
+MyVector<T>::MyVector() {
+    arr_ = nullptr;
+    size_ = 0;
+    capacity_ = 0;
 }
 
 template<typename T>
-vector<T>::~vector()
-{
-    if(_v!=nullptr)
-    {
-        for(int i=0;i<_size;i++)
-            _v[i]->~T();
-    }
-    _v=nullptr;
-    _size=_capacity=0;
-}
-
-template<typename T>
-T &vector<T>::at(int i)
-{
-    if(i>=_size)
-        throw std::out_of_range("index out of range");
-    return _v[i];
-}
-
-template<typename T>
-long long vector<T>::capacity()
-{
-    return _capacity;
-}
-
-template<typename T>
-void vector<T>::clear()
-{
-    for(int i=0;i<_size;i++)
-        _v[i]->~T();
-    _size=0;
-}
-
-template<typename T>
-T &vector<T>::back()
-{
-    return _v[_size-1];
-}
-
-template<typename T>
-T *vector<T>::data()
-{
-    return &_v[0];
-}
-
-template<typename T>
-bool vector<T>::empty()
-{
-    return _size==0;
-}
-
-template<typename T>
-T &vector<T>::front()
-{
-    return _v[0];
-}
-
-template<typename T>
-void vector<T>::swap(vector<T> &b)
-{
-    T* temp=_v;
-    _v=b._v;
-    b._v=temp;
-
-    //size
-    _size^=b._size;
-    b._size^=_size;
-    _size^=b._size;
-
-    //capacity
-    _capacity^=b._capacity;
-    b._capacity^=_capacity;
-    _capacity^=b._capacity;
-}
-
-template<typename T>
-long long vector<T>::size()
-{
-    return _size;
-}
-
-template<typename T>
-void vector<T>::resize(long long n)
-{
-    if(n==_size)return;
-    if(n<_size)
-    {
-        for(;n<_size;n++)
-            _v[n]->~T();
-    }
-    else
-    {
-        if(n>_capacity)
-        {
-            _v=(T*)realloc(_v,sizeof(T)*n);
-            _capacity=n;
-        }
-            for(;_size<n;_size++)
-                _v[_size]=0;
+MyVector<T>::MyVector(size_t n) {
+    reserve(n);
+    for (int i = 0; i < n; i++) {
+        new(arr_ + i) T();
     }
 }
 
 template<typename T>
-void vector<T>::reserve(long long size)
-{
-    if(size<=_capacity)return;
-    _v=(T*)realloc(_v,sizeof(T)*size);
-    for(;_size<size;_size++)
-        _v[_size]=0;
-    _capacity=_size;
-    //for(int i=0;i)
-}
-
-template<typename T>
-void vector<T>::push_back(const T &a)
-{
-    if(++_size>_capacity)
-    {
-        reserve(_size+1);
+MyVector<T>::MyVector(MyVector<T> const &tmp_) {
+    size_ = tmp_.size_;
+    capacity_ = tmp_.capacity_;
+    qDebug()<<size_;
+    arr_ = reinterpret_cast<T*>(new int8_t[size_ * sizeof(T)]);
+    for (size_t i = 0; i < size_; i++) {
+        new (arr_ + i) T(tmp_[i]);
     }
-    _v[_size-1]=a;
+}
+
+
+template<typename T>
+MyVector<T>::MyVector(std::initializer_list<T> l) :
+        size_(l.size()),
+        capacity_(l.size()) {
+    arr_ = reinterpret_cast<T *>(new int8_t[size_ * sizeof(T)]);
+    auto listIt = l.begin();
+    for (size_t i = 0; i < size_; i++, listIt++) {
+        T tmp = *listIt;
+        new(arr_ + i) T(std::move(tmp));
+    }
 }
 
 template<typename T>
-void vector<T>::pop_back()
-{
-    if(_size==0)return;
-
-    _v[--_size].~T();
+MyVector<T>::~MyVector() {
+    for (size_t i = 0; i < size_; i++) {
+        (arr_ + i)->~T();
+    }
+    //delete[] arr_;
+    arr_ = nullptr;
+    capacity_ = 0;
+    size_ = 0;
 }
 
 template<typename T>
-long long vector<T>::max_size()
-{
-    return std::numeric_limits<T>::max()/sizeof(T);
+T &MyVector<T>::operator[](size_t n_) const {
+    return arr_[n_];
 }
+
+template<typename T>
+template<typename... Args>
+void MyVector<T>::emplace(MyVector::c_iterator pos, Args &&... args) {
+    T tmp(args...);
+    insert(pos, tmp);
+}
+
+template<typename T>
+template<typename... Args>
+void MyVector<T>::emplace_back(Args &&... args) {
+    T tmp(args...);
+    push_back(tmp);
+}
+
+template<typename T>
+void MyVector<T>::insert(MyVector::c_iterator pos_, T const &tmp_) {
+    size_t pos = (pos_).base() - arr_;
+    reserve(size_ + 1);
+    for (size_t i = size_; i > pos; i--) {
+        new(arr_ + i) T(arr_[i - 1]);
+        (arr_ + i - 1)->~T();
+    }
+    new(arr_ + pos) T(tmp_);
+    size_++;
+}
+
+template<typename T>
+void MyVector<T>::insert(MyVector::c_iterator pos_, T &&tmp_) {
+    size_t pos = pos_.base() - arr_;
+    reserve(size_ + 1);
+    for (size_t i = size_; i > pos; i--) {
+        new(arr_ + i) T(arr_[i - 1]);
+        (arr_ + i - 1)->~T();
+    }
+    new(arr_ + pos) T(tmp_);
+    size_++;
+}
+
+template<typename T>
+void MyVector<T>::push_back(T tmp_) {
+    if (size_ >= capacity_) reserve(2 * size_ + 1);
+    new(arr_ + size_) T(tmp_);
+    size_++;
+    //insert(this->end(), tmp_);
+}
+
+template<typename T>
+void MyVector<T>::assign(size_t n, T tmp_) {
+    clear();
+    resize(n, tmp_);
+}
+
+template<typename T>
+void MyVector<T>::assign(MyVector::c_iterator beg, MyVector::c_iterator end) {
+    clear();
+    int sz = end.base() - beg.base();
+    resize(sz);
+    for (auto i = 0; i < sz; i++) {
+        new(arr_ + i) T(*(beg + i));
+    }
+}
+
+template<typename T>
+void MyVector<T>::clear() {
+    resize(0);
+}
+
+template<typename T>
+void MyVector<T>::erase(MyVector::b_iterator tmp) {
+    erase(tmp, tmp + 1);
+}
+
+template<typename T>
+void MyVector<T>::erase(MyVector<T>::b_iterator beg, MyVector<T>::b_iterator end) {
+    int i1 = beg.base() - arr_;
+    int i2 = end.base() - arr_;
+    qDebug()<<"ERASE"<<i1<<" "<<i2<<" "<<size_ - (i2 - i1);
+
+    if(size_-(i2-i1)==0)
+    {
+        clear();
+        return;
+    }
+    for (auto i = i1; i < i2; i++) {
+        (arr_ + i)->~T();
+        new(arr_ + i) T(arr_[i + 1]);
+    }
+    //qDebug()<<"ERASE"<<i1<<" "<<i2<<" "<<size_ - (i2 - i1);
+    size_ = size_ - (i2 - i1);
+}
+
+template<typename T>
+void MyVector<T>::pop_back() {
+    if (!empty()) (arr_ + size_ - 1)->~T();
+    size_--;
+}
+
+template<typename T>
+T &MyVector<T>::front() {
+    return arr_[0];
+}
+
+template<typename T>
+T &MyVector<T>::back() {
+    return arr_[size_ - 1];
+}
+
+template<typename T>
+T &MyVector<T>::at(size_t pos_) {
+    if (pos_ > size_) throw std::out_of_range("");
+    try {
+        return arr_[pos_];
+    } catch (...) {
+        throw std::out_of_range("");
+    }
+}
+
+template<typename T>
+T *MyVector<T>::data() {
+    return arr_ + 0;
+}
+
+template<typename T>
+size_t MyVector<T>::capacity() {
+    return capacity_;
+}
+
+template<typename T>
+size_t MyVector<T>::size() {
+    return size_;
+}
+
+template<typename T>
+size_t MyVector<T>::max_size() {
+    return INT64_MAX / sizeof(T);
+}
+
+template<typename T>
+void MyVector<T>::resize(size_t n_size_, T tmp_) {
+    if (n_size_ > capacity_) reserve(n_size_);
+    for (size_t i = size_; i < n_size_; i++) {
+        new(arr_ + i) T(tmp_);
+    }
+    for (size_t i = n_size_; i < size_; i++) {
+        (arr_ + i)->~T();
+    }
+    size_ = n_size_;
+}
+
+template<typename T>
+void MyVector<T>::reserve(size_t n_size_) {
+    if (n_size_ <= capacity_) return;
+    T *tmp_ = reinterpret_cast<T *>(new int8_t[n_size_ * sizeof(T)]);
+    for (int i = 0; i < size_; i++) {
+        new(tmp_ + i) T(arr_[i]);
+        (arr_ + i)->~T();
+    }
+    delete[]reinterpret_cast<int8_t *>(arr_);
+    arr_ = tmp_;
+    capacity_ = n_size_;
+}
+
+template<typename T>
+bool MyVector<T>::empty() {
+    return size_ == 0;
+}
+
+template<typename T>
+void MyVector<T>::swap(MyVector<T> &toSwap) {
+    std::swap(arr_, toSwap.arr_);
+    std::swap(size_, toSwap.size_);
+    std::swap(capacity_, toSwap.capacity_);
+}
+
+template<typename T>
+MyVector<T>::b_iterator MyVector<T>::begin() {
+    return b_iterator(arr_);
+}
+
+template<typename T>
+MyVector<T>::b_iterator MyVector<T>::end() {
+    return b_iterator(arr_ + size_);
+}
+
+template<typename T>
+MyVector<T>::c_iterator MyVector<T>::cbegin() const {
+    return c_iterator(arr_);
+}
+
+template<typename T>
+MyVector<T>::c_iterator MyVector<T>::cend() const {
+    return c_iterator(arr_ + size_);
+}
+
+template<typename T>
+MyVector<T>::r_iterator MyVector<T>::rbegin() {
+    return r_iterator(arr_ + size_);
+}
+
+template<typename T>
+MyVector<T>::r_iterator MyVector<T>::rend() {
+    return r_iterator(arr_);
+}
+
+
+template class MyVector<MyVector<MyVector<pair<pair<std::string, std::string>, pair<std::string, std::string>>>>>;
+template class MyVector<MyVector<pair<pair<std::string, std::string>, pair<std::string, std::string>>>>;
+template class MyVector<int>;
+template class MyVector<pair<MyVector<int>, MyVector<pair<int, double>>>>;
+template class MyVector<pair<int, double>>;

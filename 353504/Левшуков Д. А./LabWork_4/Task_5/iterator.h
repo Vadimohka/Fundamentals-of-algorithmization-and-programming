@@ -1,99 +1,157 @@
-#ifndef ITERATOR_H
-#define ITERATOR_H
+#ifndef L3T1_ITERATOR_H
+#define L3T1_ITERATOR_H
 
-namespace it{
+#include <cstdio>
 
-template<class T>
-class const_iterator{
-    const T* it;
+template<typename T>
+class iterator {
+
+    T *it;
+
 public:
-    const_iterator();
 
-    const_iterator(T* it);
-
-    const T *operator->();
-
-    bool operator !=(const const_iterator<T>&b);
-
-    const_iterator &operator = (const const_iterator &b)
-    {
-        it = b.it;
-        return *this;
+    explicit iterator(T *tmp) {
+        it = tmp;
     }
-    const T &operator*()
-    {
+
+    ~iterator() = default;
+
+    const T *base() const {
+        return it;
+    }
+
+    // *
+    T &operator*() const {
         return *it;
     }
 
-    const T*get();
-
-};
-
-template<class T>
-class iterator:public const_iterator<T>{
-protected:
-    T* it;
-public:
-    iterator();
-
-    iterator(const iterator <T>& it);
-
-    iterator(T *iter);
-
-    T *operator->();
-
-    virtual bool operator !=(iterator b);
-
-    bool operator ==(iterator b);
-
-    iterator &operator=(const iterator &b);
-
-    iterator &operator=(const iterator *b);
-
-    T&operator*();
-
-    T *get();
-};
-
-template<class T>
-class reverse_iterator:public iterator<T>{
-protected:
-    T* it;
-public:
-    reverse_iterator()
-    {
-        it=nullptr;
+    // ->
+    T *operator->() const {
+        return it;
     }
 
-    reverse_iterator(const iterator <T>& it);
-
-
-    reverse_iterator(T *iter);
-
-    T *operator->();
-
-    virtual bool operator !=(reverse_iterator b);
-
-    bool operator ==(reverse_iterator b);
-
-    reverse_iterator &operator=(const reverse_iterator &b)
-    {
-        it = b.it;
+    // ++ | --
+    iterator &operator++() {
+        ++it;
         return *this;
     }
 
-    reverse_iterator &operator=(const reverse_iterator *b)
-    {
-        it = b->it;
+    iterator &operator--() {
+        --it;
         return *this;
     }
 
-    T&operator*();
+    iterator operator++(int) {
+        return iterator(it++);
+    }
 
-    T *get();
+    iterator operator--(int) {
+        return iterator(it--);
+    }
+
+    // + | -
+    iterator operator+(int n) {
+        return iterator(it + n);
+    }
+
+    iterator operator-(size_t n) {
+        return iterator(it - n);
+    }
+
+    // += | -=
+    iterator &operator+=(size_t n) {
+        it += n;
+        return *this;
+    }
+
+    iterator &operator-=(size_t n) {
+        it -= n;
+        return *this;
+    }
+
+    // []
+    T operator[](size_t n) {
+        return it[n];
+    }
+
+    bool operator !=(iterator x) {
+        return it != x.operator->();
+    }
+
+};
+
+template<typename T>
+class reverse_iterator {
+
+    T *it;
+
+public:
+
+    explicit reverse_iterator(T *tmp) {
+        it = tmp;
+    }
+
+    ~reverse_iterator() = default;
+
+    const T &base() const {
+        return *it;
+    }
+
+    // *
+    T &operator*() const {
+        return *it;
+    }
+
+    // ->
+    T *operator->() const {
+        return  it;
+    }
+
+    // ++ | --
+    reverse_iterator &operator++() {
+        --it;
+        return *this;
+    }
+
+    reverse_iterator &operator--() {
+        ++it;
+        return *this;
+    }
+
+    reverse_iterator operator++(int) {
+        return reverse_iterator(it--);
+    }
+
+    reverse_iterator operator--(int) {
+        return reverse_iterator(it++);
+    }
+
+    // + | -
+    reverse_iterator operator+(size_t n) {
+        return reverse_iterator(it - n);
+    }
+
+    reverse_iterator operator-(size_t n) {
+        return reverse_iterator(it + n);
+    }
+
+    // += | -=
+    reverse_iterator &operator+=(size_t n) {
+        it -= n;
+        return *this;
+    }
+
+    reverse_iterator &operator-=(size_t n) {
+        it += n;
+        return *this;
+    }
+
+    // []
+    T operator[](size_t n) {
+        return it[n];
+    }
+
 };
 
 
-}
-
-#endif // ITERATOR_H
+#endif

@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "format": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "span": "cpp",
+        "sstream": "cpp"
+    }
+}

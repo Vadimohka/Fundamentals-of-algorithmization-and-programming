@@ -1,0 +1,28 @@
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include <QMainWindow>
+#include <QMessageBox>
+
+QT_BEGIN_NAMESPACE
+namespace Ui {
+class MainWindow;
+}
+QT_END_NAMESPACE
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
+    void getNumber();
+    int reverse(int n, int r);
+    void changeLien();
+private:
+    Ui::MainWindow *ui;
+    int number;
+    int reversNumber;
+};
+#endif // MAINWINDOW_H
