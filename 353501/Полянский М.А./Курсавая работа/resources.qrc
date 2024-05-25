@@ -1,0 +1,87 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/images/hud/coin.png</file>
+        <file>assets/images/hud/heart.png</file>
+        <file>assets/images/hud/play-button-idle.png</file>
+        <file>assets/images/hud/play-button-pressed.png</file>
+        <file>assets/images/hud/pause-button-idle.png</file>
+        <file>assets/images/hud/pause-button-pressed.png</file>
+        <file>assets/images/hud/fast-forward-button-idle.png</file>
+        <file>assets/images/hud/fast-forward-button-pressed.png</file>
+        <file>assets/images/hud/standard-button.png</file>
+        <file>assets/images/hud/standard-button-pressed.png</file>
+
+        <file>assets/images/tiles/horizontal-tile.png</file>
+        <file>assets/images/tiles/vertical-tile.png</file>
+        <file>assets/images/tiles/bottom-left-tile.png</file>
+        <file>assets/images/tiles/bottom-right-tile.png</file>
+        <file>assets/images/tiles/top-left-tile.png</file>
+        <file>assets/images/tiles/top-right-tile.png</file>
+        <file>assets/images/tiles/free-tile.png</file>
+        <file>assets/images/tiles/free-tile-pressed.png</file>
+        <file>assets/images/tiles/occupied-tile.png</file>
+        <file>assets/images/tiles/occupied-tile-pressed.png</file>
+        <file>assets/images/tiles/left-start-tile.png</file>
+        <file>assets/images/tiles/right-start-tile.png</file>
+        <file>assets/images/tiles/top-start-tile.png</file>
+        <file>assets/images/tiles/bottom-start-tile.png</file>
+        <file>assets/images/tiles/left-end-tile.png</file>
+        <file>assets/images/tiles/right-end-tile.png</file>
+        <file>assets/images/tiles/top-end-tile.png</file>
+        <file>assets/images/tiles/bottom-end-tile.png</file>
+        <file>assets/images/tiles/blocked-tile.png</file>
+
+        <file>assets/images/enemy/front1.png</file>
+        <file>assets/images/enemy/front2.png</file>
+        <file>assets/images/enemy/front3.png</file>
+        <file>assets/images/enemy/front4.png</file>
+        <file>assets/images/enemy/back1.png</file>
+        <file>assets/images/enemy/back2.png</file>
+        <file>assets/images/enemy/back3.png</file>
+        <file>assets/images/enemy/back4.png</file>
+        <file>assets/images/enemy/side1.png</file>
+        <file>assets/images/enemy/side2.png</file>
+        <file>assets/images/enemy/side3.png</file>
+        <file>assets/images/enemy/side4.png</file>
+
+        <file>assets/images/explosion1/explosion1.png</file>
+        <file>assets/images/explosion1/explosion2.png</file>
+        <file>assets/images/explosion1/explosion3.png</file>
+        <file>assets/images/explosion1/explosion4.png</file>
+        <file>assets/images/explosion1/explosion5.png</file>
+        <file>assets/images/explosion1/explosion6.png</file>
+        <file>assets/images/explosion1/explosion7.png</file>
+        <file>assets/images/explosion1/explosion8.png</file>
+        <file>assets/images/explosion1/explosion9.png</file>
+        <file>assets/images/explosion1/explosion10.png</file>
+        <file>assets/images/explosion1/explosion11.png</file>
+        <file>assets/images/explosion1/explosion12.png</file>
+        <file>assets/images/explosion1/explosion13.png</file>
+        <file>assets/images/explosion1/explosion14.png</file>
+
+        <file>assets/images/explosion2/explosion1.png</file>
+        <file>assets/images/explosion2/explosion2.png</file>
+        <file>assets/images/explosion2/explosion3.png</file>
+        <file>assets/images/explosion2/explosion4.png</file>
+        <file>assets/images/explosion2/explosion5.png</file>
+        <file>assets/images/explosion2/explosion6.png</file>
+        <file>assets/images/explosion2/explosion7.png</file>
+
+        <file>assets/images/pointers/pointer.png</file>
+        <file>assets/images/pointers/pointer-interactive.png</file>
+        <file>assets/images/pointers/pointer-turret-place.png</file>
+        <file>assets/images/pointers/pointer-turret-remove.png</file>
+        <file>assets/images/pointers/pointer-not-allowed.png</file>
+
+        <file>assets/images/turrets/weak-turret.png</file>
+        <file>assets/images/turrets/mitra-turret.png</file>
+        <file>assets/images/turrets/granade-turret.png</file>
+        <file>assets/images/turrets/combo-turret.png</file>
+        <file>assets/images/turrets/split-turret.png</file>
+        <file>assets/images/turrets/slowtime-turret.png</file>
+
+        <file>assets/images/missing-image.png</file>
+
+        <file>assets/fonts/PressStart2P-Regular.ttf</file>
+    </qresource>
+</RCC>
