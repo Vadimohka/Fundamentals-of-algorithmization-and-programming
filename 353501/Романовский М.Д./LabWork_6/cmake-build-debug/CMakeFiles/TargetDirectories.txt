@@ -1,0 +1,8 @@
+/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/CMakeFiles/Task_1.dir
+/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/CMakeFiles/Task_2.dir
+/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/CMakeFiles/Task_1_autogen_timestamp_deps.dir
+/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/CMakeFiles/Task_1_autogen.dir
+/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/CMakeFiles/Task_2_autogen_timestamp_deps.dir
+/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/CMakeFiles/Task_2_autogen.dir

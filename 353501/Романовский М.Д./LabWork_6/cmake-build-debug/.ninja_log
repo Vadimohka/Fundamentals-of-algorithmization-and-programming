@@ -1,0 +1,25 @@
+# ninja log v5
+294	2374	1715967306469769632	CMakeFiles/Task_2.dir/Task_2/sub4/SubFour.cpp.o	4acd637fc2a8803
+293	2198	1715967306293740619	CMakeFiles/Task_2.dir/Task_2/sub2/SubSecond.cpp.o	c318ece070b28154
+292	1566	1715967305661636335	CMakeFiles/Task_2.dir/Task_2/main.cpp.o	8189294e5bdb9d88
+293	1904	1715967306001692484	CMakeFiles/Task_2.dir/Task_2/sub1/SubFirst.cpp.o	e00a497857d1f79f
+150	1201	1715967522963509117	CMakeFiles/Task_1.dir/Task_1/mainwindow.cpp.o	e695673b78741601
+3	14	1715982809020924593	/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/Task_2_autogen/timestamp	32d2104f905267f3
+149	1025	1715967522787489120	CMakeFiles/Task_1.dir/Task_1/main.cpp.o	753bea68f6d5f703
+7	195	1715982921181810166	build.ninja	1cb34e9f8d93a943
+143	656	1715967443405842980	CMakeFiles/Task_1.dir/Task_1/Buisenessman.cpp.o	9e7bd026a375445b
+149	988	1715967522751485030	CMakeFiles/Task_1.dir/Task_1_autogen/mocs_compilation.cpp.o	3abfa23b0f40d012
+4	149	1715967521911389575	Task_1_autogen/mocs_compilation.cpp	43d6bdefabe9fef
+3	14	1715982809020924593	Task_2_autogen/timestamp	32d2104f905267f3
+292	2251	1715967306345749190	CMakeFiles/Task_2.dir/Task_2/mainwindow.cpp.o	86d8c65dcd38d52b
+3	14	1715982809020924593	Task_2_autogen/mocs_compilation.cpp	32d2104f905267f3
+4	149	1715967521911389575	/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/Task_1_autogen/timestamp	43d6bdefabe9fef
+294	2597	1715967306693806557	CMakeFiles/Task_2.dir/Task_2/sub5/SubFive.cpp.o	3030cd8a6af9f42e
+2597	2813	1715967306905841504	Task_2	f74d639cae859858
+4	149	1715967521911389575	/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/Task_1_autogen/mocs_compilation.cpp	43d6bdefabe9fef
+1202	1363	1715967523127527727	Task_1	ba5bc621200f605a
+4	149	1715967521911389575	Task_1_autogen/timestamp	43d6bdefabe9fef
+292	1770	1715967305865670024	CMakeFiles/Task_2.dir/Task_2_autogen/mocs_compilation.cpp.o	4d2b276467f97dd2
+3	14	1715982809020924593	/home/dmitry/Fundamentals-of-algorithmization-and-programming/353501/Романовский М.Д./LabWork_6/cmake-build-debug/Task_2_autogen/mocs_compilation.cpp	32d2104f905267f3
+293	2319	1715967306413760401	CMakeFiles/Task_2.dir/Task_2/sub3/SubThird.cpp.o	4290706a44e01c1f
+294	1060	1715967305161553766	CMakeFiles/Task_2.dir/Task_2/sub3/Buisenessman.cpp.o	220469e4f393c0cf
