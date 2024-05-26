@@ -1,6 +1,6 @@
-Создание симуляции естественного отбора с помощью генетического алгоритма
+# Создание симуляции естественного отбора с помощью генетического алгоритма
 
-Фукнциональная блок-схема
+## Фукнциональная блок-схема
 
 ![Functional scheme](https://github.com/Andrey373605/Fundamentals-of-algorithmization-and-programming/blob/martinovich_coursework/353503/Мартинович%20А.А./Курсовая%20работа/schemes/func_scheme.png)
 
@@ -10,7 +10,7 @@
 
 ![scheme](https://github.com/Andrey373605/Fundamentals-of-algorithmization-and-programming/blob/martinovich_coursework/353503/Мартинович%20А.А./Курсовая%20работа/schemes/schemea.png)
 
-Блок-схема алгоритма, реализующего генерацию карты мира
+## Блок-схема алгоритма, реализующего генерацию карты мира
 
 Применяется в simulation/field.cpp в функции DrawerGL::paintGL.
 
@@ -22,13 +22,13 @@
 
 ![scheme](https://github.com/Andrey373605/Fundamentals-of-algorithmization-and-programming/blob/martinovich_coursework/353503/Мартинович%20А.А./Курсовая%20работа/schemes/schemec.png)
 
-Блок-схема алгоритма, реализующего передвижение клетки
+## Блок-схема алгоритма, реализующего передвижение клетки
 
 Применяется в simulation/cell.cpp в функции Cell::move.
 
 ![scheme](https://github.com/Andrey373605/Fundamentals-of-algorithmization-and-programming/blob/martinovich_coursework/353503/Мартинович%20А.А./Курсовая%20работа/schemes/schemed.png)
 
-Блок-схема алгоритма, реализующего создание и отрисовку графика
+## Блок-схема алгоритма, реализующего создание и отрисовку графика
 
 Применяется в simulation/graphic.cpp в функции Graphic::addValue.
 
