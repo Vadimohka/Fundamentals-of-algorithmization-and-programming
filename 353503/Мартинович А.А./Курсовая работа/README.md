@@ -4,7 +4,7 @@
 
 ![Functional scheme](https://github.com/Andrey373605/Fundamentals-of-algorithmization-and-programming/blob/martinovich_coursework/353503/Мартинович%20А.А./Курсовая%20работа/schemes/func_scheme.png)
 
-Блок-схема алгоритма, реализующего отрисовку карты мира
+## Блок-схема алгоритма, реализующего отрисовку карты мира
 
 Применяется в simulation/drawergl.cpp в функции DrawerGL::generateMap.
 
