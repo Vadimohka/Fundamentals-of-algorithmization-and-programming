@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/prefix1"/>
+    <qresource prefix="/new/prefix1">
+        <file>prefix1/fonmainmenu.jpeg</file>
+        <file>prefix1/fon.jpeg</file>
+        <file>prefix1/FON_1.jpeg</file>
+        <file>prefix1/FON.png</file>
+        <file>prefix1/cardAttack.jpeg</file>
+        <file>prefix1/ForGraphViewBackGroung.jpeg</file>
+        <file>prefix1/BackGroundForGameLevelScene.jpeg</file>
+        <file>prefix1/ForDeckBackGround.jpeg</file>
+        <file>prefix1/BOSSIMAGE.png</file>
+        <file>prefix1/DEFAULT.png</file>
+        <file>prefix1/PLAYER.png</file>
+        <file>prefix1/BOSSMB.jpeg</file>
+        <file>prefix1/БОСС?.jpeg</file>
+        <file>prefix1/ForRestRRR.jpeg</file>
+        <file>prefix1/ForRestLevel.jpeg</file>
+        <file>prefix1/FORATTCK.png</file>
+        <file>prefix1/Koster.png</file>
+        <file>prefix1/HARD.png</file>
+        <file>prefix1/START.webp</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>prefix1/BOSSSCENE.avif</file>
+        <file>prefix1/HARDFORSCENE.avif</file>
+        <file>prefix1/BOSSSCENE2.jpeg</file>
+        <file>prefix1/HARDSCENE1.jpeg</file>
+        <file>prefix1/BOSSSCENE3.jpeg</file>
+        <file>prefix1/ForDeckinGame2.tiff</file>
+        <file>prefix1/ForDeckinGame.jpeg</file>
+        <file>prefix1/WINDIALOG2.jpeg</file>
+        <file>prefix1/WINDIALOG.webp</file>
+    </qresource>
+</RCC>
