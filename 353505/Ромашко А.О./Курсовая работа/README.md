@@ -1,47 +1,29 @@
-#Разработка приложения для игры в сёги
+#Разработка приложения аналога игры   STS
 
-Данный курсовой проект представляет из себя приложение, позволяющее играть в сёги с реальным соперником на одном экране или же с компьютером.
+Данный курсовой проект представляет из себя аналог игры STS, позволяющее играть с компьютером.
 
-##Блок-схема алгоритма, реализующего хеширование позиции
-
-
-Применяется в: `lib/search.cpp`, в методе `negaMax`, реализованна в методе `hash` в `lib/Board.cpp` 
+##Блок-схема алгоритма, реализующего битонную сортировку
 
 
-![Algorithm 1 scheme](Schemes/1.png)
+Применяется в: `DialogShowCards.cpp`, в методе `getPlayerAndDeck`, реализована в файле `bittonsort.cpp`
 
 
-##Блок-схема алгоритма, реализующего генерацию ходов
+![Algorithm 2 scheme](shemes/2.png)
+
+Применяется в: ` GamelevelScene.cpp`, в его конструкторе, реализована в файле `graph.cpp`, в его конструкторе 
 
 
-Применяется в: `lib/Board.cpp`, в методе `makeMove`, реализованна в методе `generateMoves` в `lib/move_generation.cpp` 
+![Algorithm 3 scheme](shemes/3.png)
 
+Применяется в: `graph.cpp`, в методе `addLineToScene`, реализована в файле `UFloid.cpp`
 
-![Algorithm 2 scheme](Schemes/2.png)
+![Algorithm 4 scheme](shemes/4.png)
 
+Применяется в: `GameSceneView.cpp`, в методе `GenerateEnemy`, реализованна в файлах `player.cpp` & `enemy.cpp`
 
-##Блок-схема алгоритма, реализующего оценку доски
+![Algorithm 5 scheme](shemes/5.png)
 
+Применяется в: `graph.cpp`, в методе `addLineToScene`, реализованна в файле `UFloid.cpp`, в методе `getPath`
 
-Применяется в: `lib/search.cpp`, в методе `negaMax`, реализованна в методе `evalBoard` в `lib/evaluation.cpp` 
+![Algorithm 6 scheme](shemes/6.png)
 
-
-![Algorithm 3 scheme](Schemes/3.png)
-
-
-##Блок-схема алгоритма, реализующего поиск сильнейшего хода
-
-
-Применяется в: `src/mainwindow.cpp`, в методе `makeMove`, реализованна в методе `search` в `lib/search.cpp` 
-
-
-![Algorithm 4 scheme](Schemes/4.png)
-
-
-##Блок-схема алгоритма, реализующего сортировку списка ходов 
-
-
-Применяется в: `lib/search.cpp`, в методе `negaMax`, реализованна в методе `reorderMoves` в `lib/search.cpp` 
-
-
-![Algorithm 5 scheme](Schemes/5.png)
