@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/card_tileset.png</file>
+        <file>assets/card_back.png</file>
+        <file>assets/table_background.png</file>
+        <file>assets/card_placeholders.png</file>
+        <file>assets/backarrow.png</file>
+        <file>assets/winscreen.png</file>
+        <file>assets/icon.png</file>
+    </qresource>
+</RCC>
