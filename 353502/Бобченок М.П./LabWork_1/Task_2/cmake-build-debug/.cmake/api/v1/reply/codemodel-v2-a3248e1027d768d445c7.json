@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "paintDegrodated",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "paintDegrodated::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-paintDegrodated-Debug-592a9dc570e0ccfdbd4d.json",
+					"name" : "paintDegrodated",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "paintDegrodated_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-paintDegrodated_autogen-Debug-79333446049466cac94e.json",
+					"name" : "paintDegrodated_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "paintDegrodated_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-paintDegrodated_autogen_timestamp_deps-Debug-73b789b6a682c811f3bb.json",
+					"name" : "paintDegrodated_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/u/CLionProjects/LAB1/paintDegrodated/cmake-build-debug",
+		"source" : "/home/u/CLionProjects/LAB1/paintDegrodated"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

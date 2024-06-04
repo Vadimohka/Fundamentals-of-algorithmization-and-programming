@@ -32,12 +32,27 @@ def check_labwork(labwork_folder):
       err += f"Ошибка в {labwork_folder}: Неправильно названа папка таски: {f}\n"
   return err
 
+def check_coursework(coursework_folder):
+  err = ""
+  readme_found = False
+  for f in os.listdir(coursework_folder):
+    if f in IGNORE_LIST: continue
+    if f == "README.md":
+      readme_found = True
+
+  if not readme_found:
+    err += f"{coursework_folder}: В курсовой работе не найден README.md"
+  return err
+
 def check_person(person_folder):
   err = ""
   for f in os.listdir(person_folder):
     if f in IGNORE_LIST: continue
     
-    
+    if f == "Курсовая работа": 
+      err += check_coursework(person_folder + "/" + f)
+      continue
+
     if LAB_REGEX.match(f) is None:
       return f"Ошибка в {person_folder}: Неправильно названа папка лабы: " + f
     

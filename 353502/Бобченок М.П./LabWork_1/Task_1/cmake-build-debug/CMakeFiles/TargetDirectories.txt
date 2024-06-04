@@ -1,0 +1,5 @@
+/home/u/CLionProjects/LAB1/telega/cmake-build-debug/CMakeFiles/telega.dir
+/home/u/CLionProjects/LAB1/telega/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/u/CLionProjects/LAB1/telega/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/u/CLionProjects/LAB1/telega/cmake-build-debug/CMakeFiles/telega_autogen_timestamp_deps.dir
+/home/u/CLionProjects/LAB1/telega/cmake-build-debug/CMakeFiles/telega_autogen.dir

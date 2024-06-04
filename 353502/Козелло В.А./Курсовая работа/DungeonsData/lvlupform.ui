@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LvlUpForm</class>
+ <widget class="QWidget" name="LvlUpForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #bfbfbf;
+color: black;</string>
+  </property>
+  <widget class="QLabel" name="label_Characteristics">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>361</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-left: 2px solid #6b6b6b;
+border-right: 2px solid #6b6b6b;
+border-bottom: 2px solid #6b6b6b;
+border-top: none;
+background-color: #e8e8e8;
+color: black;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string>Какую зарактеристику увеличить?</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Characteristics_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>361</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-left: 2px solid #6b6b6b;
+border-right: 2px solid #6b6b6b;
+border-bottom: none;
+border-top: 2px solid #6b6b6b;
+background-color: #e8e8e8;
+color: black;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string>У вас повысился уровень</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="chooseBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    background-color: #e8e8e8;
+    border: 2px solid #6b6b6b;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000000;
+}
+
+QComboBox::drop-down {
+    width: 20px;
+    border: none;
+}
+
+QComboBox::drop-down:disabled {
+    background-color: transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(../Sources/arrow_down.png); 
+}
+
+QComboBox::down-arrow:disabled {
+    image: none;
+}
+
+QComboBox::down-arrow:on {
+    image: url(../Sources/arrow_up.png); 
+}
+
+QComboBox QAbstractItemView {
+    background-color: #e8e8e8;
+    border: 2px solid #6b6b6b;
+    border-radius: 5px;
+    color: #000000;
+    padding: 5px;
+    selection-background-color: #cfcfcf;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Сила</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ловкость</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Выносливость</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Интеллект</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Мудрость</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Харизма</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="selectButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>CaskaydiaCove Nerd Font</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+        background-color: #e8e8e8;
+        border: 2px solid #6b6b6b;
+        border-radius: 5px;
+        padding: 5px 10px;
+        color: #000000;
+    }
+    QPushButton:hover {
+        background-color: #cfcfcf;
+    }
+    QPushButton:pressed {
+        background-color: #bfbfbf;
+    }
+QPushButton:disabled {
+    color: gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>Выбрать</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

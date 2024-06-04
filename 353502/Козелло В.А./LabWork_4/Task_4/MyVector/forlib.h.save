@@ -1,0 +1,99 @@
+#include "cstdio"
+
+
+template<class T>
+class Iterator
+{
+private:
+    T *ptr = nullptr;
+
+public:
+    Iterator() = default;
+    explicit Iterator(T *pointer)
+        : ptr(pointer)
+    {}
+    ~Iterator() = default;
+    const T *pointer() const { return ptr; }
+
+    T &operator*() const { return *ptr; }
+    T *operator->() const { return ptr; }
+
+    Iterator &operator++()
+    {
+        ++ptr;
+        return *this;
+    }
+    Iterator &operator--()
+    {
+        --ptr;
+        return *this;
+    }
+    const Iterator operator++(int) { return Iterator(ptr++); }
+    const Iterator operator--(int) { return Iterator(ptr--); }
+
+    Iterator operator+(size_t n) { return Iterator(ptr + n); }
+    Iterator operator-(size_t n) { return Iterator(ptr - n); }
+    int operator-(Iterator<T> it) { return ptr - it.ptr; }
+    Iterator &operator+=(size_t n)
+    {
+        ptr += n;
+        return *this;
+    }
+    Iterator &operator-=(size_t n)
+    {
+        ptr -= n;
+        return *this;
+    }
+
+    T operator[](size_t n) { return ptr[n]; }
+    bool operator!=(Iterator other) { return ptr != other.ptr; }
+    bool operator==(Iterator other) { return ptr == other.ptr; }
+
+    T *pointer() { return ptr; }
+};
+
+template<class T>
+class ReverseIterator
+{
+private:
+    T *ptr = nullptr;
+
+public:
+    explicit ReverseIterator(T *pointer)
+        : ptr(pointer)
+    {}
+    ~ReverseIterator() = default;
+    const T *pointer() const { return ptr; }
+
+    T &operator*() const { return *ptr; }
+    T *operator->() const { return ptr; }
+
+    ReverseIterator &operator++()
+    {
+        --ptr;
+        return *this;
+    }
+    ReverseIterator &operator--()
+    {
+        ++ptr;
+        return *this;
+    }
+    const ReverseIterator operator++(int) { return Iterator(ptr--); }
+    const ReverseIterator operator--(int) { return Iterator(ptr++); }
+
+    ReverseIterator operator+(size_t n) { return Iterator(ptr - n); }
+    ReverseIterator operator-(size_t n) { return Iterator(ptr + n); }
+    ReverseIterator &operator+=(size_t n)
+    {
+        ptr -= n;
+        return *this;
+    }
+    ReverseIterator &operator-=(size_t n)
+    {
+        ptr += n;
+        return *this;
+    }
+
+    T operator[](size_t n) { return ptr[n]; }
+};
+

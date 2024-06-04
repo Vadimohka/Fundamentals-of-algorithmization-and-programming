@@ -1,0 +1,5 @@
+/home/u/CLionProjects/LAB1/paintDegrodated/cmake-build-debug/CMakeFiles/paintDegrodated.dir
+/home/u/CLionProjects/LAB1/paintDegrodated/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/u/CLionProjects/LAB1/paintDegrodated/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/u/CLionProjects/LAB1/paintDegrodated/cmake-build-debug/CMakeFiles/paintDegrodated_autogen_timestamp_deps.dir
+/home/u/CLionProjects/LAB1/paintDegrodated/cmake-build-debug/CMakeFiles/paintDegrodated_autogen.dir

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MediaFiles/high.mp3</file>
+        <file>MediaFiles/low.mp3</file>
+        <file>MediaFiles/bass.jpeg</file>
+        <file>MediaFiles/ukulele.jpg</file>
+        <file>MediaFiles/bass5.jpeg</file>
+        <file>MediaFiles/guitar7.jpg</file>
+        <file>MediaFiles/metronomejpeg</file>
+        <file>MediaFiles/guitar.jpg</file>
+        <file>MediaFiles/transposer.jpeg</file>
+        <file>MediaFiles/notes.jpeg</file>
+        <file>MediaFiles/notes2.jpeg</file>
+    </qresource>
+</RCC>

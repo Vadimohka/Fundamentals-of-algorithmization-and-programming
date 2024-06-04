@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "bitset": "cpp",
+        "string_view": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "any": "cpp",
+        "system_error": "cpp",
+        "chrono": "cpp",
+        "qfiledialog": "cpp"
+    }
+}

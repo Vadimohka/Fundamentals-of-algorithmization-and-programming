@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/home/denis/CubeTextures">
+        <file>yellow.png</file>
+        <file>white.png</file>
+        <file>green.png</file>
+        <file>red.png</file>
+        <file>blue.png</file>
+        <file>orange.png</file>
+    </qresource>
+</RCC>

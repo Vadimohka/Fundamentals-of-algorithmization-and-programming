@@ -1,0 +1,6 @@
+#include "student"
+
+student::student()
+{
+
+}

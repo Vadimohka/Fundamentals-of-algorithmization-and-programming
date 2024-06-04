@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QSpinBox" name="spinBox">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="minimum">
+           <number>-100</number>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <widget class="QPushButton" name="On_push_back">
+          <property name="minimumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Futura</family>
+            <pointsize>16</pointsize>
+            <italic>false</italic>
+            <fontweight>Medium</fontweight>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(146, 144, 0);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+          </property>
+          <property name="text">
+           <string>push_back</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="On_push_front">
+          <property name="minimumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Futura</family>
+            <pointsize>16</pointsize>
+            <italic>false</italic>
+            <fontweight>Medium</fontweight>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(146, 144, 0);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+          </property>
+          <property name="text">
+           <string>push_front</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <widget class="QPushButton" name="On_pop_back">
+          <property name="minimumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Futura</family>
+            <pointsize>16</pointsize>
+            <italic>false</italic>
+            <fontweight>Medium</fontweight>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(146, 144, 0);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+          </property>
+          <property name="text">
+           <string>pop_back</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="On_pop_front">
+          <property name="minimumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Futura</family>
+            <pointsize>16</pointsize>
+            <italic>false</italic>
+            <fontweight>Medium</fontweight>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(146, 144, 0);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+          </property>
+          <property name="text">
+           <string>pop_front</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <widget class="QPushButton" name="On_front">
+          <property name="minimumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Futura</family>
+            <pointsize>16</pointsize>
+            <italic>false</italic>
+            <fontweight>Medium</fontweight>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(146, 144, 0);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+          </property>
+          <property name="text">
+           <string>front</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <widget class="QPushButton" name="On_back">
+          <property name="minimumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Futura</family>
+            <pointsize>16</pointsize>
+            <italic>false</italic>
+            <fontweight>Medium</fontweight>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(146, 144, 0);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+          </property>
+          <property name="text">
+           <string>back</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+         <widget class="QPushButton" name="On_Print">
+          <property name="minimumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>221</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Futura</family>
+            <pointsize>16</pointsize>
+            <italic>false</italic>
+            <fontweight>Medium</fontweight>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(146, 144, 0);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+          </property>
+          <property name="text">
+           <string>print</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>501</width>
+          <height>501</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>36</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

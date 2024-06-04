@@ -1,0 +1,8 @@
+Author_2 Title_1 Publisher_5 1899 233
+Author_3 Title_6 Publisher_2 1888 333
+Author_2 Title_1 Publisher_5 1899 233
+Author_5 Title_4 Publisher_2 1897 721
+Author_6 Title_2 Publisher_1 1891 500
+Title_1 Autoe_1 Publisher_10 1900 200
+Title Autor Pyblisher 1900 900
+V what_is_OOP OAO_IITP 2024 120
