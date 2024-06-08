@@ -1,0 +1,64 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>logo.png</file>
+        <file>ship.png</file>
+        <file>missile.png</file>
+        <file>laser-03.png</file>
+        <file>meteor-01-l.png</file>
+        <file>meteor-01-m.png</file>
+        <file>meteor-01-s.png</file>
+        <file>Shield-F-11.png</file>
+        <file>Shield-A-11.png</file>
+        <file>energy_blast-05s.png</file>
+        <file>energy_blast-04s.png</file>
+        <file>DigitalUniverse.jpg</file>
+        <file>фон.jpg</file>
+        <file>взрыв.png</file>
+        <file>energy_blast-11.png</file>
+        <file>Voicy_8-bit Powerup.mp3</file>
+        <file>backgorund.gif</file>
+    </qresource>
+    <qresource prefix="/music">
+        <file>MenuMusic.mp3</file>
+        <file>shoot.mp3</file>
+        <file>explosion.wav</file>
+        <file>Alone Against Enemy.ogg</file>
+        <file>Voicy_8-bit Powerup.mp3</file>
+    </qresource>
+    <qresource prefix="/SpaceShips">
+        <file>A-01.png</file>
+        <file>A-02.png</file>
+        <file>A-03.png</file>
+        <file>A-04.png</file>
+        <file>A-05.png</file>
+        <file>A-06.png</file>
+        <file>A-07.png</file>
+        <file>A-08.png</file>
+        <file>A-09.png</file>
+        <file>A-10.png</file>
+        <file>A-11.png</file>
+        <file>A-12.png</file>
+        <file>A-13.png</file>
+        <file>A-14.png</file>
+        <file>A-15.png</file>
+        <file>A-16.png</file>
+        <file>A-17.png</file>
+        <file>B-01.png</file>
+        <file>B-02.png</file>
+        <file>B-03.png</file>
+        <file>B-04.png</file>
+        <file>B-05.png</file>
+        <file>B-06.png</file>
+        <file>B-07.png</file>
+        <file>B-08.png</file>
+        <file>B-09.png</file>
+        <file>B-10.png</file>
+        <file>B-11.png</file>
+        <file>B-12.png</file>
+        <file>B-13.png</file>
+        <file>B-14.png</file>
+        <file>B-15.png</file>
+        <file>B-16.png</file>
+        <file>B-17.png</file>
+    </qresource>
+</RCC>
