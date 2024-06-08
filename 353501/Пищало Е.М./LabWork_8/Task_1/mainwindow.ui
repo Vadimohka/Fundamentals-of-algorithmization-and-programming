@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1098</width>
+    <height>499</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1091</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="1" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Результат операции:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3" colspan="2">
+      <widget class="QPlainTextEdit" name="resLAbel"/>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="inorderButton">
+       <property name="text">
+        <string>inOrderTraversal</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" rowspan="6">
+      <widget class="QTableWidget" name="tableWidget">
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QPushButton" name="insertSubtreeButton">
+       <property name="text">
+        <string>insertSubtree</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="balanceButton">
+       <property name="text">
+        <string>balance</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QPushButton" name="removeSubtreeButton">
+       <property name="text">
+        <string>removeSubtree</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="postorderButton">
+       <property name="text">
+        <string>postOrderTraversal</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLineEdit" name="infoLineEdit"/>
+     </item>
+     <item row="0" column="1" colspan="4">
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string>Новый столбец</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QPushButton" name="insertElmentButton">
+       <property name="text">
+        <string>insertElement</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="addStringButton">
+       <property name="text">
+        <string>addStringToTable</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="insertButton">
+       <property name="text">
+        <string>insert</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QPushButton" name="LCAButton">
+       <property name="text">
+        <string>LCA</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Текст для операции:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="inputButton">
+       <property name="text">
+        <string>inputFromTable</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QPushButton" name="removeStringButton">
+       <property name="text">
+        <string>removeStringFromTable</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="removeButton">
+       <property name="text">
+        <string>remove</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="findButton">
+       <property name="text">
+        <string>find</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="preorderButton">
+       <property name="text">
+        <string>preOrderTraversal</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Второй для LCA или ключ для вставки элемента:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QLineEdit" name="lineEdit"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

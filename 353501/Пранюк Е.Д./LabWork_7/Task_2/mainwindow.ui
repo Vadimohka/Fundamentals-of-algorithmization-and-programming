@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Futura</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>570</y>
+      <width>223</width>
+      <height>518</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="label_4">
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>KEY:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="inBox_2">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>VAL:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QPushButton" name="On_insert_2">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Futura</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <fontweight>Medium</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
+       <property name="text">
+        <string>insert</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QPushButton" name="On_balance_2">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Futura</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <fontweight>Medium</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
+       <property name="text">
+        <string>Balance</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QPushButton" name="On_find_2">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Futura</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <fontweight>Medium</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
+       <property name="text">
+        <string>find</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QPushButton" name="On_delete_2">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Futura</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <fontweight>Medium</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(146, 0, 144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
+       <property name="text">
+        <string>delete</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QPushButton" name="On_print_forward_2">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Futura</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <fontweight>Medium</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(146, 0, 144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
+       <property name="text">
+        <string>print forward</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignVCenter">
+      <widget class="QPushButton" name="On_print_reverse_2">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Futura</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <fontweight>Medium</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
+       <property name="text">
+        <string>print reverse</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="On_MaxDepth_2">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Futura</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <fontweight>Medium</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
+       <property name="text">
+        <string>Max Depth</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignVCenter">
+      <widget class="QPushButton" name="On_clear_2">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Futura</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <fontweight>Medium</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
+       <property name="text">
+        <string>clear</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>12</y>
+      <width>776</width>
+      <height>586</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_2">
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>KEY:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="inBox">
+           <property name="minimumSize">
+            <size>
+             <width>91</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="minimum">
+            <number>-100</number>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>VAL:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QPushButton" name="On_insert">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Futura</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <fontweight>Medium</fontweight>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
+         <property name="text">
+          <string>insert</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QPushButton" name="On_balance">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Futura</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <fontweight>Medium</fontweight>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
+         <property name="text">
+          <string>Balance</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QPushButton" name="On_find">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Futura</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <fontweight>Medium</fontweight>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
+         <property name="text">
+          <string>find</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QPushButton" name="On_delete">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Futura</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <fontweight>Medium</fontweight>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(146, 0, 144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
+         <property name="text">
+          <string>delete</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QPushButton" name="On_print_forward">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Futura</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <fontweight>Medium</fontweight>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(146, 0, 144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
+         <property name="text">
+          <string>print forward</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignVCenter">
+        <widget class="QPushButton" name="On_print_reverse">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Futura</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <fontweight>Medium</fontweight>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
+         <property name="text">
+          <string>print reverse</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="On_MaxDepth">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Futura</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <fontweight>Medium</fontweight>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
+         <property name="text">
+          <string>Max Depth</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignVCenter">
+        <widget class="QPushButton" name="On_clear">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>41</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Futura</family>
+           <pointsize>16</pointsize>
+           <italic>false</italic>
+           <fontweight>Medium</fontweight>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(146, 0,144);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
+         <property name="text">
+          <string>clear</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QTreeView" name="treeView">
+         <property name="minimumSize">
+          <size>
+           <width>541</width>
+           <height>532</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignVCenter">
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
