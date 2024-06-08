@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LeaderBoardWindow</class>
+ <widget class="QWidget" name="LeaderBoardWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LeaderBoardWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(9,20,96);</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>391</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(9,20,96);
+font:700 30pt Arial;
+color:white;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backToMenuBut">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>420</y>
+     <width>321</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>30</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font: 700 30pt &quot;Arial&quot;;
+	border-radius: 30px;
+	background-color:rgb(6, 17, 80);
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(66, 14, 155);
+}
+QPushButton:pressed {
+	background-color: rgb(34, 10, 105);
+	color: white;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>QUIT</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

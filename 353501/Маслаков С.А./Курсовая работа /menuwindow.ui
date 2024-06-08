@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuWindow</class>
+ <widget class="QWidget" name="MenuWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MenuWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="startBut">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>360</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>30</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font: 700 30pt &quot;Arial&quot;;
+	border-radius: 30px;
+	background-color:rgb(9, 20, 96);
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(66, 14, 155);
+}
+QPushButton:pressed {
+	background-color: rgb(34, 10, 105);
+	color: white;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-30</y>
+     <width>1800</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(22, 37, 74);
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="loginLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>300</y>
+     <width>321</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>30</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color:rgb(22, 37, 74);
+	color:white;
+	font: 700 30pt &quot;Arial&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>15</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logoLabel">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>-10</y>
+     <width>481</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background-image:url('/Users/sagot/Documents/Snake-game/images/logo.png');
+background-size: 20%;
+background-color:
+};</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="leaderBoardBut">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>430</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>30</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font: 700 30pt &quot;Arial&quot;;
+	border-radius: 30px;
+	background-color:rgb(9, 20, 96);
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(66, 14, 155);
+}
+QPushButton:pressed {
+	background-color: rgb(34, 10, 105);
+	color: white;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Leader Board</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="skinbut">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>380</y>
+     <width>151</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>30</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+border-radius:30px;
+  background-image: url('/Users/sagot/Documents/Snake-game/images/skinBut.png');
+  background-repeat: no-repeat;
+   background-position: center;
+	background-color:rgb(22, 37, 74);
+}
+QPushButton:hover {
+	background-color: rgb(66, 14, 155);
+background-image:url('/Users/sagot/Documents/Snake-game/images/skinBut.png');
+}
+QPushButton:pressed {
+background-image:url('/Users/sagot/Documents/Snake-game/images/skinBut.png');
+	background-color: rgb(34, 10, 105);
+	color: white;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="skinFrame">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>300</y>
+     <width>361</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(22, 37, 74);
+border-radius:10px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>151</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>25</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+hover-color:black;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Yellow</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Purple</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light blue</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Orange</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gray</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark blue</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark green</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Red</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light green</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pink</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="acceptSkinBut">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>120</y>
+      <width>251</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>30</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 30pt &quot;Arial&quot;;
+	border-radius: 30px;
+	background-color:rgb(9, 20, 96);
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(66, 14, 155);
+}
+QPushButton:pressed {
+	background-color: rgb(34, 10, 105);
+	color: white;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>ACCEPT</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>startBut</zorder>
+  <zorder>loginLineEdit</zorder>
+  <zorder>logoLabel</zorder>
+  <zorder>leaderBoardBut</zorder>
+  <zorder>skinbut</zorder>
+  <zorder>skinFrame</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
