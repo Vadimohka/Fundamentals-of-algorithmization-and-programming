@@ -1,0 +1,20 @@
+#ifndef DC4FB188_A62D_405B_B039_F6631EE1F814
+#define DC4FB188_A62D_405B_B039_F6631EE1F814
+#include "Service.h"
+
+class StructBin : public Service {
+
+    const QString FNAME = FILENAME + "_2.bin";
+
+  using Service::Service;
+  virtual QString getInstructions();
+
+  virtual void initInput();
+  virtual void initOutput();
+  void enterInput();
+
+protected slots:
+  virtual void processOutput();
+};
+
+#endif /* DC4FB188_A62D_405B_B039_F6631EE1F814 */
