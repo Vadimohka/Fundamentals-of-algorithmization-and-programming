@@ -1,0 +1,32 @@
+Антон Белоусов
+6.3
+ИиТП
+math: 4, physic: 5, russian: 8
+Артемий Ясев
+8.3
+ИиТП
+math: 6, physic: 7, russian: 7
+Денис Харитончик
+8.7
+ИиТП
+math: 6, physic: 7, russian: 10
+Илья Малиновский
+7.7
+ИиТП
+math: 6, physic: 9, russian: 10
+Ганусевич Максим
+10.0
+ИиТП
+math: 10, physic: 10, russian: 10
+Александ Федорако
+6.7
+ПИ
+math: 6, physic: 5, russian: 8
+Вадим Владымцев
+8.1
+ПИ
+math: 7, physic: 7, russian: 9
+Кареник Илья
+6.0
+ПОИТ
+math: 6, physic: 5, russian: 8
