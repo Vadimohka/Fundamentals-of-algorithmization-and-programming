@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "anothertable.h"
+#include "customhashtable.h"
+#include "customstack.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    CustomStack stack;
+    stack.isEmpty();
 }
 
 MainWindow::~MainWindow()

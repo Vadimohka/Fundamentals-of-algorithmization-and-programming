@@ -1,12 +1,12 @@
 #ifndef CUSTOM_STACK_H
 #define CUSTOM_STACK_H
-#pragma once
+
 #include <QVector>
 
 class CustomStack
 {
 public:
-    CustomStack();
+    CustomStack() = default;
 
     bool isEmpty() const { return current == -1; }
 
@@ -47,7 +47,7 @@ public:
         return elements[current];
     }
 
-private:
+protected:
     static constexpr int LIMIT = 10000;
     int elements[LIMIT];
     int current{-1};
