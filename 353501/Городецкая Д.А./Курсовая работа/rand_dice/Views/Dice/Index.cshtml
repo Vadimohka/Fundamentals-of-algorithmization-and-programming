@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Dice";
+}
+
+<h1>Dice</h1>
+
+<form method="post" action="/Dice/RollDice">
+    <input type="submit" value="Roll Dice" />
+</form>
+
+@if (ViewBag.History != null) 
+{
+    <h2>Roll History:</h2>
+    <ul>
+        @foreach (var roll in ViewBag.History)
+        {
+            <li>@roll</li>
+        }
+    </ul>
+}

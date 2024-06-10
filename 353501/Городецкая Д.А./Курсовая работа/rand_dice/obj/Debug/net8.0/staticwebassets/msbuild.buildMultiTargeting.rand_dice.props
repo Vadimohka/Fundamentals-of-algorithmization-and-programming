@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\rand_dice.props" />
+</Project>
