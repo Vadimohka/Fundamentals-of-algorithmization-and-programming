@@ -28,11 +28,13 @@ void MainWindow::upd()
     ui->sc->clear();
     ui->sc_2->clear();
     QString text = "";
+    if(s.size()!=0)
     for (auto& el : s) {
         text += QString::number(el.key) + "\n";
     }
     ui->textBrowser->setText(text);
     text = "";
+    if(m.size()!=0)
     for (auto& el : m) {
         text += QString::number(el.key) + "; "+QString::number(el.val)+ "\n";
     }
@@ -41,29 +43,25 @@ void MainWindow::upd()
 
 void MainWindow::on_pushButton_clicked()
 {
-    if(!s.contains(ui->spinBox->value()))
+    // if(!s.contains(ui->spinBox->value()))
     s.insert(ui->spinBox->value());
-    else
-        QMessageBox::warning(this,"Error", "This key already exist in this container");
+    // else
+    //     QMessageBox::warning(this,"Error", "This key already exist in this container");
     upd();
 }
 
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    if(s.contains(ui->spinBox->value()))
+    // if(s.contains(ui->spinBox->value()))
     s.remove(ui->spinBox->value());
-    else
-        er;
+    // else
+    //     er;
     upd();
 }
 
 
-void MainWindow::on_pushButton_3_clicked()
-{
-    s.clear();
-    upd();
-}
+
 
 
 void MainWindow::on_pushButton_4_clicked()
@@ -79,29 +77,24 @@ void MainWindow::on_pushButton_4_clicked()
 
 void MainWindow::on_pushButton_7_clicked()
 {
-    if(!m.contains(ui->spinBox->value()))
+    //if(!m.contains(ui->spinBox->value()))
+    qDebug()<<ui->spinBox_2->value();
         m.insert(ui->spinBox_2->value(),ui->spinBox_3->value());
-    else
-        QMessageBox::warning(this,"Error", "This key already exist in this container");
+    //else
+      //  QMessageBox::warning(this,"Error", "This key already exist in this container");
     upd();
 }
 
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    if(m.contains(ui->spinBox->value()))
-        m.remove(ui->spinBox->value());
-    else
-        er;
+    //if(m.contains(ui->spinBox->value()))
+        m.remove(ui->spinBox_2->value());
+    // else
+    //     er;
     upd();
 }
 
-
-void MainWindow::on_pushButton_8_clicked()
-{
-    m.clear();
-    upd();
-}
 
 
 void MainWindow::on_pushButton_6_clicked()

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>877</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(0, 0, 0);
+font: 700 italic 17pt &quot;Ubuntu&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>401</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QListWidget" name="mainListWidget">
+       <property name="styleSheet">
+        <string notr="true">font: 300 italic 13pt &quot;Ubuntu&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listWidgetPositive">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>13</pointsize>
+         <italic>true</italic>
+         <fontweight>Light</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 300 italic 13pt &quot;Ubuntu&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QListWidget" name="listWidgetNegative">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 13pt &quot;Ubuntu&quot;;
+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>311</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Колличество элементов&lt;br/&gt;очереди:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinBox">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>17</pointsize>
+         <italic>true</italic>
+         <fontweight>Light</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>30</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bnt_generation">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>17</pointsize>
+         <italic>true</italic>
+         <fontweight>Light</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Сгенерировать
+очередь случайных
+чисел</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bnt_split">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>17</pointsize>
+         <italic>true</italic>
+         <fontweight>Light</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Разбить на очередь:
+-положительных
+-отрицательных
+чисел
+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

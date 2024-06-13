@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>motorcycle.png</file>
+        <file>bus.png</file>
+        <file>car.png</file>
+        <file>freight_car.png</file>
+    </qresource>
+    <qresource prefix="/res1"/>
+</RCC>

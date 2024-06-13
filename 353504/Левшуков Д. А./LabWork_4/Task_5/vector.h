@@ -88,18 +88,31 @@ public:
     void swap(MyVector<T> &toSwap);
 
     // Iterators
-    b_iterator begin();
+    b_iterator begin()
+    {
+        return b_iterator(arr_);
+    }
+    b_iterator end()
+    {
+        return b_iterator(arr_ + size_);
+    }
+    r_iterator rbegin()
+    {
+          return r_iterator(arr_ + size_);
+    }
+    r_iterator rend()
+    {
+        return r_iterator(arr_);
+    }
+    c_iterator cbegin() const
+    {
+        return c_iterator(arr_);
+    }
 
-    b_iterator end();
-
-    r_iterator rbegin();
-
-    r_iterator rend();
-
-    c_iterator cbegin() const;
-
-    c_iterator cend() const;
-
+    c_iterator cend() const
+    {
+        return c_iterator(arr_ + size_);
+    }
 
 };
 

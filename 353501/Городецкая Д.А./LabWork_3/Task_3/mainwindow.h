@@ -2,14 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QPushButton>
 #include <QLineEdit>
+#include <QPushButton>
 #include <QLabel>
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
+namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -22,13 +20,13 @@ public:
 
 private slots:
     void reverseNumber();
-    int reverse(int n);
 
 private:
     Ui::MainWindow *ui;
-    QPushButton *calculateButton;
     QLineEdit *inputEdit;
     QLabel *answer;
 
+    int reverse(int n, int reversed);
 };
+
 #endif // MAINWINDOW_H

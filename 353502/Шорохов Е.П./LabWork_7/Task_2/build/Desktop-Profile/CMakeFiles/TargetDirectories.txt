@@ -1,0 +1,11 @@
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/LabWork_7.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/AWL.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/Hash.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/edit_cache.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/rebuild_cache.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/LabWork_7_autogen_timestamp_deps.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/LabWork_7_autogen.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/AWL_autogen_timestamp_deps.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/AWL_autogen.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/Hash_autogen_timestamp_deps.dir
+/home/shosh/CLionProjects/LabWork_7/build/Desktop-Profile/CMakeFiles/Hash_autogen.dir

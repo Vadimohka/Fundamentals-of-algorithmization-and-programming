@@ -13,8 +13,6 @@ int bitset::size()
 
 void bitset::resize(int newSize)
 {
-
-
     if(capacity<(newSize+BLOCK-1)/BLOCK)
         capacity=(newSize+BLOCK-1)/BLOCK;
 
@@ -29,7 +27,6 @@ void bitset::resize(int newSize)
     data_ = new unsigned long long[capacity];
     size_ = newSize;
 
-    qDebug()<<tmp[0];
     for(int i=0;i<capacity;i++)
         data_[i]=tmp[i];
     delete[]tmp;
@@ -58,7 +55,8 @@ bool &bitset::operator[](int ind)
 {
     if(ind>=size_||ind<0) throw;
 
-    return (bool&)(data_[(ind+BLOCK-1)/BLOCK] |= (1 << (ind % BLOCK)));
+    bool & ref=(bool &)(data_[(ind+BLOCK-1)/BLOCK] |= (1 << (ind % BLOCK)));
+    return ref;
 }
 
 bool bitset::operator[](int ind) const
@@ -118,6 +116,7 @@ int bitset::count()
 
     }
 
+    return res;
 }
 
 void bitset::flip()
@@ -193,7 +192,10 @@ std::string bitset::to_string()
 
     for (int i = size_ - 1; i >= 0; i--)
     {
-        s += (test(i) ? '1' : '0');
+        if(test(i))
+            s+="1";
+        else
+            s+="0";
     }
 
     return s;

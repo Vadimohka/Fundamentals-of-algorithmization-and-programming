@@ -25,6 +25,7 @@ MainWindow::MainWindow(QWidget *parent)
     setCentralWidget(new QWidget(this));
     centralWidget()->setLayout(layout);
 }
+
 void MainWindow::reverseNumber()
 {
     bool ok;
@@ -36,35 +37,21 @@ void MainWindow::reverseNumber()
         return;
     }
 
-    int reversed = reverse(n);
+    int reversed = reverse(n, 0);
 
     answer->setText("Ответ: " + QString::number(reversed));
 }
-int MainWindow::reverse(int n)
+
+int MainWindow::reverse(int n, int reversed)
 {
-    if (n < 10)
+    if (n == 0)
     {
-        return n;
+        return reversed;
     }
     else
     {
         int lastDigit = n % 10;
-        int remainingDigits = n / 10;
-        int reversedRemaining = reverse(remainingDigits);
-        int reversed = lastDigit;
-
-        while (reversed >= 10)
-        {
-            reversed /= 10;
-        }
-
-        int orderOfMagnitude = 10;
-        while (reversedRemaining >= orderOfMagnitude)
-        {
-            orderOfMagnitude *= 10;
-        }
-
-        return reversed * orderOfMagnitude + reversedRemaining;
+        return reverse(n / 10, reversed * 10 + lastDigit);
     }
 }
 

@@ -8,17 +8,12 @@
 template<typename T>
 class Deque
 {
-    block<T>*begin_;
-    block<T>*end_;
+    block<T>*begin_=nullptr;
+    block<T>*end_=nullptr;
     size_t size_=0;
 
 
 public:
-
-    Deque(){
-        size_=0;
-        begin_=end_=nullptr;
-    }
     ~Deque(){clear();}
 
 
@@ -31,7 +26,6 @@ public:
             {
                 new_block->next=new_block->prev=new_block;
                 begin_=end_=new_block;
-                end_->right++;
             }
             else //Not empty
             {
@@ -101,6 +95,7 @@ public:
                     begin_->prev=end_;
                 }
                 delete tmp;
+                tmp=nullptr;
             }
 
         }
@@ -125,6 +120,7 @@ public:
                     end_->next=begin_;
                 }
                 delete tmp;
+                tmp=nullptr;
             }
 
         }
@@ -144,17 +140,11 @@ public:
     }
     iterator<T>begin()
     {
-        if (begin_ != nullptr)
-            return ++iterator<T>(begin_, begin_->left);
-        else
-            return iterator<T>(nullptr, 0);
+        return iterator(begin_, begin_->left);
     }
     iterator<T>end()
     {
-        if (end_ != nullptr)
-            return ++iterator<T>(end_, end_->right);
-        else
-            return iterator<T>(nullptr, 0);
+        return ++iterator<T>(end_, end_->right);
     }
     T &operator[](size_t ind) {
         block<T>* ptr=begin_;

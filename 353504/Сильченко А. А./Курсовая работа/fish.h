@@ -16,6 +16,7 @@ public:
     ~Fish();
     int *xj, *yj, *wj, *hj, x=500, y=500, w=60, h=60, points=0;;
 
+    void move(int k);
 public slots:
     void growFish(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget, int i);
 signals:
@@ -24,9 +25,9 @@ private:
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
+
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
-
 };
 
 #endif // FISH_H

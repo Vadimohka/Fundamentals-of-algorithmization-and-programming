@@ -1,0 +1,12 @@
+#ifndef LISTHEAPLIB_GLOBAL_H
+#define LISTHEAPLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LISTHEAPLIB_LIBRARY)
+#  define LISTHEAPLIB_EXPORT Q_DECL_EXPORT
+#else
+#  define LISTHEAPLIB_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // LISTHEAPLIB_GLOBAL_H

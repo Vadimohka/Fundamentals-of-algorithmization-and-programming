@@ -162,7 +162,6 @@ void MainWindow::createNewArr()
         QRectF *rect = new QRectF(30 + 10 * i, height() - (20 + 4 * arr[i]), 10, 20 + 4 * arr[i]); // Измените второй и четвертый аргументы
         RectsVector.append(rect);
     }
-
 }
 
 bool MainWindow::isSort()

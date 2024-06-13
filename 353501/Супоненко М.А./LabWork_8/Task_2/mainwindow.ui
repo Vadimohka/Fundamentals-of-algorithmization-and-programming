@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Binary Heaps</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="arrayHeapLayout">
+      <item>
+       <widget class="QLineEdit" name="arrayValueInput">
+        <property name="placeholderText">
+         <string>Array Heap: Enter value</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="arrayInsertButton">
+        <property name="text">
+         <string>Insert</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="arrayExtractButton">
+        <property name="text">
+         <string>Extract Max</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="arrayGetMaxButton">
+        <property name="text">
+         <string>Get Max</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="arrayOutput">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="listHeapLayout">
+      <item>
+       <widget class="QLineEdit" name="listValueInput">
+        <property name="placeholderText">
+         <string>List Heap: Enter value</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="listInsertButton">
+        <property name="text">
+         <string>Insert</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="listExtractButton">
+        <property name="text">
+         <string>Extract Max</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="listGetMaxButton">
+        <property name="text">
+         <string>Get Max</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="listOutput">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar"/>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

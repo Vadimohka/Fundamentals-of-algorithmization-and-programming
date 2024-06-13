@@ -1,0 +1,6 @@
+golubci 200
+soup 100
+mit 300
+```
+1 1608 golubci 2
+2 18 xui_na_blude 3

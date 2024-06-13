@@ -1,178 +1,69 @@
-#ifndef ITERATOR_H
-#define ITERATOR_H
+#ifndef iterator_H
+#define iterator_H
 
 template<typename T>
-class Iterator
+class iterator
 {
-    T *iter;
+    T *it;
 
 public:
-    explicit Iterator(T *temp)
+    iterator(T *v)
     {
-        iter = temp;
+        it=v;
     }
 
     const T *base() const
     {
-        return iter;
+        return it;
+    }
+
+    const T *get() const
+    {
+        return it;
     }
 
     T &operator*() const
     {
-        return *iter;
+        return *it;
     }
 
-    T *operator->() const
+    iterator operator+(unsigned value)
     {
-        return iter;
-    }
-
-    Iterator &operator++()
-    {
-        ++iter;
-        return *this;
-    }
-
-    Iterator &operator--()
-    {
-        --iter;
-        return *this;
-    }
-
-    Iterator &operator++(int)
-    {
-        return Iterator(iter++);
-    }
-
-    Iterator &operator--(int)
-    {
-        return Iterator(iter--);
-    }
-
-    Iterator operator+(int value)
-    {
-        return Iterator(iter + value);
-    }
-
-    Iterator operator-(int value)
-    {
-        return Iterator(iter - value);
-    }
-
-    Iterator &operator+=(int value)
-    {
-        iter += value;
-        return *this;
-    }
-
-    Iterator &operator-=(int value)
-    {
-        iter -= value;
-        return *this;
-    }
-
-    T operator[](int index)
-    {
-        return iter[index];
-    }
-
-    bool operator==(Iterator &other)
-    {
-        return iter == other.operator->();
-    }
-
-    bool operator!=(Iterator &other)
-    {
-        return iter != other.operator->();
+        return iterator(it + value);
     }
 };
 
 template<typename T>
 class ReverseIterator
 {
-    T *iter;
+    T *it;
 
 public:
-    explicit ReverseIterator(T *temp)
+    ReverseIterator(T *temp)
     {
-        iter = temp;
+        it = temp;
     }
-
-    ~ReverseIterator();
 
     const T *base() const
     {
-        return iter;
+        return it;
+    }
+
+    const T *get() const
+    {
+        return it;
     }
 
     T &operator*() const
     {
-        return *iter;
+        return *it;
     }
 
-    T *operator->() const
+    ReverseIterator operator+(unsigned value)
     {
-        return iter;
+        return ReverseIterator(it - value);
     }
 
-    ReverseIterator &operator++()
-    {
-        --iter;
-        return *this;
-    }
-
-    ReverseIterator &operator--()
-    {
-        ++iter;
-        return *this;
-    }
-
-    ReverseIterator &operator++(int)
-    {
-        return Iterator(iter--);
-    }
-
-    ReverseIterator &operator--(int)
-    {
-        return Iterator(iter++);
-    }
-
-    ReverseIterator operator+(int value)
-    {
-        return Iterator(iter - value);
-    }
-
-    ReverseIterator operator-(int value)
-    {
-        return Iterator(iter + value);
-    }
-
-    ReverseIterator &operator+=(int value)
-    {
-        iter -= value;
-        return *this;
-    }
-
-    ReverseIterator &operator-=(int value)
-    {
-        iter += value;
-        return *this;
-    }
-
-    T operator[](int index)
-    {
-        return iter[index];
-    }
-
-    bool operator==(ReverseIterator &other)
-    {
-        return iter == other.operator->();
-    }
-
-    bool operator!=(ReverseIterator &other)
-    {
-        return iter != other.operator->();
-    }
 };
 
-#endif // ITERATOR_H
+#endif // iterator_H

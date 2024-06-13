@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1022</width>
+    <height>724</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,40 +28,38 @@
     </property>
     <property name="font">
      <font>
+      <family>Futura</family>
       <pointsize>16</pointsize>
+      <italic>false</italic>
+      <fontweight>Medium</fontweight>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
     </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>0</y>
-      <width>121</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>28</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Bitset</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_ans">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>110</y>
+      <x>30</x>
+      <y>60</y>
       <width>481</width>
-      <height>20</height>
+      <height>71</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
     </property>
     <property name="text">
      <string/>
@@ -76,9 +74,23 @@
       <height>531</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+    </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QPushButton" name="pushButton_set">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>Set</string>
        </property>
@@ -86,6 +98,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_reset">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>Reset</string>
        </property>
@@ -93,6 +112,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_flip">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>Flip</string>
        </property>
@@ -100,6 +126,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_any">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>Any</string>
        </property>
@@ -107,6 +140,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_none">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>None</string>
        </property>
@@ -114,6 +154,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_all">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>All</string>
        </property>
@@ -121,6 +168,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_count">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>Count</string>
        </property>
@@ -128,6 +182,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_getSize">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>getSize</string>
        </property>
@@ -135,6 +196,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_ullong">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>To_ullong</string>
        </property>
@@ -142,6 +210,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_ulong">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+       </property>
        <property name="text">
         <string>To_ulong</string>
        </property>
@@ -158,11 +233,25 @@
       <height>261</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+    </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QPushButton" name="pushButton_setArg">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
          <property name="text">
           <string>Set</string>
          </property>
@@ -170,6 +259,13 @@
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_flipArg">
+         <property name="styleSheet">
+          <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
          <property name="text">
           <string>Flip</string>
          </property>
@@ -177,6 +273,13 @@
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_resetArg">
+         <property name="styleSheet">
+          <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
          <property name="text">
           <string>Reset</string>
          </property>
@@ -184,6 +287,13 @@
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_testArg">
+         <property name="styleSheet">
+          <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
          <property name="text">
           <string>Test</string>
          </property>
@@ -195,6 +305,13 @@
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QSpinBox" name="spinBox_set">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
          <property name="minimum">
           <number>0</number>
          </property>
@@ -205,6 +322,13 @@
        </item>
        <item>
         <widget class="QSpinBox" name="spinBox_flip">
+         <property name="styleSheet">
+          <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
          <property name="minimum">
           <number>0</number>
          </property>
@@ -215,6 +339,13 @@
        </item>
        <item>
         <widget class="QSpinBox" name="spinBox_reset">
+         <property name="styleSheet">
+          <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
          <property name="minimum">
           <number>0</number>
          </property>
@@ -225,6 +356,13 @@
        </item>
        <item>
         <widget class="QSpinBox" name="spinBox_test">
+         <property name="styleSheet">
+          <string>background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
+         </property>
          <property name="minimum">
           <number>0</number>
          </property>
@@ -242,9 +380,16 @@
      <rect>
       <x>30</x>
       <y>10</y>
-      <width>241</width>
-      <height>25</height>
+      <width>321</width>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(118, 118, 245);
+color: rgb(255, 255, 255);
+font: 500 16pt &quot;Futura&quot;;
+border-radius: 10px;
+padding: 6px;</string>
     </property>
     <property name="text">
      <string>Нажать, когда всё плохо</string>
@@ -253,11 +398,14 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>40</y>
-      <width>751</width>
-      <height>491</height>
+      <x>-10</x>
+      <y>120</y>
+      <width>981</width>
+      <height>501</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -269,7 +417,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1022</width>
      <height>22</height>
     </rect>
    </property>

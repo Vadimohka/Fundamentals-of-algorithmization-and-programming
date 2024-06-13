@@ -2,7 +2,8 @@
 #include "./ui_mainwindow.h"
 #include <QMessageBox>
 #include <QFileDialog>
-#include <QDirIterator>
+#include <QDir>
+#include <QFileInfoList>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -16,45 +17,35 @@ void MainWindow::on_openButton_clicked()
     QString folderPath = QFileDialog::getExistingDirectory(this, "Выберите папку", QDir::homePath());
 
     if (!folderPath.isEmpty()) {
-        QDir dir(folderPath);
-        if (dir.exists()) {
-            int subfolderCount = countSubfolders(folderPath);
-            int fileCount = countFiles(folderPath);
+        int subfolderCount = 0;
+        int fileCount = 0;
 
-            QMessageBox::information(this, "Статистика", QString("Количество подпапок: %1\nКоличество файлов: %2")
-                                                             .arg(subfolderCount).arg(fileCount));
-        } else {
-            QMessageBox::critical(this, "Ошибка", "Выбранная папка не существует");
-        }
+        countItems(folderPath, subfolderCount, fileCount);
+
+        QMessageBox::information(this, "Статистика", QString("Количество подпапок: %1\nКоличество файлов: %2")
+                                                         .arg(subfolderCount).arg(fileCount));
     } else {
         QMessageBox::warning(this, "Предупреждение", "Папка не выбрана");
     }
 }
 
-int MainWindow::countSubfolders(const QString &folderPath)
+void MainWindow::countItems(const QString &folderPath, int &subfolderCount, int &fileCount)
 {
-    int count = 0;
-
-    QDirIterator it(folderPath, QDir::Dirs | QDir::NoDotAndDotDot | QDir::NoSymLinks, QDirIterator::Subdirectories);
-    while (it.hasNext()) {
-        it.next();
-        count++;
+    QDir dir(folderPath);
+    if (!dir.exists()) {
+        QMessageBox::critical(this, "Ошибка", "Выбранная папка не существует");
+        return;
     }
 
-    return count;
-}
-
-int MainWindow::countFiles(const QString &folderPath)
-{
-    int count = 0;
-
-    QDirIterator it(folderPath, QDir::Files | QDir::NoSymLinks, QDirIterator::Subdirectories);
-    while (it.hasNext()) {
-        it.next();
-        count++;
+    QFileInfoList fileInfoList = dir.entryInfoList(QDir::Dirs | QDir::Files | QDir::NoDotAndDotDot);
+    for (const QFileInfo &fileInfo : fileInfoList) {
+        if (fileInfo.isDir()) {
+            subfolderCount++;
+            countItems(fileInfo.absoluteFilePath(), subfolderCount, fileCount);
+        } else if (fileInfo.isFile()) {
+            fileCount++;
+        }
     }
-
-    return count;
 }
 
 MainWindow::~MainWindow()

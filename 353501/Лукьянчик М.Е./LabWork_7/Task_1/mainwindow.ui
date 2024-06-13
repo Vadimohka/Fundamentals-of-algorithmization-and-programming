@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 11pt &quot;Monospace&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="valueLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>85</y>
+      <width>100</width>
+      <height>50</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="enqueueButton">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>25</y>
+      <width>100</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enqueue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dequeueButton">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>85</y>
+      <width>100</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dequeue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="findMaxAndMoveButton">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>25</y>
+      <width>100</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Find Max
+Add queue</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="queueListWidget">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>225</y>
+      <width>100</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fillRandomButton">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>150</y>
+      <width>100</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Random fill</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="queueListWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>225</y>
+      <width>100</width>
+      <height>300</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>150</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="messageLabel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>400</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="fillRandomButton_2">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>150</y>
+      <width>100</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Random fill</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

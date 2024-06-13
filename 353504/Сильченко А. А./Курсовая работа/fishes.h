@@ -8,6 +8,7 @@
 #include <QGraphicsSceneMouseEvent>
 #include <QDebug>
 #include <QCursor>
+#include <QRandomGenerator>
 
 class Fishes: public QObject, public QGraphicsItem
 {
@@ -17,8 +18,8 @@ public:
     ~Fishes();
 
     void move();
-    int m;
-    double x=0, y=0, mid=0, h, w, midx=0, midy=0;
+    int m, fsh;
+    double x=0, y=0, mid=0, w, h, midx=0, midy=0;
     double *xi, *yi, *midxi, *midyi, *wi, *hi;
 public slots:
     void pathGeneration();
@@ -29,6 +30,7 @@ private:
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 
+    int randomBetween(int low, int high);
 private slots:
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
 };

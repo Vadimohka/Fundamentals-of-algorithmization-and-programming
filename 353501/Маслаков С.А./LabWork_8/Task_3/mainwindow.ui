@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>756</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> background-color: #444444;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="value">
+      <property name="styleSheet">
+       <string notr="true"> background-color: gray;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="clearBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+QPushButton:hover {
+    background-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #222222;
+}</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="getBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+QPushButton:hover {
+    background-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #222222;
+}</string>
+        </property>
+        <property name="text">
+         <string>Get</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="setBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+QPushButton:hover {
+    background-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #222222;
+}</string>
+        </property>
+        <property name="text">
+         <string>Set</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="delBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+QPushButton:hover {
+    background-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #222222;
+}</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="1">
+     <widget class="QSpinBox" name="key">
+      <property name="maximum">
+       <number>999999999</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="randBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+QPushButton:hover {
+    background-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #222222;
+}</string>
+      </property>
+      <property name="text">
+       <string>Randomize</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true"> background-color: #444444;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>Value</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QTreeWidget" name="tree">
+      <property name="styleSheet">
+       <string notr="true"> background-color: #444444;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>Tree</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Key</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Value</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true"> background-color: #444444;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>Key</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>828</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

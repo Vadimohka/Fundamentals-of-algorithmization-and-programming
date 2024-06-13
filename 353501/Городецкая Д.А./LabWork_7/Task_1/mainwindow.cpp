@@ -7,9 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->list->setEditTriggers(QAbstractItemView::NoEditTriggers);
-
     showQueue();
-
     gen.seed(time(NULL));
 }
 
@@ -20,207 +18,134 @@ MainWindow::~MainWindow()
 
 void MainWindow::showQueue(int index_of_max)
 {
-    long long mx=q1.size();
-    if(mx<q2.size())
-        mx=q2.size();
-
     ui->list->clearContents();
-    ui->list->setRowCount(mx);
+    ui->list->setRowCount(std::max(q1.size(), q2.size()));
 
-    queue<int>temp;
-    int i=0;
-    while(!q1.empty())
-    {
-        temp.push(q1.front());
-        QTableWidgetItem *it=new QTableWidgetItem ();
-        it->setTextAlignment(Qt::AlignCenter);
-        it->setText(QString::fromStdString(std::to_string(q1.front())));
-        if(index_of_max==i)
-        {
-            it->setBackground(Qt::red);
+    auto display_queue = [&index_of_max](std::queue<int>& q, int col) {
+        int i = 0;
+        while (!q.empty()) {
+            QTableWidgetItem *it = new QTableWidgetItem();
+            it->setTextAlignment(Qt::AlignCenter);
+            it->setText(QString::fromStdString(std::to_string(q.front())));
+            if (index_of_max == i) {
+                it->setBackground(Qt::red);
+            }
+            ui->list->setItem(i, col, it);
+            q.pop();
+            i++;
         }
-        ui->list->setItem(i,0,it);
-        q1.pop();
-        i++;
-    }
+    };
 
-    while(!temp.empty())
-    {
-        q1.push(temp.front());
-        temp.pop();
-    }
+    display_queue(q1, 0);
+    display_queue(q2, 1);
 
-    i=0;
-    while(!q2.empty())
-    {
-        temp.push(q2.front());
-        QTableWidgetItem *it=new QTableWidgetItem ();
-        it->setTextAlignment(Qt::AlignCenter);
-        //qDebug()<<q2.front();
-        it->setText(QString::fromStdString(std::to_string(q2.front())));
-        ui->list->setItem(i,1,it);
-        q2.pop();
-        i++;
-    }
+    auto display_queue_info = [](std::queue<int>& q, QLabel* size_label, QLabel* front_label, QLabel* back_label, QLabel* empty_label) {
+        size_label->setText(QString::fromStdString(std::to_string(q.size())));
+        if (!q.empty()) {
+            front_label->setText(QString::fromStdString(std::to_string(q.front())));
+            back_label->setText(QString::fromStdString(std::to_string(q.back())));
+            empty_label->setText("False");
+        } else {
+            front_label->clear();
+            back_label->clear();
+            empty_label->setText("True");
+        }
+    };
 
-    while(!temp.empty())
-    {
-        q2.push(temp.front());
-        temp.pop();
-    }
-
-
-    ui->Back2->clear();
-    ui->Back1->clear();
-    ui->Front2->clear();
-    ui->Front1->clear();
-    if(q2.size()>0)
-        ui->Back2->setText(QString::fromStdString(std::to_string(q2.back())));
-
-    if(q1.size()>0)
-        ui->Back1->setText(QString::fromStdString(std::to_string(q1.back())));
-
-    if(q2.size()>0)
-        ui->Front2->setText(QString::fromStdString(std::to_string(q2.front())));
-    if(q1.size()>0)
-        ui->Front1->setText(QString::fromStdString(std::to_string(q1.front())));
-
-    ui->Size2->setText(QString::fromStdString(std::to_string(q2.size())));
-    ui->Size1->setText(QString::fromStdString(std::to_string(q1.size())));
-
-    if(q2.empty())
-        ui->Empty2->setText("True");
-    else
-        ui->Empty2->setText("False");
-
-    if(q1.empty())
-        ui->Empty1->setText("True");
-    else
-        ui->Empty1->setText("False");
+    display_queue_info(q1, ui->Size1, ui->Front1, ui->Back1, ui->Empty1);
+    display_queue_info(q2, ui->Size2, ui->Front2, ui->Back2, ui->Empty2);
 }
 
 void MainWindow::on_gen1_clicked()
 {
-    while(!q1.empty())
-        q1.pop();
+    q1 = std::queue<int>();
+    q2 = std::queue<int>();
 
-    while(!q2.empty())
-        q2.pop();
-
-    int size=gen()%30+1;
-    for(int i=0;i<size;i++)
-    {
-        q1.push(gen());
-        q2.push(gen());
+    int size = gen() % 30 + 1;
+    for (int i = 0; i < size; i++) {
+        int num = gen();
+        q1.push(num);
+        q2.push(num);
     }
     showQueue();
 }
-
 
 void MainWindow::on_pop_clicked()
 {
-    int num=ui->spinBox->value();
-    if(num==1)
-    {
-        if(q1.size()==0)
-        {
-            QMessageBox::warning(this,"Error","Firstly you should add element");
-        }
-        else
-            q1.pop();
-
-    }
-    else
-    {
-        if(q2.size()==0)
-        {
-            QMessageBox::warning(this,"Error","Firstly you should add element");
-        }
-        else
-            q2.pop();
+    int num = ui->spinBox->value();
+    if (num == 1 && !q1.empty()) {
+        q1.pop();
+    } else if (num == 2 && !q2.empty()) {
+        q2.pop();
+    } else {
+        QMessageBox::warning(this, "Error", "Firstly you should add element");
     }
     showQueue();
 }
 
-
 void MainWindow::on_push_clicked()
 {
-    int num=ui->spinBox->value();
-    if(num==1)
-    {
+    int num = ui->spinBox->value();
+    if (num == 1) {
         q1.push(gen());
-
-    }
-    else
-    {
+    } else {
         q2.push(gen());
     }
     showQueue();
 }
 
-
 void MainWindow::on_clear_clicked()
 {
-    int num=ui->spinBox->value();
-    if(num==1)
-    {
-        q1.clear();
-
-    }
-    else
-    {
-        q2.clear();
+    int num = ui->spinBox->value();
+    if (num == 1) {
+        q1 = std::queue<int>();
+    } else {
+        q2 = std::queue<int>();
     }
     showQueue();
 }
 
-
 void MainWindow::on_pushButton_clicked()
 {
-    if(q1.size()==0)
-    {
-        QMessageBox::warning(this,"Error","First queue is empty");
+    if (q1.empty()) {
+        QMessageBox::warning(this, "Error", "First queue is empty");
+        return;
     }
 
-    int i=0,mx=-INT_MIN,ind=0;
-    queue<int>temp,temp2;
-    while(!q1.empty())
-    {
+    int index_of_max = 0, max_value = INT_MIN;
+    std::queue<int> temp, temp2;
+    int i = 0;
+
+    while (!q1.empty()) {
         temp.push(q1.front());
-        if(q1.front()>mx)
-        {
-            ind=i;
-            mx=q1.front();
+        if (q1.front() > max_value) {
+            index_of_max = i;
+            max_value = q1.front();
         }
-        //qDebug()<<q1.front()<<" "<<mx;
         q1.pop();
         i++;
     }
-    i=ind+1;
-    while(!temp.empty()&&i--)
-    {
+
+    while (i--) {
         q1.push(temp.front());
         temp.pop();
     }
 
-
-    while(!q2.empty())
-    {
+    while (!q2.empty()) {
         temp2.push(q2.front());
         q2.pop();
     }
 
-    while(!temp2.empty())
-    {
+    while (!temp2.empty()) {
         q2.push(temp2.front());
         q1.push(temp2.front());
         temp2.pop();
     }
-    while(!temp.empty())
-    {
+
+    while (!temp.empty()) {
         q1.push(temp.front());
         temp.pop();
     }
 
-    showQueue(ind);
+    showQueue(index_of_max);
 }

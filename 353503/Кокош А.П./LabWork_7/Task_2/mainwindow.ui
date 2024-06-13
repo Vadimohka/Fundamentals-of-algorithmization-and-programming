@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>894</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>871</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="horizontalSpacing">
+      <number>6</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>3</number>
+     </property>
+     <item row="7" column="3">
+      <widget class="QPushButton" name="insertButton">
+       <property name="text">
+        <string>Вставить</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="3" colspan="2">
+      <widget class="QPlainTextEdit" name="resLAbel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1000000</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="plainText">
+        <string>Здесь выводится результат операций</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QPushButton" name="addStringButton">
+       <property name="text">
+        <string>Добавить строку</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="4">
+      <widget class="QPushButton" name="leavesButton">
+       <property name="text">
+        <string>AverageKey</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLineEdit" name="infoLineEdit"/>
+     </item>
+     <item row="9" column="3">
+      <widget class="QPushButton" name="removeButton">
+       <property name="text">
+        <string>Удалить</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Ключ:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Текст:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="QPushButton" name="findButton">
+       <property name="text">
+        <string>найти</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QPushButton" name="removeStringButton">
+       <property name="text">
+        <string>Удалить строку</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="3" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Результат операции:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="5">
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QSpinBox" name="keySpinBox"/>
+     </item>
+     <item row="1" column="3" colspan="2">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Информация для операций:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="preorderButton">
+       <property name="text">
+        <string>Прямым ходом</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" rowspan="17">
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="maximumSize">
+        <size>
+         <width>16777209</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="autoScroll">
+        <bool>false</bool>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>70</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string/>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Новая строка</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Число</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Строка</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="inorderButton">
+       <property name="text">
+        <string>По возрастанию</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="postorderButton">
+       <property name="text">
+        <string>Обратным ходом</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QPushButton" name="balanceButton">
+       <property name="text">
+        <string>Балансировка</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QPushButton" name="inputButton">
+       <property name="text">
+        <string>Загрузить из таблицы</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>894</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

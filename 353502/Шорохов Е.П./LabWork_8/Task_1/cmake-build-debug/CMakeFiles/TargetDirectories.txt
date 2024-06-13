@@ -1,0 +1,8 @@
+/home/shosh/CLionProjects/LabWork_8/cmake-build-debug/CMakeFiles/LabWork_8.dir
+/home/shosh/CLionProjects/LabWork_8/cmake-build-debug/CMakeFiles/Heap.dir
+/home/shosh/CLionProjects/LabWork_8/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shosh/CLionProjects/LabWork_8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/shosh/CLionProjects/LabWork_8/cmake-build-debug/CMakeFiles/LabWork_8_autogen_timestamp_deps.dir
+/home/shosh/CLionProjects/LabWork_8/cmake-build-debug/CMakeFiles/LabWork_8_autogen.dir
+/home/shosh/CLionProjects/LabWork_8/cmake-build-debug/CMakeFiles/Heap_autogen_timestamp_deps.dir
+/home/shosh/CLionProjects/LabWork_8/cmake-build-debug/CMakeFiles/Heap_autogen.dir

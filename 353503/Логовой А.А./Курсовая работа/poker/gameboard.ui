@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameBoard</class>
+ <widget class="QDialog" name="GameBoard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1987</width>
+    <height>1030</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Poker</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../images/apllicationimage.png</normaloff>../images/apllicationimage.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(/home/blaugranas/poker_qt/images/table.jpg);
+background-repeat: no-repeat;
+background-position: center;</string>
+  </property>
+  <widget class="QPushButton" name="menu_button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>111</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/mune2.png</normaloff>../images/mune2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>80</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>420</y>
+     <width>601</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="bot1_player_hand_view">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>180</y>
+     <width>251</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="bot2_player_hand_view">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>630</y>
+     <width>251</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="bot_player_hand_view">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>180</y>
+     <width>251</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="player_hand_view">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>630</y>
+     <width>251</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="bot_player_nick">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>60</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;
+color : red;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="bot1_player_nick">
+   <property name="geometry">
+    <rect>
+     <x>1160</x>
+     <y>70</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;
+color : red;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="bot2_player_nick">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>800</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;
+color : red;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="user_player_nick">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>800</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;
+color : red;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="bot_player_balance">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>120</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;
+color : red;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="bot1_player_balance">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>120</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;
+color : red;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="bot2_player_balance">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>870</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;
+color : red;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="user_player_balance">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>870</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;
+color : red;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fold_btn">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>920</y>
+     <width>329</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : transparent;
+background-color: rgb(245,0,0);
+</string>
+   </property>
+   <property name="text">
+    <string>FOLD</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="check_btn">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>920</y>
+     <width>331</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : transparent;
+background-color: rgb(255,165,0);</string>
+   </property>
+   <property name="text">
+    <string>CHECK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="call_btn">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>920</y>
+     <width>331</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : transparent;
+background-color: rgb(0,255,0);</string>
+   </property>
+   <property name="text">
+    <string>CALL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="raise_btn">
+   <property name="geometry">
+    <rect>
+     <x>1420</x>
+     <y>920</y>
+     <width>331</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : transparent;
+background-color: rgb(70,130,180);</string>
+   </property>
+   <property name="text">
+    <string>RAISE</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="raisie_slider">
+   <property name="geometry">
+    <rect>
+     <x>1790</x>
+     <y>720</y>
+     <width>91</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;
+</string>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>1100000</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="total_sum">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>330</y>
+     <width>231</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border : none;
+background : transparent;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

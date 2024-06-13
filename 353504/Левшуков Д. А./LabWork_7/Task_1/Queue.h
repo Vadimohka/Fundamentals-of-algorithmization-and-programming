@@ -15,11 +15,9 @@ class queue
     long long size_=0;
 
 public:
-    queue(){}
     ~queue()
     {
-        while(!empty())
-            pop();
+        clear();
     }
     void clear()
     {

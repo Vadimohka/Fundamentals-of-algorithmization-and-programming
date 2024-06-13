@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>796</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="1" colspan="2">
+     <widget class="QPushButton" name="delete_push_button">
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" colspan="2">
+     <widget class="QTreeView" name="treeView_2"/>
+    </item>
+    <item row="3" column="4" rowspan="2">
+     <widget class="QPushButton" name="delete_subtree_push_button">
+      <property name="text">
+       <string>Удалить поддерево</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3" rowspan="2">
+     <widget class="QPushButton" name="add_subtree_push_button">
+      <property name="text">
+       <string>Добавить поддерево</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="3">
+     <widget class="QPushButton" name="traverse_button">
+      <property name="text">
+       <string>Обход дерева</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QPushButton" name="add1_push_button">
+      <property name="text">
+       <string>Добавить элемент</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QPushButton" name="find_push_button">
+      <property name="text">
+       <string>Найти</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="add2_push_button">
+      <property name="text">
+       <string>Добавить элемент</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QTreeView" name="treeView"/>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Поддерево:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" rowspan="2" colspan="2">
+     <widget class="QPushButton" name="find_root_push_button">
+      <property name="text">
+       <string>Найти минимального общего предка</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QSpinBox" name="add1_spinBox"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QSpinBox" name="delete_spinBox"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QSpinBox" name="find_spinBox"/>
+    </item>
+    <item row="2" column="3">
+     <widget class="QSpinBox" name="add2_spinBox"/>
+    </item>
+    <item row="5" column="2">
+     <widget class="QSpinBox" name="spinBox_5"/>
+    </item>
+    <item row="6" column="2">
+     <widget class="QSpinBox" name="spinBox_6"/>
+    </item>
+    <item row="7" column="3">
+     <widget class="QLabel" name="answer_label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Ответ:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,10 +1,8 @@
 #include "fishes.h"
 
 Fishes::Fishes(QObject *parent) : QObject(parent), QGraphicsItem(){
-    xi=&x;
-    yi=&y;
-    wi=&w;
-    hi=&h;
+    w=randomBetween(30,100);
+    h=w;
 }
 
 Fishes::~Fishes()
@@ -12,29 +10,93 @@ Fishes::~Fishes()
 
 }
 
+int Fishes::randomBetween(int low, int high)
+{
+    return (QRandomGenerator::global()->generate()%((high + 1) - low) + low);
+}
+
 QRectF Fishes::boundingRect() const
 {
-    return QRectF (-30,-30,60,60);
+    return QRectF (0,0,w,h);
 }
 
 void Fishes::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    x=rand()%100;
-    y=rand()%100;
-    w=rand()%100;
-    h=w;
-    midx=x+w/2;
-    midy=y+h/2;
-    midxi=&midx;
-    midyi=&midy;
-    //QImage image("url(:/Images/Images/15.png)");
-    QImage image("/home/oblachko/Projects/CourseProject/fish.jpg");
-    QRect recrangle(*xi,*yi,w,h);
-    QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
-    painter->drawImage(recrangle, image);
-    m=rand()%4;
-    //qDebug()<<m;
 
+    //QImage image("url(:/Images/Images/15.png)");
+    fsh=randomBetween(1,11);
+    if(fsh==1)
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish1.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    else if (fsh==2)
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish2.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    else if (fsh==3)
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish4.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    else if (fsh==4)
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish5.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    else if (fsh==5)
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish6.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    else if (fsh==6)
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish7.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    else if (fsh==7)
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish8.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    else if (fsh==8)
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish9.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    else if (fsh==9)
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish10.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    else
+    {
+        QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish11.jpg");
+        QRect recrangle(0,0,w,h);
+        QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
+        painter->drawImage(recrangle, image);
+    }
+    //qDebug()<<m;
+    pathGeneration();
     Q_UNUSED(option);
     Q_UNUSED(widget);
 }

@@ -22,7 +22,7 @@ QRectF Fish::boundingRect() const
 void Fish::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
     //QImage image("url(:/Images/Images/15.png)");
-    QImage image("/home/oblachko/Projects/CourseProject/fish.jpg");
+    QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish3.jpg");
     QRect recrangle(-30,-30,60,60);
     QRectF source( 0.0 ,  0.0 ,  70.0 ,  40.0 );
     /*painter->setPen(Qt::black);
@@ -39,10 +39,10 @@ void Fish::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
 
 void Fish::growFish(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget, int i)
 {
-    QImage image("/home/oblachko/Projects/CourseProject/fish.jpg");
+    QImage image("/home/oblachko/Projects/Курсовая работа/resource/fish3.jpg");
     for(int j=1; j<=i; ++j)
     {
-    QRect recrangle(x,y,w+j,h+j);
+    QRect recrangle(0,0,w+j,h+j);
     painter->drawImage(recrangle, image);
     }
     Q_UNUSED(option);
@@ -52,30 +52,25 @@ void Fish::growFish(QPainter *painter, const QStyleOptionGraphicsItem *option, Q
 
 void Fish::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
-    /* Устанавливаем позицию графического элемента
-     * в графической сцене, транслировав координаты
-     * курсора внутри графического элемента
-     * в координатную систему графической сцены
-     * */
-    this->setPos(mapToScene(event->pos()));
+this->setPos(mapToScene(event->pos()));
 }
 
 void Fish::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
-    /* При нажатии мышью на графический элемент
-     * заменяем курсор на руку, которая держит этот элемента
-     * */
     this->setCursor(QCursor(Qt::ClosedHandCursor));
     Q_UNUSED(event);
 }
 
 void Fish::mouseReleaseEvent(QGraphicsSceneMouseEvent *event)
 {
-    /* При отпускании мышью элемента
-     * заменяем на обычный курсор стрелку
-     * */
     this->setCursor(QCursor(Qt::ArrowCursor));
     Q_UNUSED(event);
 }
 
-
+void Fish::move(int k)
+{
+    x+=k;
+    if(x<0||x+w>=1200)
+        x-=k;
+    //repaint();
+}

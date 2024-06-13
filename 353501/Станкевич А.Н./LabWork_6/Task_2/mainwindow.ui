@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1459</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>600</y>
+      <width>391</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>370</y>
+      <width>501</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1451</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Пункт 1 - Ввести один абзац текста (до нажатия Enter). Сохранить данный текст в текстовый файл с именем «Станкевич20.txt» посредством посимвольной записи.&lt;/p&gt;&lt;p&gt;Пункт 2 - посимвольно считать из текстового файла с именем «Станкевич20.txt» текст и вывести его на экран&lt;/p&gt;&lt;p&gt;Пункт 3 - ввести размер массива и массив типа float, разделяющий символ «&amp;gt;». Сохранить эти элементы массива в текстовый файл с именем «СтанкевичЛаб20_0.txt» посредством потокового ввода.&lt;/p&gt;&lt;p&gt;Пункт 4 - cчитать из текстового файла с именем «СтанкевичЛаб20_0.txt» элементы массива посредством потокового вывода и вывести на экран считанный из файла массив, разделяя печатаемые значения символом «пробел»&lt;/p&gt;&lt;p&gt;Пункт 5 - ввести содержимое полей объекта типа структуры Notebook. Сохранить содержимое всех полей структуры в текстовый файл с именем «СтанкевичЛаб20_1.txt»&lt;/p&gt;&lt;p&gt;Пункт 6 - прочитать из текстового файла с именем «СтанкевичЛаб20_1.txt» все записанные в нем структуры и распечатать содержимое их полей на экран, разделяя содержимое полей знаком '&amp;gt;'&lt;/p&gt;&lt;p&gt;Пункт 7 - запросить у пользователя ввести содержимое полей объекта типа вашей структуры. Сохранить содержимое всех полей структуры в бинарный файл с именем «СтанкевичЛаб20_2.bin»&lt;/p&gt;&lt;p&gt;Пункт 8 - прочитать из бинарного файла с именем «СтанкевичЛаб20_2.bin» все записанные в нем структуры и распечатать содержимое их полей на экран, разделяя содержимое полей символами &lt;/p&gt;&lt;p&gt;Пункт 9 - запросить у пользователя ввести предложение (до нажатия Enter) и дописать данное предложение в текстовый файл с именем «СтанкевичЛаб20_3.txt» в виде отдельной строки.&lt;/p&gt;&lt;p&gt;Пункт 10: построчно считать из текстового файла с именем «СтанкевичЛаб20_3.txt» все предложения и вывести их на экран&lt;/p&gt;&lt;p&gt;Пункт 11 - Выход&lt;/p&gt;&lt;p&gt;Выберите пункт меню: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>600</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ввод-&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вывод-&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1459</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

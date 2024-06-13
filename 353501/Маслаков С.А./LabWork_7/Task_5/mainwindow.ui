@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>813</width>
+    <height>457</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#444444;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="intView">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>541</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: #444444;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="inp">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>250</y>
+      <width>61</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushBack">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>121</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+QPushButton:hover {
+    background-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #222222;
+}</string>
+    </property>
+    <property name="text">
+     <string>pushBack</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushFront">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>121</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+QPushButton:hover {
+    background-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #222222;
+}</string>
+    </property>
+    <property name="text">
+     <string>pushFront</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="popBack">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>360</y>
+      <width>141</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+QPushButton:hover {
+    background-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #222222;
+}</string>
+    </property>
+    <property name="text">
+     <string>popBack</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="popFront">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>320</y>
+      <width>151</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+QPushButton:hover {
+    background-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #222222;
+}</string>
+    </property>
+    <property name="text">
+     <string>popFront</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="deqEls">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: #444444;
+    color: #ffffff;
+    font-family: &quot;Arial Bold&quot;;
+    font-size: 20px;
+    border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="beginPos">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>420</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="endPos">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>540</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>813</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

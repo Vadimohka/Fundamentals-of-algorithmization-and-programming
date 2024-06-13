@@ -235,35 +235,7 @@ void MyVector<T>::swap(MyVector<T> &toSwap) {
     std::swap(capacity_, toSwap.capacity_);
 }
 
-template<typename T>
-MyVector<T>::b_iterator MyVector<T>::begin() {
-    return b_iterator(arr_);
-}
 
-template<typename T>
-MyVector<T>::b_iterator MyVector<T>::end() {
-    return b_iterator(arr_ + size_);
-}
-
-template<typename T>
-MyVector<T>::c_iterator MyVector<T>::cbegin() const {
-    return c_iterator(arr_);
-}
-
-template<typename T>
-MyVector<T>::c_iterator MyVector<T>::cend() const {
-    return c_iterator(arr_ + size_);
-}
-
-template<typename T>
-MyVector<T>::r_iterator MyVector<T>::rbegin() {
-    return r_iterator(arr_ + size_);
-}
-
-template<typename T>
-MyVector<T>::r_iterator MyVector<T>::rend() {
-    return r_iterator(arr_);
-}
 
 
 template class MyVector<MyVector<MyVector<pair<pair<std::string, std::string>, pair<std::string, std::string>>>>>;

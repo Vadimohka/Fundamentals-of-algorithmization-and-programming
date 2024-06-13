@@ -2,20 +2,18 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QCheckBox>
 #include <QPushButton>
 #include <QSpinBox>
-#include <QTimer>
-#include <QPainter>
-#include <QSpinBox>
-#include <QVector>
 #include <QTableWidget>
+#include <QPainter>
+#include <QTimer>
+#include <QVector>
 #include <QRectF>
-#include <QRandomGenerator>
+#include <QTableWidgetItem>
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
+namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -26,35 +24,34 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    QPushButton* nextpushButton = new QPushButton;
-
-    QSpinBox* spinBox = new QSpinBox;
-    QTimer* timer;
-
-    QTableWidget* table = new QTableWidget;
-    QVector <QRectF*> circleFigure;
-
-    QVector <QVector <int>> vec;
-    QVector <QColor> colorVec;
-
-    void hanoi(int n, int firstPost, int secondPost, QVector <QVector <int>>& vec);
-    bool* upd;
-    bool* mainUpd;
-
-    int size = 0;
-
-    int index = 0;
-    void paintEvent(QPaintEvent *event);
-    int numberOnFirstColumn, numberOnSecondColumn, numberOnThirdColumn;
+    void centerObjects();
+    void hanoi(int n, int firstPost, int secondPost, QVector<QVector<int>>& vec);
     void moveUp(int index);
     void renul();
-    void centerObjects();
+
+protected:
+    void paintEvent(QPaintEvent *event) override;
 
 private slots:
-    void on_nextpushButton_clicked();
-
+    void on_nextPushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
+    QCheckBox *updCheckBox;
+    QCheckBox *mainUpdCheckBox;
+    QPushButton *nextPushButton;
+    QSpinBox *spinBox;
+    QTableWidget *tableWidget;
+    QTimer *timer;
+    QVector<QVector<int>> vec;
+    QVector<QRectF*> circleFigure;
+    QVector<QColor> colorVec;
+    int index = 0;
+    int size = 0;
+    int numberOnFirstColumn = 0;
+    int numberOnSecondColumn = 0;
+    int numberOnThirdColumn = 0;
+    bool *upd = new bool(false);
 };
+
 #endif // MAINWINDOW_H

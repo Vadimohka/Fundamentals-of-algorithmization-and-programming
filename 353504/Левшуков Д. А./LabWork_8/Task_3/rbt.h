@@ -1,201 +1,134 @@
 #ifndef RBT_H
 #define RBT_H
 #include<memory>
+#include<forward_list>
 template<typename T, typename T1> class RBT
 {
 protected:
 
     struct node
     {
-        node* left;
-        node*right;
-        node*parent;
+        node*parent=nullptr;
+        node* left=nullptr;
+        node*right=nullptr;
         bool red;
         T key;
         T1 val;
-        node(node*p,node*l,node*r,bool col,T k,T1 v): parent(p), left(l), right(r), red(col), key(std::move(k)), val(std::move(v)) {}
-    };
-
-public:
-    RBT()
-    {
-        root = nullptr;
-    }
-    node* insert(T key, T1 val)
-    {
-        //qDebug()<<root<<"!";
-        qDebug()<<val;
-        if(root==nullptr)
+        node(T key, T val)
         {
-            root=new node(nullptr, nullptr, nullptr, false, key, val);
-            qDebug()<<root->val<<"!";
-            return root;
-            //return;
+            this->key=key;
+            this->val=val;
         }
-        return insert(key,val,root);
+    };
+    node *root=nullptr;
+public:
+
+    void insert(T key, T1 val)
+    {
+        node* tmp = root;
+        node* p=nullptr;
+        while (tmp)
+        {
+            p=tmp;
+
+            if (tmp->key > key)
+                tmp = tmp->left;
+            else if (tmp->key < key)
+                tmp = tmp->right;
+            else
+                return;//exist
+        }
+
+        tmp = new node(key,val);
+        tmp->parent=p;
+        tmp->red=true;
+        if (p!=nullptr)
+        {
+            if (tmp->key > p->key)
+                p->right = tmp;
+            else if (tmp->key < p->key)
+                p->left = tmp;
+        }
+        else
+            root = tmp;
+
+        InsCase1(tmp);
     }
+
     void remove(T key)
     {
-        node * tmp=findNode(key);
-        if(tmp==nullptr)
+        qDebug()<<key;
+        node* tmp=findNode(key);
+        qDebug()<<tmp;
+        if(!tmp)
             return;
 
-        if(tmp->left!=nullptr&&tmp->right!=nullptr)
+        if(!tmp->parent&&!tmp->left&&!tmp->left)
         {
-            node *r=tmp->right;
-            while(r->left!=nullptr)
-                r=r->left;
-
-            tmp->key=std::move(r->key);
-            tmp->val=std::move(r->val);
-            tmp=r;
-        }
-        if (tmp->left == nullptr && tmp->right != nullptr) {
-            tmp->right->red = true;
-            replaceWith(tmp, tmp->right);
-            delete tmp;
-            return;
-        }
-
-        if (tmp->right == nullptr && tmp->left != nullptr) {
-            tmp->left->red = true;
-            replaceWith(tmp, tmp->left);
-            delete tmp;
-            return;
-        }
-        if(tmp==root)
-        {
-            delete root;
             root=nullptr;
-            return;
-        }
-        if(tmp->red==false)
-        {
-            replaceWith(tmp, nullptr);
-            delete tmp;
-            tmp=nullptr;
+            qDebug()<<" del root";
             return;
         }
 
-        node * d=tmp;
-        if(tmp->left != nullptr||tmp->right != nullptr)
+        if(tmp->left&&tmp->right)
         {
-            throw "Can`t remove";
+            node* to_swap=tmp->left;
+            while(to_swap->right)
+                to_swap=to_swap->right;
+
+            tmp->val=to_swap->val;
+            tmp->key=to_swap->key;
+            tmp=to_swap;
         }
 
-        while(tmp->parent!=nullptr)
+        node * c;
+        if(tmp->left)
+            c=tmp->left;
+        else
+            c=tmp->right;
+
+        if(!c)
         {
-            node * p=tmp->parent;
-            bool left=(p->left==tmp);
-            node *s;
-            if(left)
-                s=p->right;
+            if(!tmp->red)
+                DelCase1(tmp);
+
+            node*p=tmp->parent;
+            if(p->left==tmp)
+                p->left=c;
             else
-                s=p->left;
-            if(!s->red)
+                p->right=c;
+        }
+        else
+        {
+            c->parent=tmp->parent;
+            node*p=tmp->parent;
+            if(tmp->parent)
             {
-                p->red=false;
-                s->red=true;
-
-                if(left)
-                    RotateLeft(p);
+                if(tmp==p->left)
+                    p->left=c;
                 else
-                    RotateRight(p);
-            }
-
-            p=tmp->parent;
-            left=(p->left==tmp);
-            if(left)
-                s=p->right;
-            else
-                s=p->left;
-
-            bool blackS=(s->red) &&(s->left == nullptr || s->left->red) &&(s->right == nullptr || s->right->red);
-            if(p->red&&blackS)
-            {
-                s->red=false;
-                tmp=tmp->parent;
-                continue;
+                    p->right=c;
             }
             else
-                if(!p->red)
             {
-                s->red=false;
-                p->red=true;
-                break;
-            }
-
-            p=tmp->parent;
-            left=(p->left==tmp);
-            if(left)
-                s=p->right;
-            else
-                s=p->left;
-
-            if(s->red)
-            {
-                if(left&&(s->right == nullptr || s->right->red) &&(s->left && s->left->red == false))
+                root=c;
+                if(!tmp->red)
                 {
-                    s->red=false;
-                    s->left->red=true;
-                    RotateRight(s);
+                    if(c->red)
+                        c->red=false;
+                    else
+                        DelCase1(c);
                 }
-                else
-                    if(!left&&(s->left == nullptr || s->left->red) &&(s->right && s->right->red == false))
-                    {
-                        s->red=false;
-                        s->left->red=true;
-                        RotateLeft(s);
-                    }
             }
-
-
-            p=tmp->parent;
-            left=(p->left==tmp);
-            if(left)
-                s=p->right;
-            else
-                s=p->left;
-
-            s->red=p->red;
-            p->red=1;
-
-            if(left)
-            {
-                if(s->right)
-                    s->right->red=1;
-                RotateLeft(p);
-
-            }
-else
-            {
-                if(s->left)
-                    s->left->red=1;
-                RotateRight(p);
-            }
-
         }
-
-        node *p=d->parent;
-        if(p)
-        {
-            if(p->left==d)
-                p->left=nullptr;
-            else
-                p->right=nullptr;
-        }
-        delete d;
     }
 
     bool contains(T key)
     {
-        return findNode(key)!=nullptr;
+        return findNode(key);
     }
-    void clear()
-    {
-        clear(root);
-        root=nullptr;
-    }
+
+
 
     size_t size()
     {
@@ -204,17 +137,52 @@ else
 
     class Iterator {
     protected:
+        node *cur;
         friend class RBT<T, T1>;
-        Iterator(node *root) : cur(root) {
-            if(!cur) return;
-            while (cur->left != nullptr)
-                cur = cur->left;
+        Iterator(node *root, bool left=true)
+        {
+            cur =root;
+            if(!cur)return;
+            if(left)
+            {
+                while (cur->left)
+                    cur = cur->left;
+            }
+            else
+            {
+                while (cur->right)
+                    cur = cur->right;
+            }
         }
 
-    public:
-        node *operator->() { return cur; }
+        node* right(node *root)
+        {
+            node *tmp=root;
+            if(!tmp)return nullptr;
 
-        node &operator*() { return *cur; }
+            while (!tmp->right)
+                tmp = tmp->right;
+            return tmp;
+        }
+        node* left(node *root)
+        {
+            node *tmp=root;
+            if(!tmp)return nullptr;
+            while (!tmp->left)
+                tmp = tmp->left;
+            return tmp;
+        }
+    public:
+
+        node *operator->()
+        {
+            return cur;
+        }
+
+        node &operator*()
+        {
+            return *cur;
+        }
 
         Iterator &operator++() {
             if (!cur)
@@ -240,32 +208,43 @@ else
             return cur == other.cur;
         }
 
-        bool operator!=(const Iterator &other) { return !(*this == other); }
+        bool operator!=(const Iterator &other)
+        {
+            return !(*this == other);
+        }
 
-    protected:
-        node *cur;
     };
 
-    Iterator begin() { return Iterator(root); }
-    Iterator end() { return Iterator(nullptr); }
+    Iterator begin()
+    {
+        //qDebug()<<Iterator(Iterator::left(root));
+        return Iterator(root,1);
+    }
+
+    Iterator end()
+    {
+        //qDebug()<<Iterator(Iterator::right(root));
+        //return Iterator(root,0);
+        return Iterator(nullptr);//without move;
+    }
 
 protected:
 
     node * findNode(T key)
     {
-        node *cur = root;
-        while (cur != nullptr) {
-            if (key == cur->key)
-                return cur;
-            if (key < cur->key)
-                cur = cur->left;
-            else
-                cur = cur->right;
-        }
-
-        return nullptr;
+        qDebug()<<"ROOT:"<<root<<" "<<"KEY "<<key;
+        return find(key,root);
     }
 
+    node *find(T key, node *v)
+    {
+
+        if(v==nullptr)return nullptr;
+        qDebug()<<v->key<<" "<<key;
+        if(v->key==key)return v;
+        if(v->key>key)return find(key,v->left);
+        if(v->key<key)return find(key,v->right);
+    }
     node * grandparent(node *v)//parent parent
     {
         node *p=v->parent;
@@ -273,17 +252,21 @@ protected:
             return p->parent;
         return nullptr;
     }
+
     node * uncle(node *v)//sibling of parent
     {
-        node *g=grandparent(v);
-        if(g==nullptr)
-            return g;
-        if(v->parent==g->left)
-            return g->right;
-        return g->left;
+        node * tmp=grandparent(v);
+        if(!tmp)
+            return nullptr;
+        if(tmp->left==v->parent)
+            return tmp->right;
+        return tmp->left;
     }
+
     node * sibling(node *v)
     {
+        if(!v->parent||!v)
+            return nullptr;
         if(v->parent->left==v)
             return v->parent->right;
         return v->parent->left;
@@ -293,7 +276,7 @@ protected:
     {
         node * r=v->right;
         r->parent=v->parent;
-        if(v->parent!=nullptr)
+        if(v->parent)
         {
             if(v->parent->left==v)
             {
@@ -302,75 +285,58 @@ protected:
             else
                 v->parent->right=r;
         }
+        else
+            root=r;
 
         v->right=r->left;
 
-        if(r->left!=nullptr)
+        if(r->left)
             r->left->parent=v;
 
         v->parent=r;
         r->left=v;
     }
+
     void RotateRight(node *v)
     {
         struct node *left = v->left;
 
         left->parent = v->parent;
-        if (v->parent != nullptr) {
-            if (v->parent->left=v)
+        if (v->parent)
+        {
+            if (v->parent->left==v)
                 v->parent->left = left;
             else
                 v->parent->right = left;
         }
+        else
+            root=left;
 
         v->left = left->right;
-        if (left->right != nullptr)
+        if (left->right)
             left->right->parent = v;
 
         v->parent = left;
         left->right = v;
     }
 
-    node *insert(T key,T1 value,node *v)
-    {
-        qDebug()<<value;
-        if(key==v->key)
-            return v;
-        if(key<v->key)
-        {
-            if(v->left==nullptr)
-            {
-                v->left=new node(v,nullptr,nullptr,true,key,value);
-                InsCase1(v->left);
-                return v->left;
-            }
-            else return insert(key,value,v->left);
-        }
-        else
-        {
-            if (v->right) return insert(key, value, v->right);
-            else {
-                v->right = new node(v, nullptr, nullptr, true, key, value);
-                InsCase1(v->right);
-                return v->right;
-        }
-        }
-    }
     void InsCase1(node *v)
     {
-        if(v->parent==nullptr)//root
+        if(!v->parent)//root
             v->red=false;
         else
             InsCase2(v);
     }
+
     void InsCase2(node *v)
     {
-        if(v->parent->red==false)
+        if(!v->parent->red)
         {
             return;
         }
         InsCase3(v);
     }
+
     void InsCase3(node *v)
     {
         node *u=uncle(v);
@@ -385,21 +351,27 @@ protected:
         else
             InsCase4(v);
     }
+
     void InsCase4(node *v)
     {
         node *g=grandparent(v);
-        if(v==v->parent->right&&v->parent==g->left)
+        node *p=v->parent;
+        node *tmp=v;
+
+        if(v==p->right&&p==g->left)
         {
-            RotateLeft(v->parent);
-            v=v->left;
+            RotateLeft(p);
+            tmp=v->left;
         }
-        else if(v==v->parent->left&&v->parent==g->right)
+        else if(v==p->left&&p==g->right)
         {
-            RotateRight(v->parent);
-            v=v->right;
+            RotateRight(p);
+            tmp=v->right;
         }
-        InsCase5(v);
+
+        InsCase5(tmp);
     }
+
     void InsCase5(node *v)
     {
         node * g = grandparent(v);
@@ -414,64 +386,177 @@ protected:
         }
     }
 
-    void replaceWith(node *from, node *to) {
-        node *parent = from->parent;
-
-        if (to) {
-            to->parent = parent;
-        }
-
-        if (parent == nullptr) {
-            root = to;
-        } else {
-            if (parent->left == from) {
-                parent->left = to;
-            } else {
-                parent->right = to;
-            }
-        }
-    }
-
-    void clear(node *v)
+    void DelCase1(node *v)
     {
-        if(v==nullptr)
-            return;
-        clear(v->left);
-        clear(v->right);
-        delete v;
-        v=nullptr;
+        if(v->parent)//is root
+            DelCase2(v);
     }
 
+    void DelCase2(node *v)
+    {
+        node * sib=sibling(v);
+        node * r=v->parent;//root of sibling and v
 
-    int Size(node* n) {
-        if (n == nullptr) return 0;
+        bool red;
+        if(sib)
+            red=sib->red;
+        else
+            red=false;
+        if(red)
+        {
+            r->red=true;
+            sib->red=false;
+
+            if(v==r->left)
+                RotateLeft(r);
+            else
+                RotateRight(r);
+        }
+
+        DelCase3(v);
+    }
+
+    void DelCase3(node *v)
+    {
+        node* s = sibling(v);
+
+        bool sred = s ? s->red : false;
+        bool lred = s && s->left ? s->left->red : false;
+        bool rred = s && s->right ? s->right->red : false;
+
+        if(!v->parent->red&&!sred&&!lred&&!rred)
+        {
+            if(s)
+                s->red=true;
+            DelCase1(v->parent);
+        }
+        else
+            DelCase4(v);
+    }
+
+    void DelCase4(node *v)
+    {
+        node* s = sibling(v);
+
+        bool sred = s ? s->red : false;
+        bool lred = s && s->left ? s->left->red : false;
+        bool rred = s && s->right ? s->right->red : false;
+
+        if(v->parent->red&&!sred&&!lred&&!rred)
+        {
+            if(s)
+                s->red=true;
+            v->parent->red=false;
+        }
+        else
+            DelCase5(v);
+    }
+
+    void DelCase5(node *v)
+    {
+        node * s=sibling(v);
+        bool lred = s && s->left ? s->left->red : false;
+        bool rred = s && s->right ? s->right->red : false;
+
+        if(!s->red)
+        {
+            if(v==v->parent->left&&!rred&&lred)
+            {
+                s->red=true;
+                s->left->red=false;
+                RotateRight(s);
+            }
+            else
+                if(v==v->parent->right&&!lred&&rred)
+                {
+                    s->red=true;
+                    s->right->red=false;
+                    RotateLeft(s);
+                }
+        }
+        DelCase6(v);
+    }
+
+    void DelCase6(node *v)
+    {
+        node *s=sibling(v);
+        s->red=v->parent->red;
+        v->parent->red=false;
+
+        if(v==v->parent->left)
+        {
+            if(s->right)
+                s->right->red=false;
+            RotateLeft(v->parent);
+        }
+        else
+        {
+            if(s->left)
+                s->left->red=false;
+            RotateRight(v->parent);
+        }
+    }
+
+    int Size(node* n)
+    {
+        if (n == nullptr)
+            return 0;
         return 1 + Size(n->left) + Size(n->right);
     }
-    //Field
-    node *root=nullptr;
+
 };
 
 template <typename T, typename T1> class Map: public RBT<T, T1> {
     using RBT = RBT<T, T1>;
 public:
-    T1& operator[](const T& key) {
+    Map()
+    {
+        f.resize((int)1e6);
+    }
+    T1& operator[](const T& key)
+    {
         auto t = RBT::findNode(key);
-        if(t != nullptr) {
+        if(t)
             return t->val;
-        }
         return RBT::insert(key, T1())->val;
     }
-
-    const T1 operator[](const T& key) const {
+    const T1 operator[](const T& key) const
+    {
         return *this[key];
     }
+
+    int hash(T key)
+    {
+        return (int)key%(int)1e6;
+    }
+
+    void insert(T key,T1 val)
+    {
+        qDebug()<<key<<" "<<hash(key);
+        RBT::insert(hash(key), val);
+    }
+
+private:
+    std::forward_list<std::pair<const T,bool>>f;
 };
 
 template <typename T> class Set: public RBT<T, bool> {
     using RBT = RBT<T, bool>;
 public:
-    void insert(T&& val) {
-        RBT::insert(val, false);
+    Set()
+    {
+        f.resize((int)1e6);
     }
+    int hash(T key)
+    {
+        return (int)key%(int)1e6;
+    }
+    void insert(T&& val)
+    {
+
+        RBT::insert(hash(val), false);
+    }
+private:
+    std::forward_list<std::pair<const T,bool>>f;
 };
 #endif // RBT_H

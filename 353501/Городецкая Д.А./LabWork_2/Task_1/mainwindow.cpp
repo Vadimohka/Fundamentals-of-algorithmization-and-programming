@@ -136,108 +136,108 @@ void MainWindow::showNextDay()
     tableWidget->setItem(selectedRow, 1, nextDateItem);
 }
 
-    void MainWindow::showDiff()
-    {
-        // Получение выбранной строки
-        int selectedRow = tableWidget->currentRow();
-        if (selectedRow < 0) {
-            QMessageBox::information(this, "Ошибка", "Не выбрана строка с датой.");
+void MainWindow::showDiff()
+{
+    // Получение выбранной строки
+    int selectedRow = tableWidget->currentRow();
+    if (selectedRow < 0) {
+        QMessageBox::information(this, "Ошибка", "Не выбрана строка с датой.");
+        return;
+    }
+
+    // Получение текущей даты из таблицы
+    QTableWidgetItem *currentDateItem = tableWidget->item(selectedRow, 0);
+    QString currentDateStr = currentDateItem->text();
+    QDate currentDate = QDate::fromString(currentDateStr, "dd.MM.yyyy");
+
+    // Вычисление разницы между текущей датой и датой рождения
+    QDate birthdate = birthdateEdit->date();
+    int diff = birthdate.daysTo(currentDate);
+
+    // Вывод разницы в таблицу
+    QTableWidgetItem *diffItem = new QTableWidgetItem(QString::number(diff));
+    tableWidget->setItem(selectedRow, 2, diffItem);
+}
+
+void MainWindow::addBirthday()
+{
+    // Получение выбранной строки или добавление новой строки, если ни одна не выбрана
+    int selectedRow = tableWidget->currentRow();
+    if (selectedRow < 0) {
+        selectedRow = tableWidget->rowCount();
+        tableWidget->insertRow(selectedRow);
+    }
+
+    // Убедитесь, что таблица имеет достаточное количество столбцов
+    int columnCount = tableWidget->columnCount();
+    if (columnCount < 1) {
+        tableWidget->setColumnCount(1);
+    }
+
+    // Получение даты из поля ввода даты рождения
+    QDate date = birthdateEdit->date();
+
+    // Вставка даты рождения в таблицу
+    QTableWidgetItem *birthdateItem = new QTableWidgetItem(date.toString("dd.MM.yyyy"));
+    tableWidget->setItem(selectedRow, 0, birthdateItem);
+}
+
+void MainWindow::modifyDate()
+{
+    // Получение выбранной строки
+    int selectedRow = tableWidget->currentRow();
+    if (selectedRow < 0) {
+        QMessageBox::information(this, "Ошибка", "Не выбрана строка для изменения даты.");
+        return;
+    }
+
+    // Получение текущей даты из таблицы
+    QTableWidgetItem *currentDateItem = tableWidget->item(selectedRow, 0);
+    QString currentDateStr = currentDateItem->text();
+    QDate currentDate = QDate::fromString(currentDateStr, "dd.MM.yyyy");
+
+    // Создание диалогового окна для изменения даты
+    QDialog dialog(this);
+    dialog.setWindowTitle("Изменение даты");
+
+    // Создание виджета для выбора даты
+    QDateEdit dateEdit(&dialog);
+    dateEdit.setDate(currentDate);
+    dateEdit.setCalendarPopup(true);
+
+    // Создание кнопок "ОК" и "Отмена"
+    QDialogButtonBox buttonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, Qt::Horizontal, &dialog);
+
+    // Создание компоновщика
+    QVBoxLayout layout(&dialog);
+    layout.addWidget(&dateEdit);
+    layout.addWidget(&buttonBox);
+
+    // Обработка нажатия кнопки "ОК"
+    connect(&buttonBox, &QDialogButtonBox::accepted, [&]() {
+        // Получение выбранной даты
+        QDate newDate = dateEdit.date();
+
+        // Проверка правильности ввода даты
+        if (!newDate.isValid()) {
+            QMessageBox::warning(this, "Ошибка", "Неправильный формат даты.");
             return;
         }
 
-        // Получение текущей даты из таблицы
-        QTableWidgetItem *currentDateItem = tableWidget->item(selectedRow, 0);
-        QString currentDateStr = currentDateItem->text();
-        QDate currentDate = QDate::fromString(currentDateStr, "dd.MM.yyyy");
+        // Обновление даты в таблице
+        QTableWidgetItem *newDateItem = new QTableWidgetItem(newDate.toString("dd.MM.yyyy"));
+        tableWidget->setItem(selectedRow, 0, newDateItem);
 
-        // Вычисление разницы между текущей датой и датой рождения
-        QDate birthdate = birthdateEdit->date();
-        int diff = birthdate.daysTo(currentDate);
+        // Закрытие диалогового окна
+        dialog.accept();
+    });
 
-        // Вывод разницы в таблицу
-        QTableWidgetItem *diffItem = new QTableWidgetItem(QString::number(diff));
-        tableWidget->setItem(selectedRow, 2, diffItem);
-    }
+    // Обработка нажатия кнопки "Отмена"
+    connect(&buttonBox, &QDialogButtonBox::rejected, [&]() {
+        // Закрытие диалогового окна
+        dialog.reject();
+    });
 
-    void MainWindow::addBirthday()
-    {
-        // Получение выбранной строки или добавление новой строки, если ни одна не выбрана
-        int selectedRow = tableWidget->currentRow();
-        if (selectedRow < 0) {
-            selectedRow = tableWidget->rowCount();
-            tableWidget->insertRow(selectedRow);
-        }
-
-        // Убедитесь, что таблица имеет достаточное количество столбцов
-        int columnCount = tableWidget->columnCount();
-        if (columnCount < 1) {
-            tableWidget->setColumnCount(1);
-        }
-
-        // Получение даты из поля ввода даты рождения
-        QDate date = birthdateEdit->date();
-
-        // Вставка даты рождения в таблицу
-        QTableWidgetItem *birthdateItem = new QTableWidgetItem(date.toString("dd.MM.yyyy"));
-        tableWidget->setItem(selectedRow, 0, birthdateItem);
-    }
-
-    void MainWindow::modifyDate()
-    {
-        // Получение выбранной строки
-        int selectedRow = tableWidget->currentRow();
-        if (selectedRow < 0) {
-            QMessageBox::information(this, "Ошибка", "Не выбрана строка для изменения даты.");
-            return;
-        }
-
-        // Получение текущей даты из таблицы
-        QTableWidgetItem *currentDateItem = tableWidget->item(selectedRow, 0);
-        QString currentDateStr = currentDateItem->text();
-        QDate currentDate = QDate::fromString(currentDateStr, "dd.MM.yyyy");
-
-        // Создание диалогового окна для изменения даты
-        QDialog dialog(this);
-        dialog.setWindowTitle("Изменение даты");
-
-        // Создание виджета для выбора даты
-        QDateEdit dateEdit(&dialog);
-        dateEdit.setDate(currentDate);
-        dateEdit.setCalendarPopup(true);
-
-        // Создание кнопок "ОК" и "Отмена"
-        QDialogButtonBox buttonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, Qt::Horizontal, &dialog);
-
-        // Создание компоновщика
-        QVBoxLayout layout(&dialog);
-        layout.addWidget(&dateEdit);
-        layout.addWidget(&buttonBox);
-
-        // Обработка нажатия кнопки "ОК"
-        connect(&buttonBox, &QDialogButtonBox::accepted, [&]() {
-            // Получение выбранной даты
-            QDate newDate = dateEdit.date();
-
-            // Проверка правильности ввода даты
-            if (!newDate.isValid()) {
-                QMessageBox::warning(this, "Ошибка", "Неправильный формат даты.");
-                return;
-            }
-
-            // Обновление даты в таблице
-            QTableWidgetItem *newDateItem = new QTableWidgetItem(newDate.toString("dd.MM.yyyy"));
-            tableWidget->setItem(selectedRow, 0, newDateItem);
-
-            // Закрытие диалогового окна
-            dialog.accept();
-        });
-
-        // Обработка нажатия кнопки "Отмена"
-        connect(&buttonBox, &QDialogButtonBox::rejected, [&]() {
-            // Закрытие диалогового окна
-            dialog.reject();
-        });
-
-        // Отображение диалогового окна
-        dialog.exec();
-    }
+    // Отображение диалогового окна
+    dialog.exec();
+}

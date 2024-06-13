@@ -2,14 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QPushButton>
 #include <QLineEdit>
+#include <QPushButton>
 #include <QLabel>
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
+namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -21,15 +19,15 @@ public:
     ~MainWindow();
 
 private slots:
-    void answer();
-    int ackermann(int m, int n);
+    void computeAckermann();
 
 private:
     Ui::MainWindow *ui;
-    QPushButton *pushButton;
     QLineEdit *input1LineEdit;
     QLineEdit *input2LineEdit;
     QLabel *resultLabel;
 
+    int ackermann(int m, int n);
 };
+
 #endif // MAINWINDOW_H

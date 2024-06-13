@@ -28,10 +28,10 @@ void MainWindow::WriteAndSaveText()
     QFile file("ЛевшуковЛаб20.txt");
     QTextStream in(&file);
     file.open(QIODevice::WriteOnly | QIODevice::Text);
-    //std::wstring s=text.toStdWString();
-    for(int i=0;i<text.length();++i){
-        in << text.at(i);
-    }
+
+    for(int i=0;i<text.length();i++)
+        in << text[i];
+
     file.close();
     QMessageBox::information(this,"File saved","Data saved succesfully");
 }
@@ -43,8 +43,9 @@ void MainWindow::ReadText()
 
     file.open(QIODevice::ReadOnly | QIODevice::Text);
     QString text;
-    while(!in.atEnd()){
-        QChar ch;
+    QChar ch;
+    while(!in.atEnd())
+    {
         in >> ch;
         text+=ch;
     }
@@ -89,9 +90,10 @@ void MainWindow::ReadArray()
     file.open(QIODevice::ReadOnly | QIODevice::Text);
 
     QString text;
+    QChar ch;
     while(!in.atEnd())
     {
-        QChar ch;
+
         in >> ch;
         if(ch!=separator)
         {

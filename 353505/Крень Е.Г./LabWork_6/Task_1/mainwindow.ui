@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>703</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Инициализация пользователем</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" colspan="4">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Город:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4" colspan="3">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Количество работников</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QSpinBox" name="spinBox"/>
+        </item>
+        <item row="2" column="0" colspan="4">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Средняя почасовая оплата</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+        </item>
+        <item row="3" column="0" colspan="3">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Специализация</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4" colspan="3">
+         <widget class="QComboBox" name="comboBox">
+          <item>
+           <property name="text">
+            <string>E (Двигатель и трансмиссия)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B (Tехобслуживание и ремонт тормозной системы)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>T (Шиномонтаж и балансировка)</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="3">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Наличие страховки</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4" colspan="3">
+         <widget class="QRadioButton" name="radioButton">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="6">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Количество рабочих часов (ПН - ВС)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QSpinBox" name="spinBox_2"/>
+        </item>
+        <item row="6" column="1">
+         <widget class="QSpinBox" name="spinBox_3"/>
+        </item>
+        <item row="6" column="2">
+         <widget class="QSpinBox" name="spinBox_4"/>
+        </item>
+        <item row="6" column="3">
+         <widget class="QSpinBox" name="spinBox_5"/>
+        </item>
+        <item row="6" column="4">
+         <widget class="QSpinBox" name="spinBox_6"/>
+        </item>
+        <item row="7" column="0" colspan="8">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="5">
+         <widget class="QSpinBox" name="spinBox_7"/>
+        </item>
+        <item row="6" column="6">
+         <widget class="QSpinBox" name="spinBox_8"/>
+        </item>
+        <item row="6" column="7">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Создать структуру</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Инициализация по указателю</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>40</y>
+          <width>821</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Инициализация по ссылке</string>
+       </attribute>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>28</x>
+          <y>25</y>
+          <width>881</width>
+          <height>561</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>950</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

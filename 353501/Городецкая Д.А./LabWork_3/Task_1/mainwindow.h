@@ -2,14 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QPushButton>
 #include <QLineEdit>
+#include <QPushButton>
 #include <QLabel>
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
+namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -19,13 +17,16 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
 private slots:
     void convertToBinary();
-    QString decimalToBinary(long double number, int precision);
+
 private:
     Ui::MainWindow *ui;
-    QPushButton *button;
     QLineEdit *inputLineEdit;
     QLabel *resultLabel;
+
+    QString decimalToBinary(unsigned long long number, int precision);
 };
+
 #endif // MAINWINDOW_H

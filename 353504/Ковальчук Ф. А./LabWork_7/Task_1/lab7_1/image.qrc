@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new/img">
+        <file>image/All Apologies.jpg</file>
+        <file>image/The Adults.jpeg</file>
+        <file>image/Ok Computer.jpg</file>
+        <file>image/Notion.jpg</file>
+        <file>image/In Rainbows.jpg</file>
+        <file>image/Everlong.jpg</file>
+        <file>image/Currents.jpg</file>
+    </qresource>
+</RCC>

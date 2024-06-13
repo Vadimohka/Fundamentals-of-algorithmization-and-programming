@@ -1,0 +1,6 @@
+Candidate 1
+4
+Party 1
+Teacher
+100
+58

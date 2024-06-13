@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="SecondString">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>70</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FirstString">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>First String:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Second String:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_memcpy">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>150</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>memcpy</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_memmove">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>150</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>memmove</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strcpy">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>150</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strcpy</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strncpy">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strncpy</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strcat">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>220</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strcat</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_memcmp">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>220</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>memcmp</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strcmp">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>150</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strcmp</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strcoll">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>220</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strcoll</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strncmp">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>150</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strncmp</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strerror">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strerror</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strtok">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>220</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strtok</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strxfrm">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>290</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strxfrm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_memset">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>290</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>memset</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strLen1">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>350</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strlen 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_strLen1_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>350</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>strlen 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>579</x>
+      <y>19</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter N:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>10</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="output">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>410</y>
+      <width>731</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>300</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>13</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>36</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

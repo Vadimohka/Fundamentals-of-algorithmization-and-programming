@@ -20,44 +20,41 @@ public:
         return current->data[ind];
     }
 
-    bool operator==(const iterator &other) const {
-        return current == other.current && ind == other.ind;
+    bool operator==(const iterator &other) const
+    {
+        return current==other.current&&ind==other.ind;
     }
 
-    bool operator!=(const iterator &other) const {
-        return !(*this == other);
+    bool operator!=(const iterator &other) const
+    {
+        return !(operator==(other));
     }
 
     iterator &operator++() {
-        if (current != nullptr && ind == current->right) {
+        if (current != nullptr && ind == current->right)//next block
+        {
             current = current->next;
             ind = current->left;
-        } else if (current != nullptr) {
-            ++ind;
+        }
+        else if (current != nullptr)//next index
+        {
+            ind++;
         }
         return *this;
     }
 
     iterator operator++(int) {
-        iterator tmp = *this;
-        ++(*this);
-        return tmp;
-    }
-
-    iterator &operator--() {
-        iterator tmp = *this;
-        --(*this);
-        return tmp;
-    }
-
-    iterator operator--(int) {
-        if (current != nullptr && ind == current->left) {
-            current = current->prev;
-            ind = current->right;
-        } else if (current != nullptr) {
-            ind--;
+      iterator tmp = *this;
+        if (current != nullptr && ind == current->right)//next block
+        {
+            current = current->next;
+            ind = current->left;
         }
-        return *this;
+        else if (current != nullptr)//next index
+        {
+            ind++;
+        }
+        return tmp;
     }
 
 };

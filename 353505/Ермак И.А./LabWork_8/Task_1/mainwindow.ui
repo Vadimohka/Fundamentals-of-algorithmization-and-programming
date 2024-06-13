@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="addLineEdit"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="addButton">
+      <property name="text">
+       <string>Add Node</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="removeLineEdit"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="removeButton">
+      <property name="text">
+       <string>Remove Node</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="insertParentLineEdit"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="insertBranchLineEdit"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="insertBranchButton">
+      <property name="text">
+       <string>Insert Branch</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="deleteParentLineEdit"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="deleteBranchLineEdit"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deleteBranchButton">
+      <property name="text">
+       <string>Delete Branch</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="node1LineEdit"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="node2LineEdit"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="findLCAButton">
+      <property name="text">
+       <string>Find LCA</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="findLCAResultLabel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="traverseButton">
+      <property name="text">
+       <string>Traverse</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="traversalLabel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

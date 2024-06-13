@@ -1,0 +1,24 @@
+#include "operation.h"
+
+Operation::Operation(Expression* left, Expression* right, char operation) {
+    this->left = left;
+    this->right = right;
+    this->operation = operation;
+}
+
+Operation::~Operation(){
+    delete left;
+    delete right;
+}
+
+double Operation::evaluate(Expression *left, Expression *right, char operation){
+    
+    switch(operation){
+        
+    case '+':
+        return left->evaluate() + right->evaluate();
+        break;
+    case '-'
+        return left-
+    }
+}

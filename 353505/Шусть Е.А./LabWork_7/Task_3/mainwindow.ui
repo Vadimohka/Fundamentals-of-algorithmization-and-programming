@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>916</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(0, 0, 0);
+font: 700 italic 15pt &quot;Ubuntu&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>11</y>
+      <width>321</width>
+      <height>500</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>506</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="ln_size">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Размер хэш-таблицы:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spb_size">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Диапазон значений, от:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spb_lvalue">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+         <property name="text">
+          <string>до:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spb_rvalue">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bnt_randgen">
+       <property name="styleSheet">
+        <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Сгенерировать случайную таблицу</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="ln_key">
+           <property name="styleSheet">
+            <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Ключ:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spb_key">
+           <property name="styleSheet">
+            <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="ln_vaue">
+           <property name="styleSheet">
+            <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Значение:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spb_val">
+           <property name="styleSheet">
+            <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_add">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Добавить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="ln_remKey">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Ключ:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spb_remspb">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_delete">
+         <property name="styleSheet">
+          <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Удалить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bnt_printMin">
+       <property name="styleSheet">
+        <string notr="true">font: 300 italic 17pt &quot;Ubuntu&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Вывести номер стека (мин зна. ключа)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

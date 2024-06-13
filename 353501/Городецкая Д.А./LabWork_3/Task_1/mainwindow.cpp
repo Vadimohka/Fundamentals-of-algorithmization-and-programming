@@ -27,64 +27,46 @@ MainWindow::MainWindow(QWidget *parent)
 
     centralWidget()->setLayout(layout);
 }
-void MainWindow::convertToBinary(){
+
+void MainWindow::convertToBinary() {
     QString input = inputLineEdit->text();
     bool ok;
     long double number = input.toDouble(&ok);
-    if(number>1e19){
-        QMessageBox::warning(this, "Ошибка", "Введите корректное число");
-    }
-    else if (ok)
-    {
-        QString binaryQString = decimalToBinary(number, 1600); // Установите желаемую точность здесь
-        resultLabel->setText("Результат: " + binaryQString);
-    }
-
-    else
-    {
+    if (!ok) {
         resultLabel->setText("Ошибка: Введите корректное число");
+        return;
     }
-}
-QString MainWindow::decimalToBinary(long double number, int precision){
-    QString binary;
 
-    // Проверка на отрицательное число
-    if (number < 0)
-    {
+    if (number > 1e19) {
+        QMessageBox::warning(this, "Ошибка", "Введите число не более чем, 1e19");
+        return;
+    }
+
+    QString binary;
+    if (number < 0) {
         binary += "-";
         number = -number;
     }
 
+    int precision = 30; // желаемая точность для дробной части
+    binary += decimalToBinary(static_cast<unsigned long long>(number), precision);
 
-    // Преобразование целой части в двоичное представление
-    unsigned long long integerPart = static_cast<unsigned long long>(number);
-    binary += QString::number(integerPart, 2);
+    resultLabel->setText("Результат: " + binary);
+}
 
-    // Преобразование дробной части в двоичное представление
-    if (precision > 0)
-    {
-        binary += ".";
-        long double fractionalPart = number - static_cast<long double>(integerPart);
-        int digitCount = 0;
+QString MainWindow::decimalToBinary(unsigned long long number, int precision) {
+    if (number == 0) // базовый случай: когда число становится 0, рекурсия завершается
+        return "";
 
-        while (fractionalPart > 0 && digitCount < precision)
-        {
-            fractionalPart *= 2;
-            unsigned long long bit = static_cast<unsigned long long>(fractionalPart);
-            binary += QString::number(bit);
-            fractionalPart -= bit;
-            digitCount++;
-        }
-    }
-    // else if(number>1e30){
-    //     QMessageBox::warning(this, "Ошибка", "Введите корректное число");
-    // }
+    // Рекурсивно вычисляем двоичное представление целой части
+    QString binary = decimalToBinary(number / 2, precision);
+
+    // Добавляем текущий остаток в конец двоичной строки
+    binary += QString::number(number % 2);
 
     return binary;
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
     delete ui;
 }
-

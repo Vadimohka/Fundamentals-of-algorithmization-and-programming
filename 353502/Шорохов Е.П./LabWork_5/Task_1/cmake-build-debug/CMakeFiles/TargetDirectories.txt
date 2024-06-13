@@ -1,0 +1,8 @@
+/home/shosh/CLionProjects/LabWork_5/cmake-build-debug/CMakeFiles/LabWork_5.dir
+/home/shosh/CLionProjects/LabWork_5/cmake-build-debug/CMakeFiles/Task2.dir
+/home/shosh/CLionProjects/LabWork_5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shosh/CLionProjects/LabWork_5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/shosh/CLionProjects/LabWork_5/cmake-build-debug/CMakeFiles/LabWork_5_autogen_timestamp_deps.dir
+/home/shosh/CLionProjects/LabWork_5/cmake-build-debug/CMakeFiles/LabWork_5_autogen.dir
+/home/shosh/CLionProjects/LabWork_5/cmake-build-debug/CMakeFiles/Task2_autogen_timestamp_deps.dir
+/home/shosh/CLionProjects/LabWork_5/cmake-build-debug/CMakeFiles/Task2_autogen.dir

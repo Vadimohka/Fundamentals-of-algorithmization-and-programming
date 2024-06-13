@@ -160,7 +160,7 @@ void remove(int key, node *v,node *& pred,bool left)
         if(delta<-1)
         {
             if(height(v->right->left)>height(v->right->right))
-                Rrotate(v->left);
+                Rrotate(v->right);
             Lrotate(v);
         }
 

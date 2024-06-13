@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>879</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ЧипиЧипи</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(0, 0, 0);
+font: 700 italic 11pt &quot;Ubuntu&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>860</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="ln_ans">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>11</pointsize>
+             <italic>true</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: italic 11pt &quot;Ubuntu&quot;;</string>
+           </property>
+           <property name="text">
+            <string>String 1:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="ln_str1">
+           <property name="styleSheet">
+            <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">font: italic 11pt &quot;Ubuntu&quot;;</string>
+           </property>
+           <property name="text">
+            <string>String 2:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="ln_str2">
+           <property name="styleSheet">
+            <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+           </property>
+           <property name="text">
+            <string>N:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spb_N">
+           <property name="styleSheet">
+            <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="bnt_memcpy">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>memcpy</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_memmove">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>memmove</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_strcpy">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strcpy</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_strncpy">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strncpy</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_strcat">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strcat</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="bnt_memset">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>memset</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_strtok">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strtok</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_strcoll">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strcoll</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_strxfrm">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strxfrm</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_strlen">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strlen</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetMinimumSize</enum>
+       </property>
+       <item>
+        <widget class="QPushButton" name="bnt_strcmp">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strcmp</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_strncmp">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strncmp</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_memcmp">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>memcmp</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bnt_strncat">
+         <property name="styleSheet">
+          <string notr="true">font: 700 11pt &quot;Ubuntu Condensed&quot;;</string>
+         </property>
+         <property name="text">
+          <string>strncat</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>879</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

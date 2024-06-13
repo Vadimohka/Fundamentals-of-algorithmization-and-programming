@@ -2,18 +2,17 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QString>
 
-namespace Ui {
-class MainWindow;
-}
+QT_BEGIN_NAMESPACE
+namespace Ui { class MainWindow; }
+QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
@@ -22,8 +21,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-    int countSubfolders(const QString &folderPath);
-    int countFiles(const QString &folderPath);
+    void countItems(const QString &folderPath, int &subfolderCount, int &fileCount);
 };
 
 #endif // MAINWINDOW_H
