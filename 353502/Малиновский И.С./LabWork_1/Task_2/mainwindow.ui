@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>0</y>
+      <width>1750</width>
+      <height>1080</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ПЛОЩАДЬ ФИГУРЫ</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser1">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ПЕРИМЕТР ФИГУРЫ</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    ЦЕНТР ФИГУРЫ</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Создать фигуру</string>
+    </property>
+    <addaction name="createStar5"/>
+    <addaction name="createStar6"/>
+    <addaction name="createStar8"/>
+    <addaction name="createSquare"/>
+    <addaction name="createCircle"/>
+    <addaction name="createParallelogram"/>
+    <addaction name="createRectangle"/>
+    <addaction name="createRhomb"/>
+    <addaction name="createTriangle"/>
+    <addaction name="createHexagon"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Редактирование фигур</string>
+    </property>
+    <addaction name="moveFigure"/>
+    <addaction name="resizeFigure"/>
+    <addaction name="deleteFigure"/>
+    <addaction name="rotateFigure"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="createTriangle">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Треугольник</string>
+   </property>
+  </action>
+  <action name="createSquare">
+   <property name="text">
+    <string>Квадрат</string>
+   </property>
+  </action>
+  <action name="moveFigure">
+   <property name="text">
+    <string>Перемещение</string>
+   </property>
+  </action>
+  <action name="resizeFigure">
+   <property name="text">
+    <string>Изменение размера</string>
+   </property>
+  </action>
+  <action name="deleteFigure">
+   <property name="text">
+    <string>Удаление</string>
+   </property>
+  </action>
+  <action name="createCircle">
+   <property name="text">
+    <string>Круг</string>
+   </property>
+  </action>
+  <action name="createStar5">
+   <property name="text">
+    <string>Звезда (пятиугольная)</string>
+   </property>
+  </action>
+  <action name="createStar6">
+   <property name="text">
+    <string>Звезда (шестиугольная)</string>
+   </property>
+  </action>
+  <action name="createStar8">
+   <property name="text">
+    <string>Звезда (восьмиугольная)</string>
+   </property>
+  </action>
+  <action name="createParallelogram">
+   <property name="text">
+    <string>Параллелограмм</string>
+   </property>
+  </action>
+  <action name="createRectangle">
+   <property name="text">
+    <string>Прямоугольник</string>
+   </property>
+  </action>
+  <action name="createHexagon">
+   <property name="text">
+    <string>Шестиугольник</string>
+   </property>
+  </action>
+  <action name="createRhomb">
+   <property name="text">
+    <string>Ромб</string>
+   </property>
+  </action>
+  <action name="rotateFigure">
+   <property name="text">
+    <string>Повернуть фигуру</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
