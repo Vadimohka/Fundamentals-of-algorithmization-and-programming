@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>711</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>991</width>
+      <height>501</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttTriangle">
+    <property name="geometry">
+     <rect>
+      <x>339</x>
+      <y>21</y>
+      <width>80</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+
+Треугольник
+
+</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttRect">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>21</y>
+      <width>80</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+Прямо
+угольник
+
+</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttSixStar">
+    <property name="geometry">
+     <rect>
+      <x>422</x>
+      <y>21</y>
+      <width>80</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+
+хихихи
+
+</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttSquare">
+    <property name="geometry">
+     <rect>
+      <x>93</x>
+      <y>21</y>
+      <width>80</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+
+Квадрат
+
+</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttCircle">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>21</y>
+      <width>80</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+
+Круг
+
+</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttRomb">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>21</y>
+      <width>80</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+
+Ромб
+
+</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pointEdit">
+    <property name="geometry">
+     <rect>
+      <x>588</x>
+      <y>84</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttStar">
+    <property name="geometry">
+     <rect>
+      <x>588</x>
+      <y>22</y>
+      <width>80</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+Звезда
+</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttDrag">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>672</x>
+      <y>41</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Перетащить</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttRotate">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>716</x>
+      <y>72</y>
+      <width>76</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вращать</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SetRotationAngle">
+    <property name="geometry">
+     <rect>
+      <x>673</x>
+      <y>72</y>
+      <width>37</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttTransform">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>716</x>
+      <y>104</y>
+      <width>76</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>размер</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SetScale">
+    <property name="geometry">
+     <rect>
+      <x>673</x>
+      <y>104</y>
+      <width>37</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttClear">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>673</x>
+      <y>3</y>
+      <width>57</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 7pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Очистить
+сцену</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletItem">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>736</x>
+      <y>3</y>
+      <width>56</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 7pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>удалить
+объект</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minusButt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>861</x>
+      <y>4</y>
+      <width>57</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+-
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="plusButt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>798</x>
+      <y>4</y>
+      <width>57</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
++
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="counterClockwiseButt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>798</x>
+      <y>71</y>
+      <width>57</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+&lt;-
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ClockwiseButt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>861</x>
+      <y>71</y>
+      <width>57</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+-&gt;
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="paint_button">
+    <property name="geometry">
+     <rect>
+      <x>923</x>
+      <y>2</y>
+      <width>80</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>
+нарисовать
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="W_height">
+    <property name="geometry">
+     <rect>
+      <x>947</x>
+      <y>100</y>
+      <width>54</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="W_width">
+    <property name="geometry">
+     <rect>
+      <x>947</x>
+      <y>68</y>
+      <width>54</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>924</x>
+      <y>70</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>W:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>924</x>
+      <y>100</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arealabel">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>646</y>
+      <width>39</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Area:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="areaOutput">
+    <property name="geometry">
+     <rect>
+      <x>82</x>
+      <y>646</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="perimeterOutput">
+    <property name="geometry">
+     <rect>
+      <x>313</x>
+      <y>647</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="perimeterLabel">
+    <property name="geometry">
+     <rect>
+      <x>205</x>
+      <y>647</y>
+      <width>80</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Perimeter:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hexagonButt">
+    <property name="geometry">
+     <rect>
+      <x>505</x>
+      <y>21</y>
+      <width>80</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>
+Шести
+угольник
+
+</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
