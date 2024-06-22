@@ -1,0 +1,3 @@
+#include "all_figures"
+
+include::include() {}

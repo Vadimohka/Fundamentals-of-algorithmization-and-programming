@@ -1,0 +1,289 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.5.0-35-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++ 
+      Build flags: -DQT_QML_DEBUG
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/3.27.7/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-EIfZdZ"
+      binary: "/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-EIfZdZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-EIfZdZ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_7f24a
+        [1/2] /usr/bin/clang++   -DQT_QML_DEBUG  -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -c /home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 14.0.0-1ubuntu1.1
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-EIfZdZ" -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D QT_QML_DEBUG -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-EIfZdZ" -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward
+         /usr/lib/llvm-14/lib/clang/14.0.0/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/bin/clang++ -DQT_QML_DEBUG -v CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7f24a   && :
+        Ubuntu clang version 14.0.0-1ubuntu1.1
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7f24a /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward]
+          add: [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/llvm-14/lib/clang/14.0.0/include] ==> [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/llvm-14/lib/clang/14.0.0/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-EIfZdZ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_7f24a]
+        ignore line: [[1/2] /usr/bin/clang++   -DQT_QML_DEBUG  -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -c /home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v "-fcoverage-compilation-dir=/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-EIfZdZ" -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D QT_QML_DEBUG -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro "-fdebug-compilation-dir=/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-EIfZdZ" -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward]
+        ignore line: [ /usr/lib/llvm-14/lib/clang/14.0.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang++ -DQT_QML_DEBUG -v CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7f24a   && :]
+        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7f24a /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7f24a] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_7f24a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-14/bin/../lib] ==> [/usr/lib/llvm-14/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-14/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/Qt6Config.cmake:119 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ak1XpA"
+      binary: "/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ak1XpA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6;/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ak1XpA'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b409b
+        [1/2] /usr/bin/clang++ -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_b409b.dir/src.cxx.o -MF CMakeFiles/cmTC_b409b.dir/src.cxx.o.d -o CMakeFiles/cmTC_b409b.dir/src.cxx.o -c '/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ak1XpA/src.cxx'
+        [2/2] : && /usr/bin/clang++ -DQT_QML_DEBUG  CMakeFiles/cmTC_b409b.dir/src.cxx.o -o cmTC_b409b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:41 (include)"
+      - "/home/egor/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:111 (find_dependency)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:39 (_qt_internal_find_qt_dependencies)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/Qt6Config.cmake:164 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ScsNzR"
+      binary: "/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ScsNzR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6;/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/3rdparty/kwin;/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6;/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/home/egor/Qt/6.6.2/gcc_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ScsNzR'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_6660f
+        [1/2] /usr/bin/clang++ -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_6660f.dir/src.cxx.o -MF CMakeFiles/cmTC_6660f.dir/src.cxx.o.d -o CMakeFiles/cmTC_6660f.dir/src.cxx.o -c '/home/egor/qt labs/Lab3-3/build-Lab5-1-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ScsNzR/src.cxx'
+        [2/2] : && /usr/bin/clang++ -DQT_QML_DEBUG  CMakeFiles/cmTC_6660f.dir/src.cxx.o -o cmTC_6660f   && :
+        
+      exitCode: 0
+...
