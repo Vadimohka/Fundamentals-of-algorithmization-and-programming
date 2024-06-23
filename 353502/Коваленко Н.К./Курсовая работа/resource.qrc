@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/all_numbers.png</file>
+        <file>images/paddle.png</file>
+        <file>images/background.png</file>
+        <file>images/ball.png</file>
+        <file>images/block01.png</file>
+        <file>images/block02.png</file>
+        <file>images/block03.png</file>
+        <file>images/block04.png</file>
+        <file>images/block05.png</file>
+        <file>images/bg_gameover.png</file>
+        <file>images/bg_pause.png</file>
+        <file>images/bg_victory.png</file>
+        <file>images/cat.png</file>
+        <file>images/Menu.png</file>
+        <file>images/negr.png</file>
+        <file>images/block01 (копия).png</file>
+    </qresource>
+</RCC>
